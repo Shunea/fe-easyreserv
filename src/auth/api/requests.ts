@@ -3,38 +3,6 @@ import { TourType } from "../../components/Staff/StaffTypes";
 import storage from "../../utils/storage";
 import api from "./apiInstance";
 
-export type PaymentType = 'CASH' | 'POS' | 'TRANSFER';
-export type CourierStatus = 'PENDING' | 'IN_PREPARATION' | 'PICKED_UP' | 'DELIVERED' | 'CANCELLED';
-export type OperatorStatus = 'CONFIRM' | 'REJECT' | 'MODIFY' | 'PENDING';
-
-export interface DeliveryOrderData {
-  restaurant_id: string;
-  client_name: string;
-  client_phone: string;
-  comments?: string;
-  address_entrance: string;
-  address_staircase: string;
-  address_floor: string;
-  address_intercom: string;
-  payment_type: PaymentType;
-  total_amount: number;
-  courier_id: string;
-  courier_phone: string;
-  courier_status: CourierStatus;
-  courier_pickup_time?: string;
-  estimated_delivery_time: number;
-  estimated_preparation_time: number;
-  operator_status: OperatorStatus;
-  operator_modified_at?: string;
-  order_date: string;
-  created_at: string;
-  deleted_at: null;
-  client_latitude?: number;
-  client_longitude?: number;
-  courier_latitude?: number;
-  courier_longitude?: number;
-}
-
 export type userData = {
   id?: string;
   username?: string;
@@ -1819,16 +1787,6 @@ export const getAdminRestaurantData = async () => {
     return null;
   } catch (error) {
     console.error("Error getting admin restaurant data:", error);
-    throw error;
-  }
-};
-
-export const createDeliveryOrder = async (deliveryData: DeliveryOrderData) => {
-  try {
-    const response = await api.post("/delivery/order", deliveryData);
-    return response.data;
-  } catch (error) {
-    console.error("Error creating delivery order:", error);
     throw error;
   }
 };

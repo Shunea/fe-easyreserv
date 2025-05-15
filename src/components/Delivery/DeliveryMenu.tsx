@@ -7,7 +7,6 @@ import { closeIcon } from '../../icons/icons';
 interface DeliveryMenuProps {
   isOpen: boolean;
   onClose: () => void;
-  onOrderConfirm: (orderDetails: { items: string, totalAmount: number }) => void;
 }
 
 interface Ingredient {
@@ -30,7 +29,7 @@ interface Product {
   weight: number;
 }
 
-const DeliveryMenu: React.FC<DeliveryMenuProps> = ({ isOpen, onClose, onOrderConfirm }) => {
+const DeliveryMenu: React.FC<DeliveryMenuProps> = ({ isOpen, onClose }) => {
   const [products, setProducts] = useState<Product[]>([]);
   const [loading, setLoading] = useState(true);
   const [counters, setCounters] = useState<{ [key: string]: number }>({});
@@ -88,22 +87,6 @@ const DeliveryMenu: React.FC<DeliveryMenuProps> = ({ isOpen, onClose, onOrderCon
     }, 0);
   };
 
-  const formatOrderDetails = () => {
-    return products
-      .filter(product => counters[product.id] > 0)
-      .map(product => `${product.title} x${counters[product.id]}`)
-      .join(', ');
-  };
-
-  const handleConfirmOrder = () => {
-    const orderDetails = {
-      items: formatOrderDetails(),
-      totalAmount: calculateTotalSum()
-    };
-    onOrderConfirm(orderDetails);
-    onClose();
-  };
-
   if (!isOpen) return null;
 
   return (
@@ -116,7 +99,7 @@ const DeliveryMenu: React.FC<DeliveryMenuProps> = ({ isOpen, onClose, onOrderCon
           <h2 className={classes.menu_title}>Delivery Menu</h2>
           <div className={classes.totalSum}>
             <span>Total sum: {calculateTotalSum()} MDL</span>
-            <button className={classes.AddItemButton} onClick={handleConfirmOrder}>
+            <button className={classes.AddItemButton}>
               <span className={classes.AddItemText}>Confirm Order</span>
             </button>
           </div>

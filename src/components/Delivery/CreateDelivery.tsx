@@ -1,4 +1,4 @@
-import { useRef, useState, useEffect } from "react";
+import { useRef, useState } from "react";
 import classes from "./CreateDelivery.module.css";
 import { LeftArrow } from "../../icons/icons";
 import OutsideClickHandler from "../Staff/components/OutsideClickHandler";
@@ -12,47 +12,6 @@ import CustomSelect from "../Staff/EditEmployee/components/CustomSelect";
 import CustomSelectStyles from "../Staff/EditEmployee/components/CustomSelectStyles";
 import PhoneInput from "react-phone-input-2";
 import DeliveryMenu from "./DeliveryMenu";
-import { createDeliveryOrder } from "../../auth/api/requests";
-import { DeliveryOrderData, PaymentType, CourierStatus, OperatorStatus } from "../../auth/api/requests";
-
-const deliveryTimeOptions = [
-  { value: "30", label: "30 minutes" },
-  { value: "60", label: "1 hour" },
-  { value: "90", label: "1.5 hours" },
-  { value: "120", label: "2 hours" },
-  { value: "150", label: "2.5 hours" },
-  { value: "180", label: "3 hours" },
-];
-
-const preparationTimeOptions = [
-  { value: "15", label: "15 minutes" },
-  { value: "30", label: "30 minutes" },
-  { value: "45", label: "45 minutes" },
-  { value: "60", label: "1 hour" },
-  { value: "90", label: "1.5 hours" },
-  { value: "120", label: "2 hours" },
-];
-
-const paymentOptions: { value: PaymentType; label: string }[] = [
-  { value: "CASH", label: "Cash" },
-  { value: "POS", label: "POS" },
-  { value: "TRANSFER", label: "Transfer" },
-];
-
-const courierStatusOptions: { value: CourierStatus; label: string }[] = [
-  { value: "PENDING", label: "Pending" },
-  { value: "IN_PREPARATION", label: "In Preparation" },
-  { value: "PICKED_UP", label: "Picked Up" },
-  { value: "DELIVERED", label: "Delivered" },
-  { value: "CANCELLED", label: "Cancelled" },
-];
-
-const operatorStatusOptions: { value: OperatorStatus; label: string }[] = [
-  { value: "CONFIRM", label: "Confirm" },
-  { value: "REJECT", label: "Reject" },
-  { value: "MODIFY", label: "Modify" },
-  { value: "PENDING", label: "Pending" },
-];
 
 const CreateDelivery = ({ handleClose }) => {
   const boxRef = useRef<HTMLDivElement | null>(null);
@@ -85,7 +44,13 @@ const CreateDelivery = ({ handleClose }) => {
   //const [clientPhone, setClientPhone] = useState("");
   const [comments, setComments] = useState("");
   const [order, setOrder] = useState("");
-  const [paymentType, setPaymentType] = useState<PaymentType>("CASH");
+  const [paymentType, setPaymentType] = useState("");
+  const paymentOptions = [
+    { value: "CASH", label: "Cash" },
+    { value: "CARD", label: "Card" },
+    { value: "TRANSFER", label: "Transfer" },
+    { value: "MIA", label: "MIA" },
+  ];
   const [orderDateTime, setOrderDateTime] = useState<dayjs.Dayjs | null>(null);
   const [totalAmount, setTotalAmount] = useState("");
 
@@ -100,8 +65,13 @@ const CreateDelivery = ({ handleClose }) => {
   const [courier, setCourier] = useState("");
   //const [courierPhone, setCourierPhone] = useState("");
   const [StatusType, setStatusType] = useState("");
-  const [courierStatus, setCourierStatus] = useState<CourierStatus>("PENDING");
-  const [operatorStatus, setOperatorStatus] = useState<OperatorStatus>("PENDING");
+  const courierStatus = [
+    { value: "WAITING", label: "Waiting" },
+    { value: "PREPARING", label: "Preparing" },
+    { value: "ORDER", label: "Order" },
+    { value: "DELIVERED", label: "Delivered" },
+    { value: "CANCELLED", label: "Cancelled" },
+  ];
   const [estimatedDeliveryTime, setEstimatedDeliveryTime] = useState("");
   const [preparationTimeEstimate, setPreparationTimeEstimate] = useState("");
 
@@ -117,114 +87,25 @@ const CreateDelivery = ({ handleClose }) => {
     setIsDeliveryMenuOpen(false); 
   };
 
-  const handleOrderConfirm = (orderDetails: { items: string, totalAmount: number }) => {
-    setOrder(orderDetails.items);
-    setTotalAmount(orderDetails.totalAmount.toString());
-  };
-
-  useEffect(() => {
-    try {
-      const storedRestaurant = localStorage.getItem("selectedRestaurant");
-      console.log("Stored restaurant data:", storedRestaurant);
-      
-      if (storedRestaurant) {
-        const restaurantData = JSON.parse(storedRestaurant);
-        console.log("Parsed restaurant data:", restaurantData);
-        
-        if (restaurantData && restaurantData.id) {
-          setRestaurantID(restaurantData.id);
-        }
-      }
-    } catch (error) {
-      console.error("Error loading restaurant ID:", error);
-    }
-  }, []);
-
-  const isFormValid = () => {
-    return (
-      ClientphoneNumber !== "" &&
-      clientName !== "" &&
-      order !== "" &&
-      paymentType &&
-      totalAmount !== "" &&
-      street !== "" &&
-      block !== "" &&
-      floor !== "" &&
-      intercom !== "" &&
-      restaurantID !== "" &&
-      operator !== "" &&
-      courier !== "" &&
-      CurierphoneNumber !== "" &&
-      StatusType !== "" &&
-      estimatedDeliveryTime !== "" &&
-      preparationTimeEstimate !== ""
-    );
-  };
-
-  const [isLoading, setIsLoading] = useState(false);
-  const [error, setError] = useState<string | null>(null);
-
-  const handleSubmit = async () => {
-    try {
-      setIsLoading(true);
-      setError(null);
-
-      // Проверка обязательных полей
-      if (!isFormValid()) {
-        throw new Error("Please fill in all required fields");
-      }
-
-      // Проверка payment_type
-      if (!['CASH', 'POS', 'TRANSFER'].includes(paymentType)) {
-        throw new Error("Invalid payment type");
-      }
-
-      // Проверка courier_status
-      if (!['PENDING', 'IN_PREPARATION', 'PICKED_UP', 'DELIVERED', 'CANCELLED'].includes(StatusType)) {
-        throw new Error("Invalid courier status");
-      }
-
-      const deliveryData: DeliveryOrderData = {
-        restaurant_id: restaurantID,
-        client_name: clientName,
-        client_phone: ClientphoneNumber,
-        comments: comments,
-        address_entrance: block,
-        address_staircase: street,
-        address_floor: floor,
-        address_intercom: intercom,
-        payment_type: paymentType,
-        total_amount: parseFloat(totalAmount),
-        courier_id: courier,
-        courier_phone: CurierphoneNumber,
-        courier_status: StatusType as CourierStatus,
-        courier_pickup_time: modificationDateTime?.toISOString(),
-        estimated_delivery_time: parseInt(estimatedDeliveryTime),
-        estimated_preparation_time: parseInt(preparationTimeEstimate),
-        operator_status: "CONFIRM" as OperatorStatus,
-        operator_modified_at: modificationDateTime?.toISOString(),
-        order_date: orderDateTime?.toISOString() || new Date().toISOString(),
-        created_at: new Date().toISOString(),
-        deleted_at: null,
-        client_latitude: 0,
-        client_longitude: 0,
-        courier_latitude: 0,
-        courier_longitude: 0
-      };
-
-      console.log('Sending delivery data:', deliveryData); // Для отладки
-
-      const response = await createDeliveryOrder(deliveryData);
-      console.log("Delivery created successfully:", response);
-      
-      handleClose();
-    } catch (error) {
-      console.error("Error creating delivery:", error);
-      setError(error instanceof Error ? error.message : "Failed to create delivery");
-    } finally {
-      setIsLoading(false);
-    }
-  };
+{/* for save button
+  const disabled =
+    ClientphoneNumber === "" ||
+    CurierphoneNumber === "" ||
+    clientName === "" ||
+    comments === "" ||
+    order === "" ||
+    paymentType === "" ||
+    totalAmount === "" ||
+    street === "" ||
+    block === "" ||
+    floor === "" ||
+    intercom === "" || 
+    restaurantID === "" ||
+    operator === "" ||
+    courier === "" ||
+    estimatedDeliveryTime === "" ||
+    preparationTimeEstimate === "" 
+ */}   
 
   return (
     <div className={classes.Modal}>
@@ -240,11 +121,7 @@ const CreateDelivery = ({ handleClose }) => {
             <span className={classes.AddItemText}>Add new menu</span>
           </button>
           </div>
-          <DeliveryMenu 
-            isOpen={isDeliveryMenuOpen} 
-            onClose={closeDeliveryMenu}
-            onOrderConfirm={handleOrderConfirm} 
-          />
+          <DeliveryMenu isOpen={isDeliveryMenuOpen} onClose={closeDeliveryMenu} />
         </div>
         <div className={classes.BoxForm}>
           {/* Client Section */}
@@ -299,9 +176,9 @@ const CreateDelivery = ({ handleClose }) => {
                   <input
                     type="text"
                     value={order}
-                    className={`${classes.InputField} ${classes.ReadOnlyInput}`}
+                    onChange={(e) => setOrder(e.target.value)}
+                    className={classes.InputField}
                     placeholder="Enter order details"
-                    readOnly
                   />
                 </div>
               </div>
@@ -347,9 +224,9 @@ const CreateDelivery = ({ handleClose }) => {
                   <input
                     type="text"
                     value={totalAmount}
-                    className={`${classes.InputField} ${classes.ReadOnlyInput}`}
+                    onChange={(e) => setTotalAmount(e.target.value)}
+                    className={classes.InputField}
                     placeholder="Enter total amount"
-                    readOnly
                   />
                 </div>
               </div>
@@ -421,9 +298,9 @@ const CreateDelivery = ({ handleClose }) => {
                   <input
                     type="text"
                     value={restaurantID}
-                    className={`${classes.InputField} ${classes.ReadOnlyInput}`}
-                    placeholder="Restaurant ID"
-                    readOnly
+                    onChange={(e) => setRestaurantID(e.target.value)}
+                    className={classes.InputField}
+                    placeholder="Enter restaurant ID"
                   />
                 </div>
                 <div className={classes.InputContainer}>
@@ -497,7 +374,7 @@ const CreateDelivery = ({ handleClose }) => {
                   <CustomSelect
                     onChange={(selectedOption) => setStatusType(selectedOption.value)}
                     value={StatusType}
-                    options={courierStatusOptions}
+                    options={courierStatus}
                     placeholder="Select status curier"
                     styles={CustomSelectStyles}
                   />
@@ -506,46 +383,38 @@ const CreateDelivery = ({ handleClose }) => {
               <div className={classes.SectionRow}>
                 <div className={classes.InputContainer}>
                   <label className={classes.InputLabel}>Timp estimativ de livrare</label>
-                  <CustomSelect
-                    onChange={(selectedOption) => setEstimatedDeliveryTime(selectedOption.value)}
+                  <input
+                    type="text"
                     value={estimatedDeliveryTime}
-                    options={deliveryTimeOptions}
-                    placeholder="Select delivery time"
-                    styles={CustomSelectStyles}
+                    onChange={(e) => setEstimatedDeliveryTime(e.target.value)}
+                    className={classes.InputField}
+                    placeholder="Enter estimated delivery time"
                   />
                 </div>
                 <div className={classes.InputContainer}>
                   <label className={classes.InputLabel}>Estimare timp pregatire</label>
-                  <CustomSelect
-                    onChange={(selectedOption) => setPreparationTimeEstimate(selectedOption.value)}
+                  <input
+                    type="text"
                     value={preparationTimeEstimate}
-                    options={preparationTimeOptions}
-                    placeholder="Select preparation time"
-                    styles={CustomSelectStyles}
+                    onChange={(e) => setPreparationTimeEstimate(e.target.value)}
+                    className={classes.InputField}
+                    placeholder="Enter preparation time estimate"
                   />
                 </div>
               </div>
             </div>
             <div className={classes.BoxAction}>
-              <button
-                className={classes.SaveItemButton}
-                disabled={!isFormValid() || isLoading}
-                onClick={handleSubmit}
-              >
-                <span className={classes.SaveItemText}>
-                  {isLoading ? "Saving..." : "Save delivery"}
-                </span>
-              </button>
-            </div>
+                <button
+                  className={classes.SaveItemButton}
+                  //onClick={handleClose}
+                  //disabled={disabled}
+                >
+                  <span className={classes.SaveItemText}>Save delivery</span>
+                </button>
+              </div>
           </section>
         </div>
       </div>
-      
-      {error && (
-        <div className={classes.ErrorMessage}>
-          {error}
-        </div>
-      )}
     </div>
   );
 };
