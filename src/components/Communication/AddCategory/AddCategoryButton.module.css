@@ -1,0 +1,28 @@
+.AddEmployeeButton {
+  display: flex;
+  width: auto;
+  padding: 8px 12px 8px 10px;
+  justify-content: center;
+  align-items: center;
+  gap: 6px;
+  border-radius: 100px !important;
+  border: 1px solid #eee;
+  background: var(--Brand-Snow, #fff);
+  color: var(--Brand-Charcoal, var(--Brand-Charcoal, #020202));
+}
+
+.AddEmployeeButton:hover {
+  background: #fff;
+}
+.AddCategoryIcon svg {
+  opacity: 0.35;
+}
+.AddEmployeeButtonText {
+  color: var(--Brand-Charcoal, var(--Brand-Charcoal, #020202));
+  font-family: Inter;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 100%; /* 12px */
+  letter-spacing: -0.24px;
+}

@@ -1,0 +1,23 @@
+.spinner-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  z-index: 9999;
+}
+
+.spinner-container-hidden {
+  display: none;
+}
+
+.spinner-container-modal {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  top: 50%;
+  left: 75%;
+  z-index: 9999;
+}

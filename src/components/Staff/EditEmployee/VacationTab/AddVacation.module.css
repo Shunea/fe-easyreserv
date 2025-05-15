@@ -1,0 +1,495 @@
+.AddVacationBox {
+  display: flex;
+  width: 735px;
+  flex-direction: column;
+  align-items: flex-start;
+  background: var(--brand-snow, #fff);
+  box-shadow: 8px 8px 80px 0px rgba(0, 0, 0, 0.04);
+  z-index: 100;
+  height: 100%;
+  overflow: auto;
+}
+
+.AddVacationHead {
+  display: flex;
+  padding: 24px;
+  justify-content: space-between;
+  align-items: center;
+  align-self: stretch;
+  border-bottom: 1px solid #eee;
+}
+
+.HeadHeading {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.HeadActions {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+}
+
+.BackButton {
+  display: flex;
+  width: 40px;
+  height: 40px;
+  padding-right: 0px;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  border-radius: 100px !important;
+  border: 1px solid #eee;
+  padding: 0;
+  background-color: transparent;
+}
+.BackButton:hover {
+  background-color: #eee;
+}
+
+.LeftArrow {
+  width: 20px;
+  height: 20px;
+  flex-shrink: 0;
+  opacity: 0.5;
+}
+
+.HeadingTitle {
+  color: var(--brand-charcoal, var(--brand-charcoal, #020202));
+  font-family: Inter;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 120%; /* 28.8px */
+  letter-spacing: -0.48px;
+}
+
+.HeadActions {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+}
+
+.CloseButton {
+  width: 28px;
+  height: 28px;
+  opacity: 0.35;
+  background-color: transparent;
+  padding: 0;
+  display: flex;
+}
+.CloseButton:hover {
+  background-color: transparent;
+}
+
+.AddVacationContent {
+  display: flex;
+  padding: 24px;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 40px;
+  flex: 1 0 0;
+  align-self: stretch;
+}
+
+.AddVacationForm {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 32px;
+  flex: 1 0 0;
+  align-self: stretch;
+}
+
+.VacationType {
+  display: flex;
+  align-items: flex-start;
+  gap: 24px;
+  align-self: stretch;
+}
+
+.VacationTypeSelect {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 12px;
+  flex: 1 0 0;
+  align-self: stretch;
+}
+
+.VacationDays {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 12px;
+  align-self: stretch;
+}
+
+.DaysLabel {
+  align-self: stretch;
+  color: var(--brand-charcoal, var(--brand-charcoal, #020202));
+  font-family: Inter;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 100%; /* 14px */
+}
+
+.TotalDays {
+  display: flex;
+  padding: 16px;
+  align-items: flex-start;
+  gap: 40px;
+  align-self: stretch;
+  border-radius: 12px;
+  background: var(--brand-clouds, #f6f6f6);
+}
+
+.AvaliableDays {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  flex: 1 0 0;
+}
+
+.RequestedDays {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  flex: 1 0 0;
+}
+
+.LeftDays {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  flex: 1 0 0;
+}
+
+.RequestedDaysLabel {
+  color: var(--brand-charcoal, var(--brand-charcoal, #020202));
+  font-family: Inter;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 120%; /* 19.2px */
+  letter-spacing: -0.32px;
+}
+
+.DaysValue {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+
+.AvaliableValueText {
+  color: #12664f;
+  font-family: Inter;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 120%; /* 24px */
+  letter-spacing: -0.8px;
+}
+
+.RequestedValueText {
+  color: #fe9800;
+  font-family: Inter;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 120%; /* 24px */
+  letter-spacing: -0.8px;
+}
+
+.LeftValueText {
+  color: var(--brand-charcoal, var(--brand-charcoal, #020202));
+  font-family: Inter;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 120%; /* 24px */
+  letter-spacing: -0.8px;
+}
+
+.CalendarContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 24px;
+  align-self: stretch;
+}
+
+.FromToRow {
+  display: flex;
+  align-items: flex-start;
+  gap: 24px;
+  align-self: stretch;
+}
+
+.Calendar {
+  display: flex;
+  padding: 20px 16px;
+  justify-content: space-between;
+  align-items: flex-start;
+  align-self: stretch;
+  border-radius: 12px;
+  border: 1px solid #eee;
+  background: var(--brand-snow, #fff);
+}
+
+.DateInput {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 12px;
+  flex: 1 0 0;
+}
+
+.DateLabel {
+  align-self: stretch;
+  color: var(--brand-charcoal, var(--brand-charcoal, #020202));
+  font-family: Inter;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 100%; /* 14px */
+}
+
+.DateInputField {
+  display: flex;
+  height: 52px;
+  padding: 0px 16px;
+  align-items: center;
+  gap: 8px;
+  align-self: stretch;
+  border-radius: 12px;
+  border: 1px solid #eee;
+  background: var(--brand-snow, #fff);
+  outline: none;
+  overflow: hidden;
+  color: var(--brand-charcoal, var(--brand-charcoal, #020202));
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  font-family: Inter;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 100%; /* 16px */
+}
+
+.DateInputField::placeholder {
+  opacity: 0.35;
+  overflow: hidden;
+  color: var(--brand-charcoal, var(--brand-charcoal, #020202));
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  font-family: Inter;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 100%; /* 16px */
+}
+
+.multipleMonths {
+  margin: 0 !important;
+  width: 100%;
+}
+.months {
+  display: flex;
+  padding: 20px 16px;
+  justify-content: space-between;
+  align-items: flex-start;
+  align-self: stretch;
+  border-radius: 12px;
+  border: 1px solid #eee;
+  background: var(--brand-snow, #fff);
+}
+
+.customMonth {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  background: var(--brand-snow, #fff);
+}
+
+.captionStart .caption {
+  flex-direction: row-reverse;
+}
+
+.caption {
+  display: flex;
+  width: 308px;
+  padding: 0px 12px 12px 12px;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.captionLabel {
+  color: var(--brand-charcoal, var(--brand-charcoal, #020202));
+  font-family: Inter;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 100%; /* 18px */
+}
+
+.navButton {
+  position: inherit !important;
+  border-radius: 100px !important;
+  border: 1px solid #eee;
+  background: var(--brand-clouds, #f6f6f6);
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.table {
+  max-width: calc(44px * 7);
+}
+
+.table button:disabled {
+  background-color: transparent !important;
+opacity: 0.5;
+}
+
+.head {
+  height: 24px;
+}
+
+.headCell {
+  width: 44px;
+  padding: 6px 12.1px;
+  color: var(--brand-charcoal, var(--brand-charcoal, #020202));
+  text-align: center;
+  font-family: Inter;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 100%; /* 12px */
+}
+
+.day {
+  position: inherit !important;
+  width: 44px;
+  height: 44px;
+  color: var(--brand-charcoal, var(--brand-charcoal, #020202));
+  text-align: center;
+  font-family: Inter;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 100%; /* 14px */
+}
+
+.dayDisabled {
+  position: inherit !important;
+  width: 44px;
+  height: 44px;
+  color: var(--brand-charcoal, var(--brand-charcoal, #020202));
+  text-align: center;
+  font-family: Inter;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 100%; /* 14px */
+}
+
+.dayOutside {
+  opacity: 0.1;
+}
+
+.today {
+  width: 24px;
+  height: 24px;
+  margin: 10px 10px;
+  border-radius: 100px;
+  background: var(--brand-charcoal, #020202) !important;
+  color: #fff !important;
+  text-align: center;
+  font-family: Inter;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 800;
+  line-height: 100%; /* 14px */
+}
+
+.dayRangeMiddle {
+  width: 44px;
+  height: 44px;
+  background: rgba(254, 152, 0, 0.1) !important;
+  border-radius: 100px !important;
+  color: #020202 !important;
+}
+
+.selected {
+  margin: 0;
+}
+
+.dayRangeStart,
+.dayRangeEnd {
+  width: 44px;
+  height: 44px;
+  border-radius: 100px !important;
+  background: var(--brand-sun, #fe9800) !important;
+  color: #fff !important;
+}
+
+.AddVacationActions {
+  display: flex;
+  padding: 0px 24px 24px 24px;
+  align-items: flex-start;
+  gap: 24px;
+  align-self: stretch;
+}
+
+.CancelButton {
+  display: flex;
+  padding: 16px 24px;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  flex: 1 0 0;
+  border-radius: 12px;
+  border: 1px solid #eee;
+  background: var(--brand-snow, #fff);
+}
+
+.CancelButtonText {
+  color: var(--brand-charcoal, var(--brand-charcoal, #020202));
+  text-align: center;
+  font-family: Inter;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 125%; /* 20px */
+}
+
+.SaveButton {
+  display: flex;
+  padding: 16px 24px;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  flex: 1 0 0;
+  border-radius: 12px;
+  background: var(--brand-sun, #fe9800);
+}
+
+.SaveButtonText {
+  color: var(--brand-snow, var(--brand-snow, #fff));
+  text-align: center;
+  font-family: Inter;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 125%; /* 20px */
+}
+
+.button:hover:not([disabled]):not(.selected) {
+  background: rgba(254, 152, 0, 0.1) !important;
+  border-radius: 100px !important;
+}

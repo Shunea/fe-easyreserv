@@ -1,0 +1,168 @@
+.menu {
+  text-align: center;
+  margin-top: 45px !important;
+}
+
+.mealCards {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  gap: 20px;
+}
+
+.menu_title p {
+  opacity: 1 !important;
+}
+
+.menu_title {
+  padding: 30px 0 20px 10px;
+  white-space: pre-line;
+}
+.form_buttons {
+  padding-top: 10px;
+}
+
+.form_buttons button {
+  margin-right: 16px;
+}
+.display_linebreak {
+  white-space: pre-line;
+}
+.iconPadding {
+  display: flex;
+  display: inline-block;
+  align-items: center; /* Center-align vertically */
+  padding-right: 10px; /* Adjust the padding as needed */
+}
+
+.header {
+  display: flex;
+  padding: 22px 8px 40px 8px;
+  align-items: center;
+  gap: 40px;
+  background: var(--brand-snow, #fff);
+}
+
+.Heading {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  flex: 1 0 0;
+}
+
+.Heading p {
+  margin-top: 0;
+  padding-bottom: 0;
+}
+
+.HeaderActions {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.ImportButton {
+  display: flex;
+  padding: 16px 24px;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  border-radius: 12px;
+  border: 1px solid #eee;
+  background: var(--brand-snow, #fff) !important;
+}
+
+.ImportButtonIcon {
+  width: 20px;
+  height: 20px;
+  color: #020202;
+}
+
+.ImportButtonText {
+  color: var(--brand-charcoal, var(--brand-charcoal, #020202));
+  text-align: center;
+  font-family: Inter;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 125%; /* 20px */
+}
+
+.createMealButton {
+  align-self: flex-start;
+  margin-top: 10px;
+}
+
+.NotificationButton {
+  display: flex;
+  width: 52px;
+  height: 52px;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  border-radius: 100px !important;
+  border: 1px solid #eee;
+  background: var(--brand-snow, #fff) !important;
+  padding: 0 !important;
+}
+
+.NotificationIcon {
+  width: 24px;
+  height: 24px;
+  flex-shrink: 0;
+  opacity: 0.5;
+}
+
+.NotificationDot {
+  width: 8px;
+  height: 8px;
+  position: absolute;
+  right: 57px;
+  top: 55px;
+  color: #f23636;
+  stroke-width: 2px;
+  stroke: var(--brand-snow, #fff);
+}
+
+.mealsList {
+  display: flex;
+  width: 100%;
+  padding: 0;
+  align-items: flex-start;
+  gap: 24px;
+  border-bottom: 1px solid #eee;
+  overflow: auto;
+  list-style: none;
+  margin-bottom: 40px;
+}
+
+.MealCategory {
+  display: flex;
+  padding: 0px 8px 24px 8px;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  cursor: pointer;
+}
+
+.selectedText {
+  color: var(--brand-sun, var(--brand-sun, #fe9800));
+  font-family: Inter;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 100%; /* 16px */
+}
+
+.MealCategoryText {
+  color: var(--brand-charcoal, var(--brand-charcoal, #020202));
+  font-family: Inter;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 100%; /* 16px */
+}
+
+.selected {
+  border-bottom: 2px solid var(--brand-sun, #fe9800);
+}

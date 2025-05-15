@@ -1,0 +1,116 @@
+.image_gallery_card {
+  width: 140px;
+  height: 160px;
+  border-radius: 12px;
+  padding: 0;
+  outline: 1px solid #eeeeee;
+  background-size: cover;
+  background-repeat: no-repeat;
+  margin: 4px;
+}
+
+.image_gallery_card:hover .delete_overlay {
+  display: flex;
+}
+
+.upload_gallery_card {
+  width: 140px;
+  height: 160px;
+  border-radius: 12px;
+  padding: 0;
+  margin: 4px;
+}
+
+.gallery {
+  padding-left: 12px;
+  max-height: 62vh;
+  overflow: hidden;
+  overflow-y: scroll;
+}
+
+.delete_overlay {
+  display: none;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(2, 2, 2, 0.2);
+  border-radius: 12px;
+  text-align: center;
+  justify-content: end;
+}
+
+.delete_icon {
+  cursor: pointer;
+  width: 30px;
+  height: 30px;
+  margin-top: 10px !important;
+  margin-right: 10px !important;
+  border-radius: 50px;
+  background-color: #fafafa;
+  text-align: center;
+  margin: auto auto;
+  position: sticky;
+}
+
+.delete_icon svg {
+  color: #f23636;
+}
+
+.form_buttons {
+  padding-top: 40px;
+}
+
+.form_buttons button {
+  margin-right: 16px;
+}
+
+@media (max-width: 725px) {
+  .form_buttons {
+    padding-top: 0px;
+    text-align: center;
+  }
+
+  .form_buttons button {
+    margin-top: 10px;
+  }
+}
+
+@media (min-width: 1425px) {
+  .form_buttons {
+    position: absolute;
+    bottom: 40px;
+  }
+}
+
+@media (max-width: 770px) {
+  .gallery_row {
+    justify-content: center;
+  }
+}
+
+@media (max-width: 770px) {
+  .form_buttons {
+    text-align: center;
+    position: relative;
+    bottom: none;
+    margin-top: 10px;
+  }
+}
+.customTextClass {
+  height: 90vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.customTitleClass {
+  width: 70%;
+  text-align: center;
+  font-size: 62px !important;
+  color: #fe9800 !important;
+}
+.customSubtitleClass {
+  width: 70%;
+  text-align: center;
+  font-size: 26px !important;
+  /* color:#fe9800; */
+}

@@ -1,0 +1,44 @@
+.content {
+  grid-column-start: 2;
+  overflow: hidden;
+  height: 100%;
+  padding: 30px;
+}
+
+.maincontent {
+  height: 0%;
+}
+
+.buttondiv {
+  margin-left: -9px;
+}
+
+.buttondiv button {
+  bottom: 20px;
+}
+
+.container {
+  height: 100vh;
+  margin: 0 !important;
+  padding-left: 80px;
+  /* background: rgb(0, 0, 0); */
+  /* background: linear-gradient(90deg, rgba(0, 0, 0, 1) 0px, rgba(0, 0, 0, 1) 80px, rgba(255, 255, 255, 1) 80px, rgba(255, 255, 255, 1) 100%); */
+}
+
+.container.col {
+  height: 100vh;
+}
+
+.secondcol {
+  padding-right: 0 !important;
+}
+
+.content_container {
+  padding: 20px;
+}
+
+@media (max-width: 576px) {
+  .secondcol {
+    display: none;
+  }
+}

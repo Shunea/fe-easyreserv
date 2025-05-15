@@ -1,0 +1,143 @@
+.Filter {
+  display: flex;
+  width: 685px;
+  align-items: flex-start;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+.Filter p {
+  display: flex;
+  padding: 8px 12px;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  border-radius: 8px;
+  height: 32px;
+  border: 1px solid #eee;
+  background: var(--Brand-Snow, #fff);
+  cursor: pointer;
+}
+
+.Filter p.ActiveCategory {
+  border-radius: 8px;
+  background: var(--Brand-Charcoal, #020202);
+  color: var(--Brand-Snow, var(--Brand-Snow, #fff));
+}
+.AddEmployeeButton {
+  display: flex;
+  padding: 6px 12px 6px 10px;
+  justify-content: center;
+  align-items: center;
+  height: 32px;
+  gap: 8px;
+  border-radius: 8px;
+  border: 1px solid #eee;
+  background: var(--Brand-Clouds, #f6f6f6);
+  opacity: 0.5;
+  color: var(--Brand-Charcoal, var(--Brand-Charcoal, #020202));
+}
+.AddEmployeeButton:hover {
+  background: none;
+}
+.AddEmployeeButtonText {
+  background: none !important;
+}
+.Dates {
+  display: flex;
+  gap: 24px;
+  padding-bottom: 32px;
+  margin-bottom: 32px;
+  border-bottom: 1px solid #eee;
+}
+.SelectFieldContainer {
+  /* position: relative; */
+  /* top: 30px; */
+}
+.selectField {
+  width: 215px;
+  height: 60px;
+  border-radius: 12px !important;
+}
+.selectFieldTime {
+  width: 137px;
+  height: 60px;
+  border-radius: 12px !important;
+}
+.menuItem {
+  color: var(--Brand-Charcoal, var(--Brand-Charcoal, #020202));
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  font-family: Inter;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 100%;
+  opacity: 0.35;
+  position: relative;
+  top: 2px;
+}
+
+.MessageContainer {
+  display: flex;
+  flex-direction: column;
+  /* align-items: flex-start; */
+  gap: 8px;
+  padding: 5px 10px;
+  align-self: stretch;
+  border-radius: 12px;
+  border: 1px solid #eee;
+  background: var(--Brand-Snow, #fff);
+}
+/* .MessageContainer p:first-child {
+  border-bottom: 1px solid #eee;
+  padding: 18px 16px;
+}
+.MessageContainer p:last-child {
+  padding: 16px;
+}
+.MessageContainer .tagspar {
+  color: var(--Brand-Charcoal, var(--Brand-Charcoal, #020202));
+  font-family: Inter;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 100%;
+  opacity: 0.35;
+  padding-right: 16px;
+} */
+.tags {
+  display: flex;
+  padding: 4px 8px;
+  align-items: flex-start;
+  gap: 4px;
+  border-radius: 8px;
+  background: var(--Brand-Clouds, #f6f6f6);
+  color: var(--Brand-Charcoal, var(--Brand-Charcoal, #020202));
+  font-family: Inter;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 100%; /* 14px */
+  letter-spacing: -0.28px;
+}
+.selectFieldClientStatus {
+  width: 320px;
+  height: 60px;
+  padding: 0 16px;
+}
+.selectFieldPrice {
+  width: 159px;
+  height: 60px;
+  padding: 0 16px;
+}
+.MenuOptions {
+  overflow: hidden;
+  color: var(--Brand-Charcoal, var(--Brand-Charcoal, #020202));
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  font-family: Inter;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 100%; /* 16px */
+}

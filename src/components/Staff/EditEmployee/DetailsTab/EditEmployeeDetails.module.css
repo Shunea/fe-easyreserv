@@ -1,0 +1,199 @@
+.customSelect {
+  color: var(--brand-charcoal, #020202);
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  font-family: Inter;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+}
+
+.customSelect .label,
+.BoxForm .label {
+  margin-bottom: 0;
+  display: flex;
+  flex-direction: column;
+  align-self: stretch;
+  color: var(--brand-charcoal, #020202);
+  font-family: Inter;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 100%;
+}
+
+.BoxFormSelect {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 12px;
+  flex: 1 0 0;
+  align-self: stretch;
+  width: 250px;
+}
+
+.BoxForm {
+  display: flex;
+  padding: 0px 24px;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 32px;
+  flex: 1 0 0;
+  align-self: stretch;
+}
+
+.BoxFormDrag {
+  padding: 21px 0 21px 0;
+  border-radius: 12px;
+  border: 1px solid #eee;
+  background: var(--brand-snow, #fff);
+  width: 100%;
+}
+
+.BoxFormRow {
+  display: flex;
+  align-items: flex-start;
+  gap: 24px;
+  align-self: stretch;
+}
+
+.BoxFormInputContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 12px;
+  flex: 1 0 0;
+  align-self: stretch;
+  max-width: 50%;
+}
+
+.BoxFormInputContainerDepartament {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 12px;
+  flex: 1 0 0;
+  align-self: stretch;
+  width: 250px;
+}
+
+.BoxFormInputContainerPhone {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 12px;
+  flex: 1 0 0;
+  align-self: stretch;
+}
+.TimeTable {
+  margin-top: 25px;
+}
+.BoxFormInputContainerSalary {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 12px;
+  flex: 1 0 0;
+  align-self: stretch;
+  max-width: 50%;
+}
+
+.BoxFormInput {
+  display: flex;
+  height: 52px;
+  padding: 0px 16px;
+  align-items: center;
+  gap: 8px;
+  align-self: stretch;
+  border-radius: 12px;
+  border: 1px solid #eee;
+  background: var(--brand-snow, #fff);
+}
+
+.BoxFormInput:focus {
+  box-shadow: 0 0 0 1.5px rgba(254, 152, 0, 1);
+}
+
+.BoxFormInputContainer input {
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  color: var(--brand-charcoal, #020202);
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  font-family: Inter;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 100%;
+}
+
+.PhoneContainer {
+  width: 100%;
+  color: var(--brand-charcoal, #020202);
+  font-family: Inter !important;
+  font-size: 14px !important;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 100%;
+}
+
+.PhoneInput {
+  display: flex !important;
+  height: 52px !important;
+  align-items: center !important;
+  gap: 8px !important;
+  align-self: stretch !important;
+  border-radius: 12px !important;
+  border: 1px solid #eee !important;
+  background: var(--brand-snow, #fff) !important;
+  width: 100% !important;
+}
+
+.PhoneInput:focus {
+  box-shadow: 0 0 0 1.5px rgba(254, 152, 0, 1);
+}
+
+.BoxForm input {
+  outline: none;
+}
+
+.PhoneDropDown {
+  height: 180px;
+  border-radius: 12px !important;
+  /* width: 331px !important; */
+  width: 436.3px !important;
+  font-family: Inter !important;
+  font-size: 14px !important;
+}
+
+.PhoneButton {
+  background-color: #eee !important;
+  border-bottom-left-radius: 12px !important;
+  border-top-left-radius: 12px !important;
+}
+
+.DeleteUserButton {
+  display: flex;
+  padding: 16px 24px;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  align-self: stretch;
+  border-radius: 12px;
+  border: 1px solid #eee;
+  background: var(--brand-snow, #fff);
+  margin-top: auto;
+  margin-bottom: -20px;
+  color: var(--brand-charcoal, var(--brand-charcoal, #020202));
+  text-align: center;
+  font-family: Inter;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 125%; /* 20px */
+}
+
+.DeleteUserButton:hover {
+  background: var(--brand-snow, #fff);
+}

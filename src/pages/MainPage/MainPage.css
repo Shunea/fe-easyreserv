@@ -1,0 +1,19 @@
+.construction-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background: url("../../assets/coming-soon.jpg") center/cover no-repeat;
+  margin: 0;
+}
+.time {
+  display: flex;
+  flex-direction: row;
+  color: #fff;
+  position: absolute;
+  bottom: 250px;
+  left: 630px;
+  font-size: 21px;
+  transform: rotate(-10deg);
+  font-weight: 600;
+}

@@ -1,0 +1,347 @@
+.ClientsContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-bottom: 37px;
+  width: 100%;
+}
+.clients {
+  display: flex;
+  gap: 8px;
+  justify-content: center;
+  align-items: center;
+}
+
+.date_picker,
+.year_interval {
+  display: flex;
+  width: 120px;
+  align-items: center;
+  justify-content: space-between;
+  height: 40px;
+  border-radius: 12px;
+  border: none;
+  padding: 8px;
+  background-color: "#fcfcfc";
+  outline: 1px solid #eeeeee;
+  box-shadow: none;
+}
+.year_interval {
+  width: 150px;
+}
+.date_picker:hover,
+.year_interval:hover {
+  outline: 1px solid rgba(254, 152, 0, 0.4);
+}
+
+.Export {
+  display: flex;
+  width: 150px;
+  align-items: center;
+  gap: 8px;
+  justify-content: center;
+  height: 52px;
+  border-radius: 12px;
+  border: none;
+  padding: 16px;
+  background-color: rgba(254, 152, 0, 1);
+  outline: 1px solid #eeeeee;
+  color: white;
+  font-size: 16px;
+}
+
+.Buttons {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+  height: 50px;
+}
+
+.ClientsStatisticsBody {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+.Cards {
+  display: flex;
+  gap: 24px;
+  align-items: center;
+
+  margin-bottom: 24px;
+}
+.Card {
+  height: 104px;
+  width: 240px;
+  background: #d19f9f;
+  border-radius: 12px;
+  display: flex;
+  justify-content: start;
+  padding: 20px 24px 24px 24px;
+  gap: 16px;
+  align-items: start;
+}
+
+.Info {
+  display: flex;
+  flex-direction: column;
+}
+.Info span {
+  font-size: 14px;
+  text-wrap: nowrap;
+}
+.Value {
+  line-height: 36px;
+  display: inline;
+  font-size: 36px !important;
+  font-weight: 500;
+}
+
+.Icon {
+  position: relative;
+  z-index: -2;
+}
+
+.Title {
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 24px;
+  margin-bottom: 16px;
+}
+.Statistics {
+  height: 540px;
+  border: 2px solid rgba(238, 238, 238, 1);
+  border-radius: 12px;
+}
+
+.StatisticsHeader {
+  height: 30px;
+  width: 100%;
+  /* background: red; */
+  padding: 24px;
+  height: 72px;
+  border-bottom: 2px solid rgba(238, 238, 238, 1);
+  border-radius: 12px 12px 0 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.Chart {
+  padding: 32px 24px 64px 24px;
+}
+
+.Checkbox input {
+  height: 0;
+  width: 0;
+}
+
+.Checkbox {
+  display: block;
+  width: 20px;
+  height: 20px;
+  position: relative;
+  margin-right: 3px;
+  font-size: 22px;
+  user-select: none;
+}
+.Checkmark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 20px;
+  width: 20px;
+  border-radius: 6px;
+cursor: pointer;
+  background-color: #dedbdb;
+}
+
+.Checkbox .Unique:checked ~ .Checkmark {
+  background-color: rgba(5, 110, 198, 1);
+}
+.Checkbox .Recurrent:checked ~ .Checkmark {
+  background-color: rgba(54, 186, 242, 1);
+}
+.Checkbox .Canceled:checked ~ .Checkmark {
+  background-color: rgba(242, 54, 54, 1);
+}
+
+.Checkbox .General:checked ~ .Checkmark {
+  background-color: rgba(254, 152, 0, 1);
+}
+.Checkbox .Food:checked ~ .Checkmark {
+  background-color: rgba(75, 226, 72, 1);
+}
+.Checkbox .Price:checked ~ .Checkmark {
+  background-color: rgba(127, 0, 254, 1);
+}
+.Checkbox .Atmosphere:checked ~ .Checkmark {
+  background-color: rgba(209, 90, 183, 1);
+}
+
+.Checkbox .Checkmark:after {
+  top: -5px;
+  width: 5px;
+  height: 10px;
+  left: 2px;
+  color: white;
+}
+
+.Checkbox input:checked ~ .Checkmark:after {
+  display: flex;
+  justify-content: center;
+  height: 100%;
+  width: 100%;
+  align-items: center;
+  padding-top: 3px;
+}
+
+.Checkmark:after {
+  content: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='16' height='16' viewBox='0 0 16 16' fill='none'><path d='M2.3999 6.93338L6.8799 11.2L13.5999 4.80005' stroke='white' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'/></svg>");
+  display: none;
+}
+
+.Buttons div span {
+  font-size: 17px;
+}
+
+.CheckboxContainer {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+.CheckboxContainer div {
+  display: flex;
+  gap: 8px;
+  font-size: 17px;
+}
+
+.Total {
+  font-size: 36px;
+  font-weight: 500;
+}
+
+.header svg {
+  opacity: 0.35;
+}
+
+.header svg:hover {
+  opacity: 0.75;
+  cursor: pointer;
+}
+
+.NotificationButton {
+  display: flex;
+  width: 52px;
+  height: 52px;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  border-radius: 100px !important;
+  border: 1px solid #eee;
+  background: var(--brand-snow, #fff) !important;
+  padding: 0 !important;
+  position: relative;
+  top: 0;
+}
+
+.NotificationIcon {
+  width: 24px;
+  height: 24px;
+  flex-shrink: 0;
+  opacity: 1;
+}
+
+.NotificationDot {
+  width: 8px;
+  height: 8px;
+  position: absolute;
+  top: 5px;
+  color: #f23636;
+  stroke-width: 2px;
+  stroke: var(--brand-snow, #fff);
+}
+
+.DatePickerArrow {
+  cursor: pointer;
+}
+
+.NotificationsModal {
+  max-height: 365px;
+  width: 360px;
+  background: rgb(255, 255, 255);
+  position: absolute;
+  outline: rgba(238, 238, 238, 1) 1px solid;
+  z-index: 20;
+  top: 55px;
+  right: 0px;
+  border-radius: 12px;
+  background-color: rgba(255, 255, 255, 1);
+  box-shadow: 8px 8px 80px 0px rgba(0, 0, 0, 0.146);
+
+}
+.NotificationsBody::-webkit-scrollbar {
+  display: none;
+  width: 12px; /* Ajustați lățimea scrollbar-ului după preferințe */
+}
+.NotificationsHeader {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 70px;
+  padding: 24px;
+  border-radius: 12px 12px 0 0;
+  border-bottom: 1px rgba(238, 238, 238, 1) solid;
+}
+
+.NotificationsBody {
+  max-height: calc(74px * 4);
+  width: 100%;
+  overflow: auto;
+  display: flex;
+  flex-direction: column;
+  border-radius: 0 0 12px 12px;
+}
+
+.Notification {
+  height: 74px;
+  padding: 12px 24px;
+  border-bottom: 1px solid rgba(238, 238, 238, 1);
+  display: flex;
+  gap:14px;
+}
+
+.Notification:hover{
+  background: rgba(254, 152, 0, 0.05);
+  cursor: pointer;
+}
+
+.loaderContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  width: 100%;
+}
+
+.loader {
+  border: 4px solid #f3f3f3;
+  border-radius: 50%;
+  border-top: 4px solid rgba(254, 152, 0, 1);
+  width: 40px;
+  height: 40px;
+  animation: spin 1s linear infinite;
+  margin-bottom: 16px;
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+

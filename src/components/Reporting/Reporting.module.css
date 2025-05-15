@@ -1,0 +1,135 @@
+.CommonReportingContainer {
+    position: relative;
+  }
+  
+  @media screen and (min-width: 768px) {
+    .CommonReportingContainer {
+      height: calc(100vh + 140px);
+    }
+  }
+  
+  @media screen and (min-width: 1024px) {
+    .CommonReportingContainer {
+      height: calc(100vh + 200px);
+    }
+  }
+  
+  @media screen and (min-width: 1440px) {
+    .CommonReportingContainer {
+      height: calc(100vh - 40px);
+    }
+  }
+  
+  .ReportingContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding-left: 24px;
+  }
+  
+  .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 37px;
+    width: 100%;
+  }
+  
+  .IndicatorCard {
+    display: flex;
+    padding: 20px 24px 24px 24px;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+    border-radius: 12px;
+    background: rgba(14, 0, 255, 0.10);
+    width: 250px;
+    height: 250px;
+  }
+  
+  .IconContainer {
+    display: flex;
+    padding-top: 4px;
+    align-items: flex-start;
+    gap: 4px;
+    position: relative;
+  }
+  
+  .IconControl {
+    display: flex;
+    width: 44px;
+    height: 44px;
+    padding: 9.778px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 100px;
+    background: var(--brand-snow, #FFF);
+    box-shadow: 12px 12px 20px 0px rgba(116, 229, 114, 0.10), 2px 2px 12px 0px rgba(0, 0, 0, 0.05);
+  }
+  
+  .Icon {
+    width: 24.444px;
+    height: 24.444px;
+    flex-shrink: 0;
+  }
+  
+  .CardContent {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+  }
+  
+  .ContentValue {
+    display: flex;
+    align-items: flex-start;
+    gap: 8px;
+  }
+  
+  .ContentValueText {
+    font-family: Inter;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 120%;
+    letter-spacing: -1.92px;
+    color: #0E00FF;
+    display: inline-block;
+  }
+  
+  .ContentLabel {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-start;
+    width: 100%;
+  }
+  
+  .ContentLabelText {
+    color: var(--brand-charcoal, #020202);
+    font-family: Inter;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 120%;
+    letter-spacing: -0.28px;
+  }
+  
+  .CurrencyLabel {
+    color: var(--brand-charcoal, #020202);
+    font-feature-settings: 'sups' on;
+    font-family: Inter;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 150%;
+    letter-spacing: -1.28px;
+    opacity: 0.35;
+  }
+  
+  .CardLinkIcon {
+    width: 20px;
+    height: 20px;
+    margin-left: auto;
+    opacity: 0.
+  }

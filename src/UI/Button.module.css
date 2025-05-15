@@ -1,0 +1,36 @@
+button {
+  background-color: #fe9800;
+  border: none;
+  outline: none;
+  color: #fff;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px !important;
+  padding: 14px 22px;
+  border-radius: 12px !important;
+  bottom: 30px;
+}
+
+button:hover {
+  background-color: #f09000;
+}
+
+button:active {
+  background-color: #da8300;
+}
+
+button:disabled,
+button[disabled] {
+  background-color: rgba(254, 152, 0, 0.6) !important;
+}
+
+.button_secondary {
+  background-color: #fff;
+  color: #000;
+  border: 1px solid #eee;
+}
+
+.button_secondary:hover {
+  background-color: #eee;
+}

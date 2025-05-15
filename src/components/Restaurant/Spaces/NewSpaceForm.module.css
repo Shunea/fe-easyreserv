@@ -1,0 +1,142 @@
+.duration_label {
+  font-size: 14px;
+  font-weight: 600;
+  margin: 0;
+  margin-bottom: 5px !important;
+}
+
+.duration_picker {
+  outline: 1px solid #eee !important;
+  height: 40px;
+  border-radius: 12px !important;
+  padding: 0 8px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.duration_picker:hover {
+  outline: 1px solid rgba(254, 152, 0, 0.4) !important;
+}
+
+.duration_input {
+  height: 40px;
+  cursor: default;
+}
+
+.duration_picker_button {
+  padding: 10px;
+}
+
+.duration_input:focus {
+  outline: none !important;
+}
+
+.duration_picker_button svg {
+  width: 16px;
+  margin-top: -3px;
+  opacity: 0.5;
+}
+
+.duration_picker_button:hover svg {
+  opacity: 1 !important;
+}
+
+.new_space_form .table_option {
+  display: flex;
+  padding: 8px 20px 10px 20px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  flex: 1 0 0;
+  align-self: stretch;
+  border-radius: 12px;
+  border: 1px solid #eee;
+  width: 180px !important;
+  min-width: 180px !important;
+  max-width: 180px !important;
+  margin-right: 12px;
+  margin-bottom: 12px;
+}
+
+.new_space_form .table_option .table_icon {
+  color: #fff;
+  height: 70px;
+  stroke: rgb(2, 2, 2);
+  display: inline-grid;
+}
+
+.table_icon.disabled {
+  opacity: 0.35;
+}
+
+.table_icon {
+  align-content: center;
+}
+
+.table_input {
+  display: inline-flex;
+}
+
+.table_input svg {
+  width: 13px;
+  height: 12px;
+
+  color: #fff;
+}
+
+.table_input .minus,
+.table_input .plus {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #020202;
+  height: 15px;
+  width: 15px;
+  border-radius: 100px;
+  cursor: pointer;
+}
+
+.table_input .minus:hover,
+.table_input .plus:hover {
+  background: rgba(2, 2, 2, 0.7);
+}
+
+.table_input .plus:active {
+  background: rgba(2, 2, 2, 1);
+}
+
+.table_input .quantity {
+  padding: 0 15px;
+  margin-top: -5px;
+  user-select: none;
+}
+
+.table_input .disabled {
+  border: 1px solid #eee;
+  background: #fff;
+  pointer-events: none;
+}
+
+.table_input .disabled svg {
+  color: #020202;
+}
+
+.table_input .minus.disabled:hover {
+  background: #eee;
+}
+
+.table_input .minus.disabled:active {
+  background: #d2d2d2;
+}
+
+.tables_options_container {
+  margin-top: 18px;
+}
+.errorMessage {
+  color: red;
+  opacity: 0.4;
+  font-size: 12px;
+  margin-left: 10px;
+  margin-top: -10px;
+}

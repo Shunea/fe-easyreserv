@@ -1,0 +1,185 @@
+.form_inputs {
+  margin-bottom: 15px;
+}
+
+.label {
+  font-size: 14px;
+  font-weight: 600;
+  margin: 0;
+  margin-bottom: 5px;
+}
+
+.form_inputs.input {
+  width: 100%;
+  height: 40px;
+  border-radius: 12px;
+  border: none;
+  outline: 1px solid #eeeeee;
+  padding-left: 16px;
+}
+
+.MealForm {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 32px;
+  align-self: stretch;
+}
+
+.Gallery {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 12px;
+  align-self: stretch;
+}
+
+.GalleryTitle {
+  align-self: stretch;
+  color: var(--brand-charcoal, var(--brand-charcoal, #020202));
+  font-family: Inter;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 100%; /* 14px */
+}
+
+.FormActions {
+  display: flex;
+  align-items: flex-start;
+  gap: 16px;
+  margin-top: 40px;
+}
+
+.CreateMealButton {
+  display: flex;
+  padding: 16px 24px;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  border-radius: 12px;
+  background: var(--brand-sun, #fe9800);
+}
+
+.CreateMealText {
+  color: var(--brand-snow, var(--brand-snow, #fff));
+  text-align: center;
+  font-family: Inter;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 125%; /* 20px */
+}
+
+.BackButton {
+  display: flex;
+  padding: 16px 24px;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  border-radius: 12px;
+  border: 1px solid #eee;
+  background: var(--brand-snow, #fff) !important;
+}
+
+.BackButtonText {
+  color: var(--brand-charcoal, var(--brand-charcoal, #020202));
+  text-align: center;
+  font-family: Inter;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 125%; /* 20px */
+}
+
+.AlergensContainer {
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  gap: 12px;
+}
+.AlergensTitle {
+  color: var(--brand-charcoal, #020202);
+  font-family: Inter;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 100%;
+}
+
+.AlergensInput {
+  width: 429px;
+  border-radius: 12px;
+  border: 1px solid #eee;
+  min-height: 40px;
+  padding: 0px 16px 0px 16px;
+}
+
+.CommentsInput {
+  display: flex;
+  flex-direction: column;
+  width: 400px;
+  gap: 8px;
+  padding: 5px 10px;
+  align-self: stretch;
+  border-radius: 12px;
+  border: 1px solid #eee;
+  background: var(--Brand-Snow, #fff);
+}
+
+.tvaRow {
+  display: flex;
+  gap: 16px;
+  width: 60%;
+  margin-top: -55px;
+  margin-left: 200px;
+  padding-right: 15px;
+}
+
+.tvaGroup {
+  flex: 1;
+  min-width: 100px;
+  max-width: 200px;
+}
+
+.tvaLabel {
+  font-size: 14px;
+  color: #333;
+  margin-bottom: 6px;
+  display: block;
+  font-weight: 500;
+}
+
+.tvaSelect,
+.tvaInput {
+  width: 100%;
+  height: 38px;
+  padding: 6px 12px;
+  font-size: 14px;
+  border: 1px solid #ced4da;
+  border-radius: 1px;
+  background-color: #fff;
+}
+
+.tvaInput:disabled {
+  background-color: #e9ecef;
+  cursor: not-allowed;
+}
+
+.tvaSelect:focus,
+.tvaInput:focus {
+  border-color: #86b7fe;
+  outline: 0;
+  box-shadow: 0 0 0 0.25rem rgba(13, 110, 253, 0.25);
+}
+
+@media (max-width: 768px) {
+  .tvaRow {
+    flex-direction: column;
+    gap: 15px;
+  }
+  
+  .tvaGroup {
+    width: 100%;
+  }
+}

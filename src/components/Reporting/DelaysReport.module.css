@@ -1,0 +1,231 @@
+.CommonSalesContainer {
+  position: relative;
+}
+
+@media screen and (min-width: 768px) {
+  .CommonSalesContainer {
+    height: calc(100vh + 140px);
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .CommonSalesContainer {
+    height: calc(100vh + 200px);
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .CommonSalesContainer {
+    height: calc(100vh - 40px);
+  }
+}
+
+.SalesContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  width: 100%;
+  padding: 0px;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-bottom: 37px;
+  width: 100%;
+}
+
+.titleContainer {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+}
+
+.titleContainer h1 {
+  margin: 0;
+  margin-right: 24px;
+}
+
+.BackButton {
+  display: flex;
+  width: 40px;
+  height: 40px;
+  padding-right: 0px;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  border-radius: 100px !important;
+  border: 1px solid #eee;
+  padding: 0;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+.BackButton:hover {
+  background-color: #eee;
+}
+
+.LeftArrow {
+  width: 20px;
+  height: 20px;
+  flex-shrink: 0;
+  opacity: 0.5;
+}
+
+.tableContainer {
+  width: 100%;
+  overflow-x: auto;
+  padding: 0;
+}
+
+.tableHeaderMain {
+  display: grid;
+  grid-template-columns: 2fr 1.5fr 2fr 1fr 1fr 1fr 1fr 1.5fr 2fr;
+  width: 100%;
+  padding: 12px 8px;
+  align-items: center;
+  gap: 15px;
+  border-bottom: 1px solid #eee;
+  color: #6C6C6C;
+  font-family: Inter;
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 120%;
+  opacity: 0.8;
+}
+
+.tableHeaderMain > div {
+  padding: 0 8px;
+  text-align: center;
+}
+
+.tableBody {
+  width: 100%;
+}
+
+.tableRow {
+  display: grid;
+  grid-template-columns: 2fr 1.5fr 2fr 1fr 1fr 1fr 1fr 1.5fr 2fr;
+  padding: 12px 8px;
+  align-items: center;
+  gap: 15px;
+  border-bottom: 1px solid #eee;
+}
+
+.tableRow > div {
+  padding: 0 8px;
+  text-align: center;
+  font-size: 13px;
+}
+
+.date_picker {
+  display: flex;
+  height: 52px;
+  padding: 0px 20px;
+  justify-content: center;
+  align-items: center;
+  gap: 16px;
+  border-radius: 12px;
+  border: 1px solid #EEE;
+  background: var(--brand-snow, #FFF);
+}
+
+.DatePickerArrow {
+  display: flex;
+  width: 20px;
+  height: 20px;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  opacity: 0.35;
+}
+
+.DatePickerArrow:hover {
+  opacity: 0.5;
+}
+
+.date_value {
+  color: var(--brand-black, #1A1A1A);
+  font-size: 15px;
+  font-weight: 500;
+  line-height: 120%;
+}
+
+.headerActions {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.exportWrapper {
+  position: relative;
+}
+
+.Export {
+  display: flex;
+  width: 150px;
+  align-items: center;
+  gap: 8px;
+  justify-content: center;
+  height: 52px;
+  border-radius: 12px;
+  border: none;
+  padding: 16px;
+  background-color: rgba(254, 152, 0, 1);
+  outline: 1px solid #eeeeee;
+  color: white;
+  font-size: 16px;
+}
+
+.exportMenu {
+  position: absolute;
+  top: 100%;
+  right: 0;
+  background: white;
+  border: 1px solid #eee;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  z-index: 1000;
+}
+
+.exportMenuItem {
+  padding: 12px 16px;
+  cursor: pointer;
+  white-space: nowrap;
+  transition: background 0.2s;
+}
+
+.exportMenuItem:hover {
+  background: #f5f5f5;
+}
+
+.loaderContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 200px;
+  width: 100%;
+}
+
+.loader {
+  border: 4px solid #f3f3f3;
+  border-radius: 50%;
+  border-top: 4px solid rgba(254, 152, 0, 1);
+  width: 40px;
+  height: 40px;
+  animation: spin 1s linear infinite;
+  margin-bottom: 16px;
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+.noData {
+  text-align: center;
+  padding: 20px;
+  color: #6C6C6C;
+}

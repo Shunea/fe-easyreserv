@@ -1,0 +1,190 @@
+.DocumentsForm {
+  display: flex;
+flex-direction: column;
+align-items: center;
+justify-content: center;
+padding: 24px;
+gap: 32px;
+}
+
+.InvoiceRow {
+  display: flex;
+flex-direction: column;
+align-items: flex-start;
+gap: 8px;
+align-self: stretch;
+}
+
+.InvoiceItem {
+  display: flex;
+padding: 12px 16px;
+align-items: center;
+gap: 16px;
+align-self: stretch;
+border-radius: 12px;
+border: 1px solid #EEE;
+background: var(--Brand-Snow, #FFF);
+}
+
+.TitleContainer {
+  display: flex;
+width: 120px;
+align-items: center;
+gap: 8px;
+}
+
+.DocumentIcon {
+  width: 20px;
+height: 20px;
+flex-shrink: 0;
+display: flex;
+}
+
+.InvoiceTitle {
+  flex: 1 0 0;
+  color: var(--Brand-Charcoal, var(--Brand-Charcoal, #020202));
+font-family: Inter;
+font-size: 14px;
+font-style: normal;
+font-weight: 700;
+line-height: 120%; /* 16.8px */
+}
+
+.Hover {
+  color:#020202
+}
+
+.Hover:hover {
+  color: #FE9800
+}
+
+.NotHover {
+  color:#020202
+}
+
+.Line {
+  width: 1px;
+height: 32px;
+background: #EEE;
+}
+
+.SerialContainer {
+  display: flex;
+align-items: center;
+gap: 4px;
+flex: 1 0 0;
+width: 207px;
+}
+
+.SerialText {
+  color: var(--Brand-Charcoal, var(--Brand-Charcoal, #020202));
+font-family: Inter;
+font-size: 14px;
+font-style: normal;
+font-weight: 600;
+line-height: 100%; /* 14px */
+opacity: 0.35;
+}
+
+.SerialValue, .TimeValue {
+  flex: 1 0 0;
+  color: var(--Brand-Charcoal, var(--Brand-Charcoal, #020202));
+text-align: right;
+font-family: Inter;
+font-size: 14px;
+font-style: normal;
+font-weight: 500;
+line-height: 120%; /* 16.8px */
+}
+
+.TimeContainer {
+  display: flex;
+align-items: center;
+gap: 4px;
+flex: 1 0 0;
+width: 207px;
+}
+
+.TimeText {
+  color: var(--Brand-Charcoal, var(--Brand-Charcoal, #020202));
+font-family: Inter;
+font-size: 14px;
+font-style: normal;
+font-weight: 600;
+line-height: 100%; /* 14px */
+opacity: 0.35;
+}
+
+.Download {
+  display: flex;
+width: 25px;
+height: 25px;
+padding: 5px;
+justify-content: center;
+align-items: center;
+gap: 4px;
+border-radius: 100px;
+border: 1px solid #EEE;
+background: var(--Brand-Snow, #FFF);
+color:#020202;
+opacity: 0.35;
+
+}
+
+.Download:hover {
+  background-color: #FFF;
+}
+.AddNewFile {
+  display: flex;
+flex-direction: column;
+align-items: flex-start;
+gap: 20px;
+align-self: stretch;
+background: var(--Brand-Snow, #FFF);
+margin-top: auto;
+}
+
+.UploadText {
+  display: flex;
+width: 687px;
+height: 16px;
+flex-direction: column;
+justify-content: center;
+color: var(--Brand-Charcoal, var(--Brand-Charcoal, #020202));
+text-align: center;
+font-family: Inter;
+font-size: 12px;
+font-style: normal;
+font-weight: 400;
+line-height: 125%; /* 15px */
+opacity: 0.4;
+}
+
+.AddButton {
+  display: flex;
+padding: 16px 24px;
+justify-content: center;
+align-items: center;
+gap: 8px;
+align-self: stretch;
+border-radius: 12px;
+border: 1px solid #EEE;
+background: #FAFAFA;
+}
+
+.PlusIcon {
+  width: 20px;
+height: 20px;
+color:#020202;
+display: flex;
+}
+
+.AddText {
+  color: var(--Brand-Charcoal, var(--Brand-Charcoal, #020202));
+text-align: center;
+font-family: Inter;
+font-size: 16px;
+font-style: normal;
+font-weight: 600;
+line-height: 125%; /* 20px */
+}

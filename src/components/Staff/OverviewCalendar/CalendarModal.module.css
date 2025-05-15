@@ -1,0 +1,336 @@
+.EditEmployeeModal {
+  display: inline-flex;
+  justify-content: flex-end;
+  align-items: center;
+  flex-shrink: 0;
+  background: rgba(0, 0, 0, 0.3);
+  backdrop-filter: blur(10px);
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 99;
+  overflow: auto;
+}
+
+.EditEmployeeBox {
+  display: flex;
+  width: 735px;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 24px;
+  background: var(--brand-snow, #fff);
+  box-shadow: 8px 8px 80px 0px rgba(0, 0, 0, 0.04);
+  height: 100vh; 
+  overflow-y: auto; 
+    border-bottom-left-radius: 12px;
+  border-top-left-radius: 12px;
+}
+
+.BoxHead {
+  display: flex;
+  height: 80px;
+  padding: 24px 24px 0px 24px;
+  justify-content: space-between;
+  align-items: center;
+  align-self: stretch;
+}
+
+.BoxHeadTitle {
+  color: #020202;
+  font-family: Inter;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 120%;
+  letter-spacing: -0.48px;
+  margin-bottom: 0;
+}
+
+.BoxHeadDate {
+  overflow: hidden;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 1;
+  color: rgba(2, 2, 2, 0.35);
+  text-overflow: ellipsis;
+  font-family: Inter;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 120%;
+  letter-spacing: -0.48px;
+}
+
+.BoxHeadButtonContainer {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+}
+
+.BoxHeadButton {
+  width: 28px;
+  height: 28px;
+  opacity: 0.3499999940395355;
+  padding: 0;
+  background-color: transparent;
+}
+
+.BoxHeadButton:hover {
+  background-color: transparent;
+}
+
+.BoxBody {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 32px;
+  flex: 1 0 0;
+  align-self: stretch;
+}
+
+.BoxList {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  align-self: stretch;
+}
+
+.EmployeeRow {
+  display: flex;
+  padding: 16px 24px;
+  align-items: center;
+  gap: 40px;
+  align-self: stretch;
+  border-bottom: 1px solid #eee;
+  background: var(--brand-snow, #fff);
+}
+
+.EmployeeNameContainer {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  flex: 1 0 0;
+}
+
+.EmployeeAvatarContainer {
+  width: 56px;
+  height: 56px;
+  border-radius: 200px;
+  border: 1px solid rgba(0, 0, 0, 0.02);
+}
+
+.WorkDot {
+  display: flex;
+  width: 12px;
+  height: 12px;
+  flex-shrink: 0;
+  color: #4be248;
+  stroke-width: 4px;
+  stroke: var(--brand-snow, #fff);
+  margin-top: 45px;
+  margin-bottom: 0;
+  margin-left: auto;
+}
+
+.EmployeeTitleContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 4px;
+  flex: 1 0 0;
+}
+
+.EmployeeNameRow {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 4px;
+}
+
+.EmployeeName {
+  margin: 0;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 1;
+  overflow: hidden;
+  color: var(--brand-charcoal, #020202);
+  text-overflow: ellipsis;
+  font-family: Inter;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 120%;
+  letter-spacing: -0.32px;
+}
+
+.EmployeeSpace {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.EmployeeSpaceIcon {
+  display: flex;
+  width: 14px;
+  height: 14px;
+  opacity: 0.35;
+  position: inherit;
+}
+
+.EmployeeSpaceName {
+  color: var(--brand-charcoal, var(--brand-charcoal, #020202));
+  font-family: Inter;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 100%; /* 12px */
+  opacity: 0.6;
+}
+
+.EmployeeActionsContainer {
+  display: flex;
+  gap: 8px;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+.EmployeeActionButton {
+  display: flex;
+  width: 30px;
+  height: 30px;
+  padding: 5px !important;
+  justify-content: center;
+  align-items: center !important;
+  gap: 4px;
+  border-radius: 100px !important;
+  border: 1px solid #eee;
+  background: var(--brand-snow, #fff);
+}
+
+.EmployeeActionIcon {
+  display: flex;
+  width: 14px;
+  height: 14px;
+  flex-shrink: 0;
+  opacity: 0.35;
+}
+
+.VacationTitle {
+  color: var(--brand-charcoal, var(--brand-charcoal, #020202));
+  font-family: Inter;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 100%; /* 12px */
+}
+
+.VacationIdentifier {
+  opacity: 0.6;
+  color: rgba(2, 2, 2, 0.5);
+  font-family: Inter;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 100%;
+}
+
+.VacationCalendarIcon {
+  display: flex;
+  height: 14px;
+  width: 14px;
+  opacity: 0.35;
+}
+
+.VacationDates {
+  color: var(--brand-charcoal, var(--brand-charcoal, #020202));
+  font-family: Inter;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 100%; /* 12px */
+  opacity: 0.6;
+}
+
+.BoxAction {
+  display: flex;
+  padding: 24px;
+  flex-direction: column;
+  align-items: flex-start;
+  align-self: stretch;
+}
+
+.BoxActionButton {
+  display: flex;
+  padding: 16px 24px;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  align-self: stretch;
+  border-radius: 12px;
+  background: var(--brand-sun, #fe9800);
+  width: 100%;
+}
+
+.BoxActionText {
+  color: var(--brand-snow, var(--brand-snow, #fff));
+  text-align: center;
+  font-family: Inter;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 125%; /* 20px */
+}
+
+.BoxActionIcon {
+  width: 20px;
+  height: 20px;
+}
+
+.ButtonModal {
+  display: inline-flex;
+  padding: 8px;
+  flex-direction: column;
+  align-items: flex-start;
+  border-radius: 12px;
+  border: 1px solid #eee;
+  background: var(--brand-snow, #fff);
+  box-shadow: 8px 8px 80px 0px rgba(0, 0, 0, 0.04);
+  width: 100px;
+  height: 80px;
+}
+
+.ModalButton {
+  padding: 0;
+  color: var(--brand-sun, var(--brand-sun, #020202));
+  font-family: Inter;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 100%; /* 16px */
+  background-color: #fff;
+  padding: 8px 10px;
+}
+
+.BoxHeadInfo {
+  display: flex;
+  align-items: center;
+}
+
+.TotalUsers {
+  margin-left: 10px;
+  color: rgba(2, 2, 2, 0.35);
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 120%;
+  letter-spacing: -0.48px;
+}
+
+.CheckInTime {
+  color: #666;
+  font-family: Inter;
+  font-size: 14px;
+  font-weight: 400;
+  white-space: nowrap;
+}

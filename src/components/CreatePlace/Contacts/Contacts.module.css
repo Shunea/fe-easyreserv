@@ -1,0 +1,112 @@
+.map_container {
+  margin-top: -15px;
+  margin-bottom: 24px;
+}
+
+.contacts {
+  height: 100%;
+}
+
+.map {
+  border: 1px solid #eeeeee;
+  height: 300px;
+  overflow: hidden;
+  border-radius: 12px;
+}
+
+.input_location {
+  padding-left: 40px !important;
+}
+
+.input_icon {
+  position: absolute;
+  margin-top: 31px;
+  padding-left: 12px;
+}
+
+.form_buttons {
+  padding-top: 40px;
+}
+
+.form_buttons button {
+  margin-right: 16px;
+}
+
+@media (max-width: 725px) {
+  .form_buttons {
+    padding-top: 0px;
+    text-align: center;
+  }
+
+  .form_buttons button {
+    margin-top: 10px;
+  }
+}
+
+/* @media (min-width: 1425px) {
+  .form_buttons {
+    position: absolute;
+    bottom: 40px;
+  }
+} */
+
+@media (max-width: 576px) {
+  .form_buttons {
+    text-align: center;
+    position: relative;
+    bottom: none;
+    margin-top: 40px;
+  }
+}
+.PhoneContainer {
+  width: 100%;
+  color: var(--brand-charcoal, #020202);
+  font-family: Inter !important;
+  font-size: 14px !important;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 100%;
+}
+
+.PhoneInput {
+  display: flex !important;
+  height: 42px !important;
+  align-items: center !important;
+  gap: 8px !important;
+  align-self: stretch !important;
+  border-radius: 12px !important;
+  border: 1px solid #eee !important;
+  background: var(--brand-snow, #fff) !important;
+  width: 100% !important;
+}
+
+.PhoneInput:focus {
+  box-shadow: 0 0 0 1.5px rgba(254, 152, 0, 1);
+}
+
+.PhoneDropDown {
+  height: 110px;
+  border-radius: 12px !important;
+  width: 320px !important;
+  font-family: Inter !important;
+  font-size: 14px !important;
+}
+
+.PhoneButton {
+  background-color: #eee !important;
+  border-radius: 12px 0 0 12px !important;
+}
+
+.address_display {
+  margin-top: 10px;
+  padding: 10px;
+  background-color: #f8f9fa;
+  border-radius: 12px;
+  height: 60px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.address_display p {
+  margin: 0;
+  font-size: 14px;
+}

@@ -1,0 +1,279 @@
+.Container {
+  margin-left: 80px;
+}
+.Header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 94px;
+  padding: 0 40px;
+}
+.Header p {
+  color: var(--Brand-Charcoal, var(--Brand-Charcoal, #020202));
+  font-family: Inter;
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 120%;
+  letter-spacing: -0.64px;
+}
+.Head {
+  display: flex;
+  gap: 16px;
+}
+.AddMessageButton {
+  display: flex;
+  padding: 16px 24px;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  border-radius: 12px;
+  background: var(--brand-sun, #fe9800);
+}
+
+.AddMessageIcon {
+  width: 20px;
+  height: 20px;
+}
+
+.AddMessageText {
+  color: var(--brand-snow, var(--brand-snow, #fff));
+  text-align: center;
+  font-family: Inter;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 125%; /* 20px */
+}
+
+.NotificationButton {
+  display: flex;
+  width: 52px;
+  height: 52px;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  border-radius: 100px !important;
+  border: 1px solid #eee;
+  background: var(--brand-snow, #fff) !important;
+  padding: 0 !important;
+}
+
+.NotificationIcon {
+  width: 24px;
+  height: 24px;
+  flex-shrink: 0;
+  opacity: 0.5;
+}
+
+.NotificationDot {
+  width: 8px;
+  height: 8px;
+  position: absolute;
+  right: 60px;
+  top: 25px;
+  color: #f23636;
+  stroke-width: 2px;
+  stroke: var(--brand-snow, #fff);
+}
+.Body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.FilterNav {
+  padding: 0 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  align-self: stretch;
+  border-bottom: 1px solid #eee;
+  background: var(--Brand-Clouds, #f6f6f6);
+}
+.Filter {
+  display: flex;
+  align-items: flex-start;
+  gap: 24px;
+}
+.Filter p {
+  display: flex;
+  padding: 20px 8px 24px 8px;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  cursor: pointer;
+  font-family: Inter;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 100%;
+}
+.ActiveCategory {
+  color: var(--Brand-Sun, var(--Brand-Sun, #fe9800));
+}
+.AddCategoryButton {
+  display: flex;
+  width: fit-content;
+  padding: 8px 12px 8px 10px;
+  justify-content: center;
+  align-items: center;
+  gap: 6px;
+  border-radius: 100px !important;
+  border: 1px solid #eee;
+  background: var(--Brand-Snow, #fff);
+  color: var(--Brand-Charcoal, var(--Brand-Charcoal, #020202));
+}
+.AddCategoryButton:hover {
+  background: #fff;
+}
+.AddCategoryIcon svg {
+  opacity: 0.35;
+}
+.MessageList {
+  display: flex;
+  padding: 20px 40px;
+  align-items: center;
+  gap: 20px;
+  align-self: stretch;
+  border-bottom: 1px solid #eee;
+  background: var(--Brand-Snow, #fff);
+}
+.MessageInfo {
+  width: 100%;
+  display: flex;
+  gap: 20px;
+}
+.MessageInfo img {
+  border-radius: 12px;
+}
+.MessageInfoText {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  width: 100%;
+}
+.MessageInfoText p {
+  color: var(--Brand-Charcoal, var(--Brand-Charcoal, #020202));
+  text-overflow: ellipsis;
+  font-family: Inter;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 100%;
+}
+.MessageInfoText p:nth-child(2) {
+  font-size: 12px;
+  font-weight: 400;
+}
+.MessageInfoText div:nth-child(1) {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+.MessageInfoText div:nth-child(2) {
+  display: flex;
+  flex-direction: row;
+  gap: 6px;
+}
+.MessageInfoText button {
+  display: flex;
+  padding: 4px 8px;
+  justify-content: center;
+  align-items: center;
+  gap: 4px;
+  border-radius: 12px;
+  background: rgba(2, 2, 2, 0.05);
+  color: var(--Brand-Charcoal, var(--Brand-Charcoal, #020202));
+  font-family: Inter;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 120%; /* 14.4px */
+}
+.MessageInfoText span {
+  display: flex;
+  gap: 6px;
+  align-items: center;
+  justify-content: center;
+  color: rgba(2, 2, 2, 0.6);
+  font-family: Inter;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 100%;
+}
+.MessageInfoText svg {
+  width: 15px;
+  height: 15px;
+  opacity: 0.35 !important;
+}
+.MessageActions {
+  display: flex;
+  gap: 10px;
+}
+.MessageActions .AddCategoryButton:nth-child(1) .AddCategoryIcon svg {
+  width: 20px;
+  height: 20px;
+}
+.Pagination {
+  display: flex;
+  padding: 32px 40px 40px 40px;
+  justify-content: center;
+  align-items: center;
+  align-self: stretch;
+}
+
+.Pages {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+.disabled {
+  display: none;
+}
+
+.PageList {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  text-decoration: none;
+  margin-bottom: 0;
+}
+
+.ActivePage {
+  display: flex;
+  width: 30px;
+  height: 30px;
+  justify-content: center;
+  align-items: center;
+  border-radius: 100px;
+  background: var(--Brand-Charcoal, #020202) !important;
+}
+
+.ActivePageText {
+  color: var(--Brand-Snow, var(--Brand-Snow, #fff)) !important;
+}
+
+.NotActivePage {
+  display: flex;
+  width: 30px;
+  height: 30px;
+  justify-content: center;
+  align-items: center;
+  border-radius: 100px;
+  border: 1px solid #eee;
+  background: var(--Brand-Snow, #fff);
+}
+
+.NotActivePageText {
+  color: var(--Brand-Charcoal, var(--Brand-Charcoal, #020202));
+  text-align: center;
+  font-family: Inter;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 100%; /* 12px */
+  letter-spacing: -0.24px;
+  text-decoration: none;
+}

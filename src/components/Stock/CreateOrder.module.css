@@ -1,0 +1,290 @@
+.EditEmployeeModal {
+  display: inline-flex;
+  justify-content: flex-end;
+  align-items: center;
+  flex-shrink: 0;
+  background: rgba(0, 0, 0, 0.3);
+  backdrop-filter: blur(10px); 
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 99;
+  overflow: auto;
+}
+
+.EditEmployeeBox {
+  display: flex;
+  width: 735px;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 24px;
+  background: var(--brand-snow, #fff);
+  box-shadow: 8px 8px 80px 0px rgba(0, 0, 0, 0.04);
+  min-height: fit-content;
+  border-bottom-left-radius: 12px;
+  border-top-left-radius: 12px;
+  height: 100vh; 
+  overflow-y: auto; 
+
+}
+
+
+.Head {
+  display: flex;
+height: 80px;
+padding: 24px;
+justify-content: space-between;
+align-items: center;
+flex-shrink: 0;
+align-self: stretch;
+border-bottom: 1px solid #EEE;
+}
+
+.HeadText {
+  color: var(--Brand-Charcoal, var(--Brand-Charcoal, #020202));
+font-family: Inter;
+font-size: 24px;
+font-style: normal;
+font-weight: 600;
+line-height: 120%; /* 28.8px */
+letter-spacing: -0.48px;
+}
+
+.headingInviteCloseBtn {
+  width: 28px;
+  height: 28px;
+  opacity: 0.35;
+  padding: 0;
+  background-color: transparent !important;
+}
+
+.Form {
+  display: flex;
+padding: 0px 24px;
+flex-direction: column;
+align-items: flex-start;
+gap: 32px;
+flex: 1 0 0;
+align-self: stretch;
+}
+
+.FormRow {
+  display: flex;
+align-items: flex-start;
+gap: 24px;
+align-self: stretch;
+}
+
+.InputContainer {
+  display: flex;
+flex-direction: column;
+align-items: flex-start;
+gap: 12px;
+flex: 1 0 0;
+}
+
+.InputLabelContainer {
+  display: flex;
+height: 16px;
+align-items: center;
+gap: 4px;
+align-self: stretch;
+}
+
+
+.InputLabel {
+  color: var(--Brand-Charcoal, var(--Brand-Charcoal, #020202));
+  font-family: Inter;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 100%; /* 14px */
+}
+
+.InputField {
+  display: flex;
+height: 52px;
+padding: 0px 16px;
+align-items: center;
+gap: 8px;
+align-self: stretch;
+border-radius: 12px;
+border: 1px solid #EEE;
+background: var(--Brand-Snow, #FFF);
+text-align: start;
+}
+
+.MessageField {
+  display: flex;
+  min-height: 92px;
+  padding: 16px;
+  align-items: flex-start;
+  gap: 8px;
+  align-self: stretch;
+  border-radius: 12px;
+  border: 1px solid #EEE;
+  background: var(--Brand-Snow, #FFF);
+  resize: none; /* Disable textarea resizing */
+}
+
+.MessageField::placeholder {
+  opacity: 0.5;
+}
+
+.Suppliers {
+  display: flex;
+flex-direction: column;
+align-items: flex-start;
+gap: 12px;
+flex: 1 0 0;
+align-self: stretch;
+}
+
+.SectionTitle {
+  display: flex;
+align-items: flex-start;
+align-self: stretch;
+}
+
+.SectionTitleText {
+  color: var(--Brand-Charcoal, var(--Brand-Charcoal, #020202));
+font-family: Inter;
+font-size: 20px;
+font-style: normal;
+font-weight: 700;
+line-height: 120%; /* 24px */
+}
+
+.SupplierContent {
+  display: flex;
+flex-direction: column;
+align-items: flex-start;
+gap: 12px;
+align-self: stretch;
+}
+
+.SearchIcon {
+
+  position: absolute;
+  box-sizing:border-box;
+  top:50%;
+  right:16px;
+  transform: translateY(-50%);
+}
+
+.SupplierListContainer {
+  display: flex;
+flex-direction: column;
+align-items: flex-start;
+gap: -1px;
+align-self: stretch;
+border-radius: 12px;
+border: 1px solid #EEE;
+background: var(--Brand-Snow, #FFF);
+}
+
+.SupplierList {
+  display: flex;
+flex-direction: column;
+align-items: flex-start;
+align-self: stretch;
+}
+
+.SupplierRow {
+  display: flex;
+padding: 12px 24px;
+align-items: center;
+gap: 16px;
+align-self: stretch;
+border-bottom: 1px solid #EEE;
+background: var(--Brand-Snow, #FFF);
+}
+
+.SupplierNameContainer {
+  display: flex;
+align-items: center;
+gap: 12px;
+flex: 1 0 0;
+}
+
+.SupplierNameBox {
+  display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: flex-start;
+gap: 4px;
+flex: 1 0 0;
+}
+
+.SupplierName {
+  display: -webkit-box;
+-webkit-box-orient: vertical;
+-webkit-line-clamp: 1;
+overflow: hidden;
+color: var(--Brand-Charcoal, var(--Brand-Charcoal, #020202));
+text-overflow: ellipsis;
+font-family: Inter;
+font-size: 16px;
+font-style: normal;
+font-weight: 700;
+line-height: 120%; /* 19.2px */
+letter-spacing: -0.32px;
+}
+
+.AddSupplierButton {
+  display: flex;
+padding: 16px 24px;
+justify-content: center;
+align-items: center;
+gap: 8px;
+align-self: stretch;
+border-top: 1px solid #EEE;
+background: #FAFAFA;
+}
+
+.AddSupplierText {
+  color: var(--Brand-Charcoal, var(--Brand-Charcoal, #020202));
+font-family: Inter;
+font-size: 16px;
+font-style: normal;
+font-weight: 500;
+line-height: 100%; /* 16px */
+}
+
+.SupplierImage {
+  width: 36px;
+height: 36px;
+border-radius: 200px;
+border: 1px solid #EEE;
+}
+
+.FormAction {
+  display: flex;
+padding: 0px 24px 24px 24px;
+flex-direction: column;
+align-items: flex-start;
+align-self: stretch;
+}
+
+.CreateButton {
+  display: flex;
+padding: 16px 24px;
+justify-content: center;
+align-items: center;
+gap: 8px;
+align-self: stretch;
+border-radius: 12px;
+background: var(--Brand-Sun, #FE9800);
+}
+
+.CreateText {
+  color: var(--Brand-Snow, var(--Brand-Snow, #FFF));
+text-align: center;
+font-family: Inter;
+font-size: 16px;
+font-style: normal;
+font-weight: 600;
+line-height: 125%; /* 20px */
+}

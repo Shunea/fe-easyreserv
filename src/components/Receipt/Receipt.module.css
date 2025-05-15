@@ -1,0 +1,137 @@
+.CommonReceiptContainer {
+  position: relative;
+}
+
+@media screen and (min-width: 768px) {
+  .CommonReceiptContainer {
+    height: calc(100vh + 140px);
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .CommonReceiptContainer {
+    height: calc(100vh + 200px);
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .CommonReceiptContainer {
+    height: calc(100vh - 40px);
+  }
+}
+
+.ReceiptContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-bottom: 37px;
+  width: 100%;
+}
+
+.tableHeader, .tableRow {
+  display: grid;
+  grid-template-columns: 0.1fr 0.4fr 0.5fr 0.5fr 0.4fr 0.4fr 0.3fr 0.4fr 0.5fr 0.5fr ;
+  width: 100%;
+  padding: 12px 8px;
+  align-items: center;
+  gap: 15px;
+}
+
+.tableHeader {
+  border-bottom: 1px solid #eee;
+  color: #6C6C6C;
+  font-family: Inter;
+  font-size: 13px;
+  font-weight: 500;
+  line-height: 120%;
+  opacity: 0.8;
+}
+
+.tableHeader > div, .tableRow > div {
+  padding: 0 8px;
+  text-align: left;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.tableRow {
+  border-bottom: 1px solid #eee;
+  font-size: 14px;
+}
+
+.showDetails {
+  color: #007bff;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.showDetails:hover {
+  text-decoration: underline;
+}
+
+.tableContent {
+  width: 100%;
+}
+
+.modalOverlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.modalContent {
+  background: white;
+  padding: 20px;
+  border-radius: 8px;
+  width: 800px;
+  max-width: 90%;
+}
+
+.modalHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+  padding-bottom: 10px;
+  border-bottom: 1px solid #eee;
+}
+
+.closeButton {
+  font-size: 24px;
+  cursor: pointer;
+  padding: 5px;
+}
+
+.modalBody {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.detailRow {
+  display: flex;
+  justify-content: space-between;
+  padding: 8px 0;
+  border-bottom: 1px solid #eee;
+}
+
+.showDetails {
+  color: blue;
+  cursor: pointer;
+  text-decoration: underline;
+}

@@ -1,0 +1,217 @@
+.Plans {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  background: #fcfcfc;
+}
+
+/* header */
+.PlansHeader {
+  display: flex;
+  width: 100%;
+  height: auto;
+  padding: 16px 20px 16px;
+  align-items: center;
+  gap: 12px;
+  background: var(--brand-snow, #fff);
+  box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.02),
+    0px 18px 18px 0px rgba(0, 0, 0, 0.02), 0px 40px 24px 0px rgba(0, 0, 0, 0.01),
+    0px 71px 29px 0px rgba(0, 0, 0, 0), 0px 112px 31px 0px rgba(0, 0, 0, 0);
+}
+.h1 {
+  width: 244px;
+  flex-shrink: 0;
+
+  color: var(--brand-charcoal, var(--brand-charcoal, #020202));
+  font-family: Inter;
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 120%;
+  letter-spacing: -0.64px;
+}
+.HeaderCards {
+  display: flex;
+  padding: 16px 20px;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 12px;
+  width: 185px;
+  height: auto;
+  border-radius: 12px;
+  border: 1px solid #eee;
+  background: var(--brand-snow, #fff);
+}
+
+.HeaderCards.Active {
+  border: 2px solid #fe9800;
+  border-bottom: none;
+}
+.HeaderCards.Active,
+.HeaderCards.Active h1:nth-child(1),
+.HeaderCards.Active h1:nth-child(2),
+.HeaderCards.Active p {
+  background: #fe9800;
+  color: #fff;
+}
+.HeaderCardsPrice {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.HeaderCardsPrice p {
+  padding-left: 4px;
+}
+.HeaderCards h1:nth-child(1) {
+  color: var(--brand-charcoal, var(--brand-charcoal, #020202));
+  font-family: Inter;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 115%;
+}
+.HeaderCards h1:nth-child(2) {
+  color: var(--brand-charcoal, var(--brand-charcoal, #020202));
+  font-family: Inter;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 100%;
+  letter-spacing: -0.48px;
+}
+.HeaderCardsPrice p {
+  color: var(--brand-charcoal, var(--brand-charcoal, #020202));
+  font-family: Inter;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 115%;
+}
+
+/* content */
+.PlansContent {
+  background: rgba(0, 0, 0, 0.02);
+  overflow: scroll;
+  display: flex;
+  flex-direction: column;
+  padding: 0 20px;
+  width: 100%;
+  height: 630px;
+}
+.ContentType {
+  display: flex;
+  gap: 4px;
+  color: var(--brand-charcoal, var(--brand-charcoal, #020202));
+  font-family: Inter;
+  font-style: normal;
+  line-height: 100%;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 32px 0;
+  width: 244px;
+  height: 80px;
+}
+.ContentTypeHeader {
+  font-size: 18px;
+  font-weight: 600;
+}
+.ContentTypeText {
+  font-size: 16px;
+  font-weight: 500;
+}
+.ContentInfo {
+  display: flex;
+  width: 185px;
+  justify-content: center;
+  align-items: center;
+}
+.ContentInfo span {
+  font-size: 14px;
+  font-weight: 600;
+}
+.ValueColor {
+  color: #fe9800;
+}
+.UserRow {
+  display: flex;
+  flex-direction: row;
+  gap: 12px;
+  height: 80px;
+}
+.ContentInfo.ActiveContent {
+  border-left: 2px solid #fe9800;
+  border-right: 2px solid #fe9800;
+  background: rgba(254, 152, 0, 0.1);
+}
+.ContentInfo.FirstContent.ActiveContent {
+  border-top: 2px solid #fe9800;
+  border-top-right-radius:12px ;
+  border-top-left-radius: 12px;
+}
+.ContentInfo.LastContent.ActiveContent {
+  border-bottom: 2px solid #fe9800;
+  border-bottom-right-radius:12px ;
+  border-bottom-left-radius: 12px;
+}
+
+/* footer */
+.PlansFooter {
+  display: flex;
+  padding: 24px 40px 24px 280px;
+  width: 100%;
+  height: 100px;
+  align-items: flex-end;
+  gap: 12px;
+}
+.PlansFooterCards {
+  display: flex;
+  padding: 16px 0;
+  justify-content: center;
+  align-items: center;
+  width: 185px;
+  gap: 12px;
+  border-radius: 12px;
+  text-align: center;
+  font-family: Inter;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 125%;
+}
+.PlansFooterCurrent {
+  border: 1px solid #eee;
+  color: var(--brand-charcoal, var(--brand-charcoal, #020202));
+  background: var(--brand-snow, #fff);
+}
+.PlansFooterUpgrade {
+  color: var(--brand-snow, var(--brand-snow, #fff));
+  background: var(--brand-sun, #fe9800);
+}
+@media screen and (max-width: 1024px) {
+  .ContentInfo,
+  .HeaderCards,
+  .PlansFooterCards {
+    width: 130px;
+  }
+  .HeaderCardsPrice {
+    flex-direction: column;
+    gap: 5px;
+  }
+  .HeaderCards.Active:last-child {
+    height: 120px;
+  }
+}
+@media screen and (min-width: 1720px) {
+  .ContentInfo,
+  .HeaderCards,
+  .PlansFooterCards {
+    width: 250px;
+  }
+}
+@media screen and (min-width: 1920px) {
+  .ContentInfo,
+  .HeaderCards,
+  .PlansFooterCards {
+    width: 300px;
+  }
+}

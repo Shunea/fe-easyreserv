@@ -1,0 +1,19 @@
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100px;
+    position: relative;
+}
+
+.calendar{
+    padding: 20px;
+    border: 2px solid gray;
+    cursor: pointer;
+}
+
+.dateRange{
+    position: absolute;
+    top: 120px;
+}
+

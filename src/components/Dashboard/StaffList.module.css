@@ -1,0 +1,298 @@
+.StaffList {
+  display: flex;
+  width: 33.33%;
+  min-width: 421px;
+  min-height: 708px;
+  flex-direction: column;
+  align-items: flex-start;
+  flex-shrink: 0;
+  border-radius: 12px;
+  border: 1px solid #eee;
+  background: var(--brand-snow, #fff);
+  box-shadow: 8px 8px 80px 0px rgba(0, 0, 0, 0.04);
+}
+
+.Head {
+  display: flex;
+  padding: 24px 24px 16px 24px;
+  justify-content: space-between;
+  align-items: flex-start;
+  align-self: stretch;
+  border-bottom: 1px solid #eee;
+  background: var(--brand-snow, #fff);
+  border-top-left-radius: 12px;
+  border-top-right-radius: 12px;
+}
+
+.HeadTitle {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 2px;
+}
+
+.HeadTitleText {
+  color: var(--brand-charcoal, var(--brand-charcoal, #020202));
+  font-family: Inter;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 120%; /* 24px */
+  letter-spacing: -0.4px;
+}
+
+.HeadTitleValue {
+  color: var(--brand-charcoal, var(--brand-charcoal, #020202));
+  font-family: Inter;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 120%; /* 14.4px */
+  letter-spacing: -0.24px;
+  opacity: 0.4;
+}
+
+.HeadActions {
+  display: flex;
+  align-items: flex-start;
+  gap: 8px;
+}
+
+.Content {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  flex: 1 0 0;
+  align-self: stretch;
+  max-height: 650px;
+  overflow-y: auto;
+}
+
+.List {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  align-self: stretch;
+  width: 100%;
+}
+
+.EmployeeRow {
+  display: flex;
+  padding: 12px 24px;
+  align-items: center;
+  gap: 40px;
+  align-self: stretch;
+  border-bottom: 1px solid #eee;
+}
+
+.EmployeeNameContainer {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  flex: 1 0 0;
+}
+
+.LoggedIn {
+  opacity: 1;
+}
+
+.NotLoggedIn {
+  opacity: 0.7;
+}
+
+.EmployeeAvatarContainer {
+display: flex;
+}
+
+.EmployeeAvatar {
+  width: 56px;
+  height: 56px;
+  border-radius: 200px;
+  border: 1px solid rgba(0, 0, 0, 0.02);
+}
+.WorkDot {
+  display: flex;
+  width: 12px;
+  height: 12px;
+  flex-shrink: 0;
+  stroke-width: 4px;
+  stroke: var(--brand-snow, #fff);
+  margin-top: 45px;
+  margin-bottom: 0;
+  margin-left: -5px;
+}
+
+.GreenDot {
+  color: #4be248;
+}
+
+.RedDot {
+  color: #ff4747;
+}
+
+.EmployeeTitleContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 4px;
+  flex: 1 0 0;
+}
+
+.EmployeeName {
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 1;
+  overflow: hidden;
+  color: var(--brand-charcoal, var(--brand-charcoal, #020202));
+  text-overflow: ellipsis;
+  font-family: Inter;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 120%; /* 19.2px */
+  letter-spacing: -0.32px;
+}
+
+.EmployeeSpace {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.EmployeeSpaceIcon {
+  display: flex;
+  width: 14px;
+  height: 14px;
+  opacity: 0.35;
+  position: inherit;
+}
+
+.EmployeeSpaceName {
+  color: var(--brand-charcoal, var(--brand-charcoal, #020202));
+  font-family: Inter;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 100%; /* 12px */
+  opacity: 0.6;
+}
+
+.EmployeeActionsContainer {
+  display: flex;
+  gap: 8px;
+  align-items: flex-end;
+}
+.EmployeeActionButton {
+  display: flex;
+  width: 30px;
+  height: 30px;
+  padding: 5px !important;
+  justify-content: center;
+  align-items: center !important;
+  gap: 4px;
+  border-radius: 100px !important;
+  border: 1px solid #eee;
+  background: var(--brand-snow, #fff);
+}
+
+.EmployeeActionIcon {
+  display: flex;
+  width: 14px;
+  height: 14px;
+  flex-shrink: 0;
+  opacity: 0.35;
+}
+
+.ButtonModal {
+  display: inline-flex;
+  padding: 8px;
+  flex-direction: column;
+  align-items: flex-start;
+  border-radius: 12px;
+  border: 1px solid #eee;
+  background: var(--brand-snow, #fff);
+  width: 100px;
+  height: 80px;
+}
+
+.ModalButton {
+  padding: 0;
+  color: var(--brand-sun, var(--brand-sun, #020202));
+  font-family: Inter;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 100%; /* 16px */
+  background-color: #fff;
+  padding: 8px 10px;
+}
+
+.ViewStaffButton {
+  display: flex;
+  padding: 16px 24px;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  align-self: stretch;
+  border-top: 1px solid #eee;
+  background: var(--brand-snow, #fff) !important;
+}
+
+.ButtonIcon {
+  width: 16px;
+  height: 16px;
+}
+
+.ButtonText {
+  color: var(--brand-charcoal, var(--brand-charcoal, #020202));
+  font-family: Inter;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 100%; /* 14px */
+}
+
+.NotChecked {
+  background-color: #f6f6f6;
+}
+
+.Checked {
+  background-color: #fff;
+}
+
+.ScanButton {
+  display: flex;
+  width: 25px;
+  height: 25px;
+  padding: 5px !important;
+  justify-content: center;
+  align-items: center;
+  gap: 4px;
+  border-radius: 100px;
+  background: var(--brand-sun, #fe9800);
+}
+
+.Content::-webkit-scrollbar {
+  width: 4px;
+}
+
+.Content::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+.Content::-webkit-scrollbar-thumb {
+  background: #888;
+  border-radius: 4px;
+}
+
+.Content::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
+.CheckInTime {
+  font-size: 0.9em;
+  color: #666;
+  font-weight: normal;
+}

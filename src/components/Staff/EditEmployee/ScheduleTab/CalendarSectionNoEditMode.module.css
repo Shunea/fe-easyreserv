@@ -1,0 +1,191 @@
+.WorkingContent {
+  display: flex;
+  width: 287px;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 8px;
+}
+.WorkingTitle {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  align-self: stretch;
+}
+.TurColor {
+  width: 12px;
+  height: 12px;
+  border-radius: 20px;
+}
+
+.BLUE {
+  background: linear-gradient(
+      270deg,
+      rgba(255, 255, 255, 0.2) 0%,
+      rgba(255, 255, 255, 0) 100%
+    ),
+    #36baf2;
+}
+.GREEN {
+  background: linear-gradient(
+      270deg,
+      rgba(255, 255, 255, 0.2) 0%,
+      rgba(255, 255, 255, 0) 100%
+    ),
+    #4be248;
+}
+
+.RED {
+  background: linear-gradient(
+      270deg,
+      rgba(255, 255, 255, 0.2) 0%,
+      rgba(255, 255, 255, 0) 100%
+    ),
+    #ff1a1a;
+}
+.YELLOW {
+  background: linear-gradient(
+      270deg,
+      rgba(255, 255, 255, 0.2) 0%,
+      rgba(255, 255, 255, 0) 100%
+    ),
+    #ffff00;
+}
+.GREY {
+  background: linear-gradient(
+      270deg,
+      rgba(255, 255, 255, 0.2) 0%,
+      rgba(255, 255, 255, 0) 100%
+    ),
+    #d1cccc;
+}
+.ORANGE {
+  background: linear-gradient(
+      270deg,
+      rgba(255, 255, 255, 0.2) 0%,
+      rgba(255, 255, 255, 0) 100%
+    ),
+    #ff9900;
+}
+.BLACK {
+  background: linear-gradient(
+      270deg,
+      rgba(255, 255, 255, 0.2) 0%,
+      rgba(255, 255, 255, 0) 100%
+    ),
+    #000000;
+}
+.TurTitle {
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 1;
+  overflow: hidden;
+  color: var(--brand-charcoal, var(--brand-charcoal, #020202));
+  text-overflow: ellipsis;
+  font-family: Inter;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 100%; /* 16px */
+}
+.WorkingCaption {
+  display: flex;
+  padding-left: 0px;
+  align-items: center;
+  gap: 8px;
+  align-self: stretch;
+}
+.TurTime {
+  color: var(--brand-charcoal, var(--brand-charcoal, #020202));
+  font-family: Inter;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 100%; /* 12px */
+}
+.TurSpace {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+
+.TurSpaceName {
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 1;
+  overflow: hidden;
+  color: var(--brand-charcoal, var(--brand-charcoal, #020202));
+  text-overflow: ellipsis;
+  font-family: Inter;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 100%; /* 12px */
+}
+.ProposedTour {
+  display: flex;
+  width: 267px;
+  padding: 12px;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 8px;
+  background: #f9e8ce;
+  margin-left: 20px;
+}
+.ProposedTourContent {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 4px;
+}
+.ProposedText {
+  color: var(--brand-charcoal, var(--brand-charcoal, #020202));
+  font-family: Inter;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 100%; /* 12px */
+  letter-spacing: -0.24px;
+  opacity: 0.35;
+}
+.ProposedTime {
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 1;
+  overflow: hidden;
+  color: var(--brand-charcoal, var(--brand-charcoal, #020202));
+  text-overflow: ellipsis;
+  font-family: Inter;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 100%; /* 12px */
+}
+.ProposedTourActions {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+
+.DeclinePropose {
+  display: flex;
+  width: 25px;
+  height: 25px;
+  padding: 5px;
+  justify-content: center;
+  align-items: center;
+  gap: 4px;
+  border-radius: 100px;
+  background: var(--brand-snow, #fff);
+}
+.AcceptPropose {
+  display: flex;
+  width: 25px;
+  height: 25px;
+  padding: 5px;
+  justify-content: center;
+  align-items: center;
+  gap: 4px;
+  border-radius: 100px;
+  background: var(--brand-sun, #fe9800);
+}

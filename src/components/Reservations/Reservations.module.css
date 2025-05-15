@@ -1,0 +1,577 @@
+.statusCircle {
+  width: 16px;
+  height: 16px;
+  background-color: chartreuse;
+}
+
+.selectIcon {
+  position: absolute;
+  opacity: 0.35;
+  margin-left: 12px;
+  margin-top: 5px;
+}
+
+.header_col {
+  max-width: 215px;
+}
+
+.header_second_col {
+  margin-top: 12px;
+  justify-content: flex-end;
+}
+
+.table_container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* width: 75px;
+  height: 75px; */
+}
+
+.restaurant_item {
+  position: absolute;
+}
+
+.grid {
+  border-radius: 12px;
+  /* padding: 11px; */
+  margin: 0;
+  height: 100%;
+  background-size: 11px 11px;
+  background-image: linear-gradient(to right, #eee 1px, transparent 1px),
+    linear-gradient(to bottom, #eee 1px, transparent 1px);
+}
+
+.table {
+  cursor: pointer;
+  text-align: center;
+}
+
+.table svg {
+  stroke: #020202;
+  color: #fff;
+}
+
+.tablesvg:hover {
+  color: #eee;
+}
+
+.table_id {
+  pointer-events: none;
+  cursor: pointer;
+  position: absolute;
+  font-size: 12px;
+  user-select: none;
+  font-weight: 600;
+  /* margin-top: auto;
+  margin-bottom: auto;
+  text-align: center; */
+  text-align: center;
+  width: 100%;
+  display: table-cell;
+  height: 100%;
+  vertical-align: middle;
+  margin: -3px 0 0 -3px;
+}
+
+.pending,
+.confirmed,
+.rejected,
+.canceled,
+.closed,
+.dishonored,
+.serve {
+  color: #fff;
+}
+
+.table svg:hover {
+  color: #eee;
+}
+
+.pending svg {
+  color: #edbe39;
+  stroke: #d5ab33;
+  fill: #d5ab33;
+}
+.pending svg path {
+  stroke: #d5ab33;
+  fill: #d5ab33;
+}
+
+.table.pending svg:hover {
+  color: #d5ab33;
+}
+
+.confirmed svg {
+  color: #24c56e;
+  stroke: #1d9e58;
+  fill: #1d9e58;
+}
+.confirmed svg  path{
+  fill: #1d9e58;
+  stroke: #1d9e58;
+}
+
+.table.confirmed svg:hover {
+  color: #1d9e58;
+}
+
+.rejected svg  {
+  color: #30cdcd;
+  stroke: #30cdcd;
+  fill: #30cdcd;
+}
+.rejected svg path {
+  stroke: #30cdcd;
+  fill: #30cdcd;
+}
+
+.table.rejected svg:hover {
+  color: #30cdcd;
+}
+
+.canceled svg {
+  color: #fc4747;
+  stroke: #fc4747;
+  fill: #fc4747;
+}
+.canceled svg  path{
+  stroke: #fc4747;
+  fill: #fc4747;
+}
+
+.table.canceled svg:hover {
+  color: #fc4747;
+}
+
+.closed svg {
+  color: #36baf2;
+  stroke: #36baf2;
+  fill: #36baf2;
+}
+.closed svg path {
+  stroke: #36baf2;
+  fill: #36baf2;
+}
+
+.table.closed svg:hover {
+  color: #36baf2;
+}
+.dishonored svg {
+  color: #2167d1;
+  stroke: #2167d1;
+  fill: #2167d1;
+}
+.dishonored svg path {
+  fill: #2167d1;
+  stroke: #2167d1;
+}
+
+.table.dishonored svg:hover {
+  color: #2167d1;
+}
+
+.serve svg {
+  color: #d15ab7;
+  stroke: #d15ab7;
+  fill: #d15ab7;
+}
+.serve svg path{
+  stroke: #d15ab7;
+  fill: #d15ab7;
+}
+
+.table.serve svg:hover {
+  color: #d15ab7;
+}
+
+.occupied_seats {
+  justify-content: flex-start !important;
+  margin: -28px 0 0 -54px;
+  position: absolute;
+  z-index: 2;
+  font-size: 11px;
+  font-weight: 700;
+  line-height: 12px;
+  background-color: #fff;
+  border: 1.5px solid black;
+  border-radius: 30px;
+  width: 16px;
+  height: 16px;
+  text-align: center;
+  color: #020202;
+}
+
+.order_status svg {
+  color: #020202;
+}
+
+.occupied_seats.confirmed,
+.order_status.confirmed {
+  border-color: #24c56e;
+}
+
+.occupied_seats.pending,
+.order_status.pending {
+  border-color: #edbe39;
+}
+
+.occupied_seats.rejected,
+.order_status.rejected {
+  border-color: #30cdcd;
+}
+.occupied_seats.canceled,
+.order_status.canceled {
+  border-color: #fc4747;
+}
+
+.occupied_seats.closed,
+.order_status.closed {
+  border-color: #36baf2;
+}
+
+.occupied_seats.dishonored,
+.order_status.dishonored {
+  border-color: #2167d1;
+}
+.occupied_seats.serve,
+.order_status.serve {
+  border-color: #d15ab7;
+}
+
+.order_status {
+  justify-content: flex-start !important;
+  margin: 28px 0 0 54px;
+  position: absolute;
+  z-index: 2;
+  font-size: 11px;
+  font-weight: 700;
+  line-height: 12px;
+  background-color: #fff;
+  border: 1.5px solid black;
+  border-radius: 30px;
+  width: 16px;
+  height: 16px;
+  text-align: center;
+  color: #020202;
+}
+
+.order_status svg {
+  width: 10px;
+  height: 10px;
+  margin-top: -2px;
+  fill: #fff;
+}
+
+.reservations_header {
+  width: 100%;
+  border: 1px solid #eee;
+  border-radius: 12px 12px 0 0;
+  font-size: 17px;
+  font-weight: 600;
+}
+
+.reservations_header p {
+  margin: 15px 20px;
+  margin-right: 0;
+}
+
+.header_reservation_number {
+  opacity: 0.35;
+}
+
+.reservations_header .status {
+  opacity: 1;
+  border-radius: 30px;
+  padding: 4px 10px;
+  color: #fff;
+  font-size: 13px;
+  margin-right: 35px;
+}
+
+.reservations_header_reservation svg {
+  opacity: 0.35;
+  height: 17px;
+  margin-top: -2px;
+  margin-right: 2px;
+}
+
+.reservations_header_reservation svg:hover {
+  opacity: 0.8;
+  cursor: pointer;
+}
+
+.status_col {
+  text-align: end;
+  margin-top: auto;
+  margin-bottom: auto;
+}
+
+.reservations_header .status.confirmed {
+  background-color: #24c56e;
+}
+
+.reservations_header .status.rejected {
+  background-color: #30cdcd;
+}
+
+.reservations_header .status.pending {
+  background-color: #edbe39;
+}
+
+.reservations_header .status.canceled {
+  background-color: #fc4747;
+}
+
+.reservations_header .status.closed {
+  background-color: #36baf2;
+}
+
+.reservations_header .status.dishonored {
+  background-color: #2167d1;
+}
+.reservations_header .status.serve {
+  background-color: #d15ab7;
+}
+
+.status .icon {
+  opacity: 1;
+}
+
+.status_col .status svg {
+  color: #fff;
+}
+
+.status .icon svg {
+  width: 15px;
+  margin-top: -4px;
+  margin-right: 4px;
+}
+
+.reservations_content {
+  max-height: 70vh;
+  overflow: hidden;
+  overflow-y: scroll;
+  height: 100vh;
+  border: 1px solid #eee;
+  border-top: none;
+}
+
+.reservations_no_reservations {
+  text-align: center;
+  font-weight: 600;
+}
+
+.reservations_no_reservations p {
+  margin-top: -15px;
+}
+
+.reservations_no_reservations svg {
+  margin-top: 10vh;
+  max-width: 150px;
+  width: 80%;
+}
+
+.reservation_details {
+  padding: 15px;
+  padding-top: 10px;
+  display: grid;
+}
+
+.reservation_details .label {
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+  margin-bottom: 10px;
+  margin-top: 10px;
+  padding-left: 20px !important;
+}
+
+.item_title {
+  float: left;
+  padding-left: 20px !important;
+}
+
+.item_value {
+  display: flex;
+  gap: 8px;
+  float: right;
+  padding-right: 20px !important;
+}
+
+.item {
+  background-image: linear-gradient(
+    to right,
+    rgba(2, 2, 2, 0.35) 15%,
+    rgba(255, 255, 255, 0) 0%
+  );
+  background-position: 0 14px;
+  background-size: 10px 1px;
+  background-repeat: repeat-x;
+  width: 100%;
+  height: 32px;
+  font-weight: 500;
+}
+
+.item_title {
+  color: rgba(2, 2, 2, 0.35);
+}
+
+.item_title,
+.item_value {
+  background: #fff;
+  padding: 5px;
+  padding-top: 0;
+  margin-top: -2px;
+}
+
+.order_total {
+  background-color: #f6f6f6;
+  padding-top: 25px;
+  padding-bottom: 25px;
+  border-radius: 12px;
+  width: 100%;
+  height: 20px;
+}
+
+.order_total .item_title,
+.order_total .item_value {
+  background-color: transparent;
+  margin-top: -13px;
+  color: #020202;
+  font-weight: 500;
+}
+
+.item_value .seats_nr {
+  opacity: 0.35;
+}
+
+.item_value div {
+  opacity: 1 !important;
+}
+
+.order .meal_title {
+  color: #020202;
+}
+
+.order .meals_total {
+  color: #fe9800;
+}
+
+.avatar_missing_icon {
+  /* position: absolute; */
+  width: 22px;
+  height: 22px;
+  display: inline-block;
+  margin-right: 6px;
+  border-radius: 100%;
+  margin-left: -25px;
+  background-color: #fff;
+  border: 1px solid #a0a0a0;
+  text-align: center;
+}
+
+.avatar_missing_icon svg {
+  width: 18px;
+  margin-top: -4px;
+  color: #a0a0a0;
+}
+
+.avatar_icon {
+  width: 22px;
+  height: 22px;
+  display: inline-block;
+  margin-right: 6px;
+  border-radius: 100%;
+  background-size: cover;
+  cursor: pointer;
+  /* transition: 0.2s ease-in-out; */
+  margin-left: -25px;
+}
+
+/* .avatar_icon:hover {
+  transform: scale(4.5);
+  transition: 0.5s ease-in-out;
+} */
+
+.underlined {
+  text-decoration: underline;
+  transform: translate(0px, -5px);
+  display: inline-block;
+}
+
+.contacts .label {
+  margin-top: 20px;
+}
+
+.tables_list {
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.date_picker_arrow {
+  cursor: pointer;
+}
+
+.date_picker {
+  width: 100%;
+  height: 40px;
+  border-radius: 12px;
+  border: none;
+  outline: 1px solid #eeeeee;
+  display: flex;
+  justify-content: space-around;
+  padding-top: 9px;
+  user-select: none;
+  font-size: 14px;
+}
+
+.date_picker:hover {
+  outline: 1px solid rgba(254, 152, 0, 0.4);
+}
+
+.date_picker .date_value {
+  padding-top: 1px;
+}
+
+.date_picker svg {
+  opacity: 0.35;
+}
+
+.date_picker svg:hover {
+  opacity: 0.75;
+}
+
+.no_tables_link {
+  text-decoration: underline;
+  cursor: pointer;
+  color: #020202;
+}
+
+.no_tables_link:hover {
+  opacity: 0.7;
+}
+
+@media (max-width: 991px) {
+  .header_second_col {
+    justify-content: center;
+    margin-top: 0;
+  }
+}
+.ClientImage {
+  width: 20px;
+  height: 20px;
+  border-radius: 100px;
+  object-fit: cover;
+}
+.label4 {
+  color: #020202;
+  font-family: "Inter", Helvetica;
+  font-size: 14px;
+  font-weight: 500;
+  letter-spacing: 0;
+  line-height: 12px;
+  position: relative;
+  white-space: nowrap;
+  width: fit-content;
+}

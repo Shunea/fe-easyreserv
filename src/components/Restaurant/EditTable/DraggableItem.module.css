@@ -1,0 +1,57 @@
+.draggable_item_container {
+
+  /* background-color: red; */
+  cursor: default;
+  cursor: grab;
+  position: absolute
+}
+
+.draggable_item_container svg {
+  /* color: #fff; */
+  /* stroke: #020202; */
+  user-select: none;
+}
+
+.draggable_item_container:hover svg {
+  filter: brightness(96%);
+}
+
+.draggable_item_container:active svg {
+  filter: brightness(92%);
+  cursor: grabbing;
+
+}
+
+.cross_delete {
+  position: absolute;
+  background-color: tomato;
+  color: brown;
+  width: 13px;
+  height: 13px;
+  text-align: center;
+  border: 1px solid brown;
+  border-radius: 100%;
+  line-height: 13px;
+  font-size: 9px;
+  z-index: 5;
+  opacity: 0.8;
+  display: none;
+  margin-top: -2px;
+  right: 0;
+}
+
+.cross_delete svg {
+  width: 10px;
+  height: 10px;
+  margin-top: -2px;
+}
+
+.cross_delete:hover {
+  opacity: 1 !important;
+  cursor: pointer !important;
+}
+
+
+.draggable_item_container:hover .cross_delete {
+  display: block;
+}

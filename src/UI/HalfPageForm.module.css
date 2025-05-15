@@ -1,0 +1,134 @@
+.blurred_background {
+  overscroll-behavior: contain !important;
+  overflow: none;
+  display: inline-flex;
+  justify-content: flex-end;
+  align-items: center;
+  flex-shrink: 0;
+  background: rgba(0, 0, 0, 0.3);
+  backdrop-filter: blur(3px);
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 99;
+  overflow: auto;
+}
+
+
+.blurred_background>.half_form_container {
+  overflow-y: scroll;
+  width: 50%;
+  gap: 24px;
+  background: var(--brand-snow, #fff);
+  box-shadow: 8px 8px 80px 0px rgba(0, 0, 0, 0.04);
+  height: 100%;
+}
+
+.half_form_container .header {
+  font-size: 24px;
+  color: #020202;
+  font-family: Inter;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 120%;
+  letter-spacing: -0.48px;
+  padding: 24px 24px 0px 24px;
+  margin-bottom: 20px;
+}
+
+.half_form_container .header {
+  /* padding: 24px;
+  height: 84px; */
+  display: flex;
+  height: 55px;
+  padding: 24px 24px 0px 24px;
+  justify-content: space-between;
+  align-items: center;
+  align-self: stretch;
+  display: flex;
+  justify-content: space-between;
+}
+
+.cross_icon {
+
+  cursor: pointer;
+  width: 28px;
+  height: 28px;
+  opacity: 0.15;
+  margin-top: -2px;
+}
+
+.cross_icon svg {
+  width: 28px;
+  height: 28px;
+}
+
+.cross_icon:hover {
+  opacity: 0.35;
+
+
+}
+
+.multiple_choice {
+
+  border-bottom: 1px solid #EEE;
+}
+
+.multiple_choice_items {
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  margin-left: 24px;
+  display: flex;
+  justify-content: flex-start;
+  overflow-x: scroll;
+  overflow-y: none;
+}
+
+.multiple_choice_items::-webkit-scrollbar {
+  height: 0;
+  color: transparent;
+}
+
+.multiple_choice_item {
+  height: 40px;
+  padding-left: 10px;
+  padding-right: 10px;
+  margin-right: 20px;
+  cursor: pointer;
+  display: inline-flex;
+}
+
+.selectedItem {
+  color: #FE9800;
+  border-bottom: 2px solid #FE9800;
+  font-weight: 600;
+
+}
+
+.item_info {
+  display: inline-flex;
+}
+
+.item_info .dot {
+  color: rgb(2, 2, 2, 0.35);
+  padding-left: 4px;
+  padding-right: 4px;
+}
+
+.selectedItem .dot,
+.selectedItem .info_number {
+  color: #FE9800;
+}
+
+.info_number {
+  color: rgb(2, 2, 2, 0.35);
+  font-size: 14px;
+  padding-top: 2px;
+}
+
+.half_form_container .contents {
+  padding: 24px;
+}

@@ -1,0 +1,53 @@
+.NoVacationMesage {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+  flex: 1 0 0;
+  align-self: stretch;
+}
+
+.NoVacationTextContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+}
+
+.NoVacationText {
+  color: var(--brand-charcoal, var(--brand-charcoal, #020202));
+  font-family: Inter;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 120%; /* 24px */
+  letter-spacing: -0.4px;
+}
+
+.AddVacationButton {
+  display: flex;
+  padding: 16px 24px !important;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  border-radius: 12px;
+  background: var(--brand-sun, #fe9800) !important;
+  border: 0 !important;
+  position: inherit !important;
+}
+
+.AddVacationButton:hover {
+  border: 0 !important;
+}
+
+.AddVacationButtonText {
+  color: var(--brand-snow, var(--brand-snow, #fff));
+  text-align: center;
+  font-family: Inter;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 125%; /* 20px */
+  text-transform: none;
+}

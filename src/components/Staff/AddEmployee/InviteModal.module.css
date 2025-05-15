@@ -1,0 +1,236 @@
+.headingInvite {
+  display: flex;
+  height: 80px;
+  padding: 24px;
+  justify-content: space-between;
+  align-items: center;
+  align-self: stretch;
+  border-bottom: 1px solid #eee;
+}
+
+.headingInviteTitle {
+  color: var(--brand-charcoal, #020202);
+  font-family: Inter;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 120%;
+  letter-spacing: -0.48px;
+  margin-bottom: 0;
+}
+
+.headingInviteCloseBtn {
+  width: 28px;
+  height: 28px;
+  opacity: 0.3499999940395355;
+  padding: 0;
+  background-color: transparent !important;
+}
+
+.formInvite {
+  display: flex;
+  padding: 0px 24px;
+  flex-direction: column;
+  align-items: flex-start;
+  align-self: stretch;
+}
+
+.formInviteInput {
+  display: flex;
+  height: 52px;
+  padding: 0px 16px;
+  align-items: center;
+  gap: 8px;
+  align-self: stretch;
+  border-radius: 12px;
+  border: 1px solid #eee;
+  background: var(--brand-snow, #fff);
+}
+
+.formInviteInputContainer input {
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+  color: var(--brand-charcoal, #020202);
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  font-family: Inter;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 100%;
+  outline-color: rgba(254, 152, 0, 0.7);
+  box-shadow: none;
+}
+
+.formInviteInputContainer input:hover {
+outline-color: rgba(254, 152, 0);
+
+}
+
+
+.formInviteInput::placeholder {
+  display: flex;
+  height: 16px;
+  flex-direction: column;
+  flex: 1 0 0;
+  overflow: hidden;
+  color: var(--brand-charcoal, #020202);
+  opacity: 0.3499999940395355;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  font-family: Inter;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 100%;
+}
+
+.formInviteInputContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 12px;
+  align-self: stretch;
+  margin-bottom: 24px;
+}
+
+.overlayInvite {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 999;
+  background: rgba(0, 0, 0, 0.3);
+  backdrop-filter: blur(10px); }
+
+.InviteModalWindow {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 1000;
+  display: flex;
+  width: 480px;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 24px;
+  border-radius: 12px;
+  background: var(--brand-snow, #fff);
+  box-shadow: 8px 8px 80px 0px rgba(0, 0, 0, 0.04);
+}
+
+.InviteModalAction {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  align-self: stretch;
+  width: 100%;
+  padding-bottom: 24px;
+}
+
+.InviteModalSubmitButton {
+  background-color: rgba(254, 152, 0, 1) !important;
+  height: 52px;
+  border-radius: 12px;
+  gap: 8px;
+  border: 0px !important;
+  display: flex;
+  padding: 16px 24px;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  align-self: stretch;
+  position: inherit !important;
+}
+
+.InviteModalSubmitButton:hover {
+  background-color: rgba(254, 152, 0, 1);
+  opacity: 1;
+  border: 0;
+}
+
+.InviteModalSubmitButtonTitle {
+  color: rgba(255, 255, 255, 1);
+  font-family: Inter;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 20px;
+  align-content: center;
+  text-transform: none;
+}
+
+.label {
+  margin-bottom: 0;
+  display: flex;
+  flex-direction: column;
+  align-self: stretch;
+  color: var(--brand-charcoal, #020202);
+  font-family: Inter;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 100%;
+}
+
+.InviteModalWindow .formInviteSelect {
+  margin-bottom: 24px;
+  width: 100%;
+}
+
+.customSelect {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 12px;
+  align-self: stretch;
+}
+
+.PhoneContainer {
+  width: 100%;
+  color: var(--brand-charcoal, #020202);
+  font-family: Inter !important;
+  font-size: 14px !important;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 100%;
+
+  
+}
+
+.PhoneInput {
+  display: flex !important;
+  height: 52px !important;
+  align-items: center !important;
+  gap: 8px !important;
+  align-self: stretch !important;
+  border-radius: 12px !important;
+  border: 1px solid #eee !important;
+  background: var(--brand-snow, #fff) !important;
+  width: 100% !important;
+}
+
+.PhoneInput:focus{
+  box-shadow: 0 0 0 1.5px rgba(254, 152, 0, 1);
+
+}
+
+.PhoneDropDown {
+  height: 180px;
+  border-radius: 12px !important;
+  width: 432px !important;
+  font-family: Inter !important;
+  font-size: 14px !important;
+}
+
+.PhoneButton {
+  background-color: #eee !important;
+  border-radius: 12px 0 0 12px !important;
+
+}
+
+.InviteModalWindow .selected-flag {
+  border-radius: 12px 0 0 12px !important;
+}
+

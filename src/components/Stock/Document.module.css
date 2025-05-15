@@ -1,0 +1,109 @@
+.InvoiceRow {
+  display: flex;
+flex-direction: column;
+align-items: flex-start;
+gap: 8px;
+align-self: stretch;
+}
+.InvoiceItem {
+  display: flex;
+padding: 12px 16px;
+align-items: center;
+gap: 16px;
+align-self: stretch;
+border-radius: 12px;
+border: 1px solid #EEE;
+background: var(--Brand-Snow, #FFF);
+}
+
+.TitleContainer {
+  display: flex;
+width: 120px;
+align-items: center;
+gap: 8px;
+}
+
+.DocumentIcon {
+  width: 20px;
+height: 20px;
+flex-shrink: 0;
+display: flex;
+}
+
+.InputField {
+  display: flex;
+height: 17px;
+align-items: center;
+gap: 8px;
+align-self: stretch;
+border: 0;
+background: var(--Brand-Snow, #FFF);
+outline: none;
+direction: rtl;
+}
+
+
+.Line {
+  width: 1px;
+height: 32px;
+background: #EEE;
+}
+
+.SerialContainer {
+  display: flex;
+align-items: center;
+gap: 4px;
+flex: 1 0 0;
+width: 207px;
+}
+
+.SerialText {
+  min-width: fit-content;
+  color: var(--Brand-Charcoal, var(--Brand-Charcoal, #020202));
+font-family: Inter;
+font-size: 14px;
+font-style: normal;
+font-weight: 600;
+line-height: 100%; /* 14px */
+opacity: 0.35;
+}
+
+.TimeContainer {
+  display: flex;
+align-items: center;
+gap: 4px;
+flex: 1 0 0;
+width: 207px;
+}
+
+.TimeText {
+  min-width: fit-content;
+  color: var(--Brand-Charcoal, var(--Brand-Charcoal, #020202));
+font-family: Inter;
+font-size: 14px;
+font-style: normal;
+font-weight: 600;
+line-height: 100%; /* 14px */
+opacity: 0.35;
+}
+
+.Download {
+  display: flex;
+width: 25px;
+height: 25px;
+padding: 5px;
+justify-content: center;
+align-items: center;
+gap: 4px;
+border-radius: 100px !important;
+border: 1px solid #EEE;
+background: var(--Brand-Snow, #FFF);
+color:#020202;
+opacity: 0.35;
+transform: rotate(180deg); /* Add this line for rotation */
+
+}
+
+.Download:hover {
+  background-color: #FFF;
+}

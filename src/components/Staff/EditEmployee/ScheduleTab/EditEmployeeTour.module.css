@@ -1,0 +1,250 @@
+.TableItem {
+  display: flex;
+  align-items: center;
+  align-self: stretch;
+  border-bottom: 1px solid #eee;
+  background: var(--brand-snow, #fff);
+  height: 52px;
+  position: relative;
+}
+
+.ScheduleTourButton {
+  display: flex;
+  padding: 16px 24px !important;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  align-self: stretch;
+  background: var(--brand-snow, #fff);
+  position: inherit !important;
+}
+
+.ScheduleTourButton:hover {
+  background: var(--brand-snow, #fff);
+}
+
+.ScheduleTourButton:disabled {
+  background-color: #eee !important;
+}
+
+.ScheduleTourButtonText {
+  color: var(--brand-charcoal, var(--brand-charcoal, #020202));
+  font-family: Inter;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 100%; /* 16px */
+  text-transform: none;
+}
+
+.TourName {
+  display: flex;
+  padding: 0px 16px 0 0;
+  align-items: center;
+  flex: 1 0 0;
+  align-self: stretch;
+  height: 51px;
+  border: 0;
+  outline: none;
+  color: var(--brand-charcoal, var(--brand-charcoal, #020202));
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  font-family: Inter;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 100%; /* 16px */
+  position: relative;
+  z-index: 1;
+  max-width: 25%;
+}
+
+.GREEN::before {
+  content: "";
+  width: 13.35px;
+  height: 12px;
+  background: linear-gradient(
+      270deg,
+      rgba(255, 255, 255, 0.2) 0%,
+      rgba(255, 255, 255, 0) 100%
+    ),
+    #4be248;
+  margin-left: 16px;
+  margin-right: 8px;
+  border-radius: 20px;
+}
+
+.BLUE::before {
+  content: "";
+  width: 13.35px;
+  height: 12px;
+  background: linear-gradient(
+      270deg,
+      rgba(255, 255, 255, 0.2) 0%,
+      rgba(255, 255, 255, 0) 100%
+    ),
+    #36baf2;
+  margin-left: 16px;
+  margin-right: 8px;
+  border-radius: 20px;
+}
+
+.RED::before {
+  content: "";
+  width: 13.35px;
+  height: 12px;
+  background: linear-gradient(
+      270deg,
+      rgba(255, 255, 255, 0.2) 0%,
+      rgba(255, 255, 255, 0) 100%
+    ),
+    #ff1a1a;
+  margin-left: 16px;
+  margin-right: 8px;
+  border-radius: 20px;
+}
+
+.YELLOW::before {
+  content: "";
+  width: 13.35px;
+  height: 12px;
+  background: linear-gradient(
+      270deg,
+      rgba(255, 255, 255, 0.2) 0%,
+      rgba(255, 255, 255, 0) 100%
+    ),
+    #ffff00;
+  margin-left: 16px;
+  margin-right: 8px;
+  border-radius: 20px;
+}
+
+.ORANGE::before {
+  content: "";
+  width: 13.35px;
+  height: 12px;
+  background: linear-gradient(
+      270deg,
+      rgba(255, 255, 255, 0.2) 0%,
+      rgba(255, 255, 255, 0) 100%
+    ),
+    #ff9900;
+  margin-left: 16px;
+  margin-right: 8px;
+  border-radius: 20px;
+}
+
+.BLACK::before {
+  content: "";
+  width: 13.35px;
+  height: 12px;
+  background: linear-gradient(
+      270deg,
+      rgba(255, 255, 255, 0.2) 0%,
+      rgba(255, 255, 255, 0) 100%
+    ),
+    #000000;
+  margin-left: 16px;
+  margin-right: 8px;
+  border-radius: 20px;
+}
+
+.GREY::before {
+  content: "";
+  width: 13.35px;
+  height: 12px;
+  background: linear-gradient(
+      270deg,
+      rgba(255, 255, 255, 0.2) 0%,
+      rgba(255, 255, 255, 0) 100%
+    ),
+    #d1cccc;
+  margin-left: 16px;
+  margin-right: 8px;
+  border-radius: 20px;
+}
+
+.TourName ::placeholder {
+  height: 16px;
+  flex: 1 0 0;
+  overflow: hidden;
+  color: var(--brand-charcoal, var(--brand-charcoal, #020202));
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  font-family: Inter;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 100%; /* 16px */
+  opacity: 0.3499999940395355;
+}
+
+.TourSelectGroup {
+  display: flex;
+  align-items: center;
+  gap: 1px;
+  width: 420px;
+}
+
+.SelectGroupLine {
+  min-width: 1px;
+  height: 32px;
+  background: #eee;
+}
+
+.TableActions {
+  display: flex;
+  padding: 0px 16px;
+  align-items: center;
+  gap: 8px;
+  align-self: stretch;
+}
+
+.AcceptButton {
+  display: flex;
+  width: 30px;
+  height: 30px;
+  padding: 5px;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  border-radius: 100px !important;
+  background: var(--brand-sun, #fe9800);
+}
+
+.DeleteButton {
+  display: flex;
+  width: 30px;
+  height: 30px;
+  padding: 5px;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  border-radius: 100px !important;
+  border: 1px solid #eee;
+  background: var(--brand-snow, #fff);
+  color:#020202;
+  opacity: 0.35;
+}
+
+.DeleteButton:hover {
+  background: var(--brand-snow, #fff);
+}
+
+.LinkToCreateSpace {
+  text-decoration: none;
+  color: #fe9800;
+  font-family: Inter;
+  font-size: 16px;
+  font-weight: 600;
+  display: flex;
+justify-content: center;}
+
+.ButtonToCreateSpace {
+  padding: 0 !important;
+  background-color: transparent;
+}
+
+.ButtonToCreateSpace:hover {
+  background-color: transparent;
+}

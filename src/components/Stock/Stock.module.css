@@ -1,0 +1,863 @@
+.HeadContainer {
+  display: flex;
+  width: 100%;
+flex-direction: column;
+align-items: flex-start;
+align-self: stretch;
+}
+
+.Head {
+  display: flex;
+height: 94px;
+padding: 20px 10px;
+align-items: center;
+gap: 40px;
+align-self: stretch;
+border-bottom: 1px solid var(--Brand-Clouds, #F6F6F6);
+background: var(--Brand-Snow, #FFF);
+box-shadow: 8px 8px 80px 0px rgba(0, 0, 0, 0.04);
+}
+
+.Heading {
+  display: flex;
+flex-direction: column;
+align-items: flex-start;
+flex: 1 0 0;
+}
+
+.Title {
+  display: flex;
+align-items: center;
+gap: 12px;
+}
+
+.TitleText {
+  color: var(--Brand-Charcoal, var(--Brand-Charcoal, #020202));
+font-family: Inter;
+font-size: 32px;
+font-style: normal;
+font-weight: 600;
+line-height: 120%; /* 38.4px */
+letter-spacing: -0.64px;
+}
+
+.Subtitle {
+  display: flex;
+align-items: flex-start;
+gap: 8px;
+}
+
+.SubtitleText {
+  color: var(--Brand-Charcoal, var(--Brand-Charcoal, #020202));
+font-family: Inter;
+font-size: 16px;
+font-style: normal;
+font-weight: 400;
+line-height: 175%; /* 28px */
+opacity: 0.4;
+}
+
+.HeadActions {
+  display: flex;
+align-items: center;
+gap: 16px;
+}
+
+.SaveChangesButton {
+  display: flex;
+padding: 16px 24px;
+justify-content: center;
+align-items: center;
+gap: 8px;
+border-radius: 12px;
+background: var(--Brand-Sun, #FE9800);
+}
+
+.SaveButtonText {
+  color: var(--Brand-Snow, var(--Brand-Snow, #FFF));
+text-align: center;
+font-family: Inter;
+font-size: 16px;
+font-style: normal;
+font-weight: 600;
+line-height: 125%; /* 20px */
+}
+
+.AddItemButton {
+  display: flex;
+padding: 16px 24px;
+justify-content: center;
+align-items: center;
+gap: 8px;
+border-radius: 12px;
+border: 1px solid #EEE;
+background: var(--Brand-Snow, #FFF);
+}
+
+.AddItemText {
+  color: var(--Brand-Charcoal, var(--Brand-Charcoal, #020202));
+text-align: center;
+font-family: Inter;
+font-size: 16px;
+font-style: normal;
+font-weight: 600;
+line-height: 125%; /* 20px */
+}
+
+
+
+.Tabs {
+  display: flex;
+padding: 0px 40px;
+margin-left: -40px;
+margin-right: -40px;
+justify-content: space-between;
+align-items: center;
+align-self: stretch;
+border-bottom: 1px solid #EEE;
+background: var(--Brand-Clouds, #F6F6F6);
+}
+
+.TabList {
+  display: flex;
+align-items: flex-start;
+gap: 24px;
+}
+
+.Tab {
+  display: flex;
+padding: 20px 8px 24px 8px;
+justify-content: center;
+align-items: center;
+gap: 8px;
+cursor: pointer;
+}
+
+.SelectedTab {
+  border-bottom: 2px solid var(--Brand-Sun, #FE9800);
+}
+
+.TabText {
+  color: var(--Brand-Charcoal, var(--Brand-Charcoal, #020202));
+font-family: Inter;
+font-size: 16px;
+font-style: normal;
+font-weight: 500;
+line-height: 100%; /* 16px */
+}
+
+.SelectedTabText {
+  color: var(--Brand-Sun, var(--Brand-Sun, #FE9800));
+font-family: Inter;
+font-size: 16px;
+font-style: normal;
+font-weight: 600;
+line-height: 100%; /* 16px */
+}
+
+.CreateCategoryButton {
+  display: flex;
+width: 146px;
+padding: 8px 12px 8px 10px;
+justify-content: center;
+align-items: center;
+gap: 6px;
+border-radius: 100px;
+border: 1px solid #EEE;
+background: var(--Brand-Snow, #FFF);
+}
+
+.CreateCategoryText {
+  color: var(--Brand-Charcoal, var(--Brand-Charcoal, #020202));
+font-family: Inter;
+font-size: 12px;
+font-style: normal;
+font-weight: 600;
+line-height: 100%; /* 12px */
+letter-spacing: -0.24px;
+}
+
+.StockTable {
+  display: flex;
+padding-top: 16px;
+flex-direction: column;
+align-items: flex-start;
+align-self: stretch;
+background: var(--Brand-Snow, #FFF);
+box-shadow: 8px 8px 80px 0px rgba(0, 0, 0, 0.04) inset;
+min-height: 775px;
+margin-left: -40px;
+margin-right: -40px;
+/* width: fit-content; */
+}
+
+/* Table stock */
+
+.ClientsContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex: 1 0 0;
+  background: var(--brand-snow, #fff);
+  box-shadow: 8px 8px 80px 0px rgba(0, 0, 0, 0.04) inset;
+  width: 100%;
+}
+
+.ClientRow {
+  display: flex;
+  padding: 16px 8px;
+  align-items: center;
+  gap: 40px;
+  align-self: stretch;
+  background: var(--brand-snow, #fff);
+  position: relative;
+}
+.ClientRow::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: -40px;
+  width: 104%;
+  height: 1px;
+  background: #eee;
+}
+
+.ClientName {
+  display: flex;
+  min-width: 240px;
+  width: 23%;
+  align-items: center;
+  gap: 12px;
+}
+
+.ClientAvatar {
+  width: 28px;
+  height: 28px;
+  flex-shrink: 0;
+  border-radius: 28px;
+  border: 1px solid #eee;
+  object-fit: cover;
+}
+
+.ClientNameText {
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 1;
+  overflow: hidden;
+  color: var(--brand-charcoal, var(--brand-charcoal, #020202));
+  text-overflow: ellipsis;
+  font-family: Inter;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 120%; /* 16.8px */
+  letter-spacing: -0.28px;
+}
+
+.ClientStatus {
+  display: flex;
+  min-width: 120px;
+  width: 12%;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 4px;
+}
+
+.Status {
+  display: flex;
+  padding: 4px 8px;
+  justify-content: center;
+  align-items: center;
+  gap: 4px;
+  border-radius: 12px;
+}
+
+.Unique {
+  background: rgba(5, 110, 198, 0.2);
+  color: #056ec6;
+}
+
+.Recurrement {
+  background: rgba(54, 186, 242, 0.2);
+  color: #36baf2;
+}
+
+.ClientDot {
+  width: 6px;
+  height: 6px;
+  display: flex;
+}
+
+.ClientPhone {
+  min-width: 160px;
+  width: 15%;
+  color: var(--brand-charcoal, var(--brand-charcoal, #020202));
+  font-family: Inter;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 120%; /* 16.8px */
+  letter-spacing: -0.28px;
+  opacity: 0.8;
+}
+
+.ClientEmail {
+  display: -webkit-box;
+  min-width: 240px;
+  width: 23%;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 1;
+  overflow: hidden;
+  color: var(--brand-charcoal, var(--brand-charcoal, #020202));
+  text-overflow: ellipsis;
+  font-family: Inter;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 120%; /* 16.8px */
+  letter-spacing: -0.28px;
+  opacity: 0.8;
+}
+
+.ClientStatusText {
+  font-family: Inter;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 120%; /* 14.4px */
+}
+
+.ClientVisit {
+  min-width: 120px;
+  width: 12%;
+  color: var(--brand-charcoal, var(--brand-charcoal, #020202));
+  font-family: Inter;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 120%; /* 16.8px */
+  letter-spacing: -0.28px;
+  opacity: 0.8;
+}
+
+.ClientOrders {
+  display: flex;
+  min-width: 160px;
+  width: 15%;
+  align-items: center;
+  gap: 4px;
+}
+
+.Currency {
+  color: var(--brand-charcoal, var(--brand-charcoal, #020202));
+  font-family: Inter;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 120%; /* 16.8px */
+  opacity: 0.35;
+}
+
+.ClientsOrdersSumm {
+  color: var(--brand-charcoal, var(--brand-charcoal, #020202));
+  font-family: Inter;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 100%; /* 14px */
+  letter-spacing: -0.28px;
+}
+
+.HoveredHeaderItem {
+  display: flex;
+  width: 240px;
+  align-items: flex-start;
+  flex-shrink: 0;
+}
+
+.HoveredHeaderTextContainer {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.HoveredHeaderText {
+  color: #020202;
+  font-family: Inter;
+  font-size: 12px !important;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 120%; /* 14.4px */
+  letter-spacing: -0.24px;
+  padding: 0px !important;
+  background-color: transparent !important;
+}
+
+.HoveredHeaderItemActions {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.HoveredHeaderAction {
+  width: 12px;
+  height: 12px;
+  color: #020202;
+  padding: 0 !important;
+  background-color: transparent !important;
+}
+
+.SearchFieldContainer {
+  display: flex;
+  width: 220px;
+  align-items: flex-start;
+  gap: 4px;
+  flex-shrink: 0;
+}
+
+.SearchInput {
+  display: flex;
+  align-items: center;
+  gap: -2px;
+  flex: 1 0 0;
+  align-self: stretch;
+  overflow: hidden;
+  color: var(--brand-charcoal, var(--brand-charcoal, #020202));
+  text-overflow: ellipsis;
+  font-family: Inter;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 100%; /* 12px */
+  border: 0;
+  outline: none;
+  max-height: 14.4px;
+  max-width: 120px;
+}
+
+.SearchInput::placeholder {
+  overflow: hidden;
+  color: var(--brand-charcoal, var(--brand-charcoal, #020202));
+  text-overflow: ellipsis;
+  font-family: Inter;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 100%; /* 12px */
+  opacity: 0.35;
+}
+
+.TableHead {
+  display: flex;
+  padding: 16px 40px;
+  align-items: flex-start;
+  gap: 40px;
+  align-self: stretch;
+  background: var(--brand-snow, #fff);
+  position: relative;
+}
+
+.TableHead::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: -40px;
+  width: 104%;
+  height: 1px;
+  background: #eee;
+}
+
+.HeaderItem {
+  color: var(--brand-charcoal, var(--brand-charcoal, #020202));
+  font-family: Inter;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 120%; /* 14.4px */
+  letter-spacing: -0.24px;
+}
+
+.NotHoveredHeaderItem {
+  color: var(--brand-charcoal, var(--brand-charcoal, #020202));
+  font-family: Inter;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 120%; /* 14.4px */
+  letter-spacing: -0.24px;
+  opacity: 0.35;
+}
+
+.HeaderItem:nth-of-type(1) {
+  min-width: 180px;
+  width: 18%;
+}
+.HeaderItem:nth-of-type(2) {
+  min-width: 100px;
+  width: 10%;
+
+}
+
+.HeaderItem:nth-of-type(3) {
+  min-width: 120px;
+  width: 12%;
+
+}
+
+.HeaderItem:nth-of-type(4) {
+  min-width: 100px;
+  width: 10%;
+
+}
+
+.HeaderItem:nth-of-type(5) {
+  min-width: 120px;
+  width: 12%;
+
+}
+
+.HeaderItem:nth-of-type(6) {
+  min-width: 120px;
+  width: 12%;
+}
+.HeaderItem:nth-of-type(7) {
+  min-width: 120px;
+  width: 12%;
+}
+.HeaderItem:nth-of-type(8) {
+  min-width: 100px;
+  width: 10%;
+}
+.HeaderItem:nth-of-type(9) {
+  min-width: 40px;
+  width: 4%;
+}
+
+.ProductRow {
+  display: flex;
+  padding: 16px 40px;
+  align-items: center;
+  gap: 40px;
+  align-self: stretch;
+  position: relative;
+  border-bottom: 1px solid #EEE;
+}
+
+.ProductNameContainer {
+  display: flex;
+  min-width: 180px;
+  width: 18%;
+  align-items: center;
+gap: 12px;
+}
+
+.ProductName {
+  display: -webkit-box;
+-webkit-box-orient: vertical;
+-webkit-line-clamp: 1;
+flex: 1 0 0;
+overflow: hidden;
+color: var(--Brand-Charcoal, var(--Brand-Charcoal, #020202));
+text-overflow: ellipsis;
+font-family: Inter;
+font-size: 14px;
+font-style: normal;
+font-weight: 700;
+line-height: 120%; /* 16.8px */
+letter-spacing: -0.28px;
+}
+
+.ProductStatusContainer {
+  display: flex;
+  min-width: 100px;
+  width: 10%;
+  flex-direction: row;
+align-items: center;
+gap: 4px;
+}
+
+.ProductStatusBackground {
+  display: flex;
+padding: 4px 8px;
+justify-content: center;
+align-items: center;
+gap: 4px;
+border-radius: 12px;
+
+}
+
+.ProductStatus {
+font-family: Inter;
+font-size: 12px;
+font-style: normal;
+font-weight: 600;
+line-height: 120%; /* 14.4px */
+}
+
+.StockStatus {
+  display: flex;
+  min-width: 120px;
+  width: 12%;
+  align-items: center;
+gap: 8px;
+}
+
+.StockStatusText {
+font-family: Inter;
+font-size: 14px;
+font-style: normal;
+font-weight: 500;
+line-height: 120%; /* 16.8px */
+letter-spacing: -0.28px;
+}
+
+.ReorderLimit {
+  display: flex;
+  min-width: 100px;
+  width: 10%;
+  align-items: center;
+gap: 8px;
+}
+
+.ReoderLimitText {
+  color: var(--Brand-Charcoal, var(--Brand-Charcoal, #020202));
+font-family: Inter;
+font-size: 14px;
+font-style: normal;
+font-weight: 500;
+line-height: 120%; /* 16.8px */
+letter-spacing: -0.28px;
+opacity: 0.8;
+}
+
+.ProductCategory {
+  display: flex;
+  min-width: 120px;
+  width: 12%;
+  align-items: center;
+gap: 4px;
+}
+
+.ProductCategoryBackground {
+  display: flex;
+padding: 4px 8px;
+justify-content: center;
+align-items: center;
+gap: 4px;
+border-radius: 12px;
+}
+
+.ProductCategoryText {
+  color: var(--Brand-Charcoal, var(--Brand-Charcoal, #020202));
+font-family: Inter;
+font-size: 12px;
+font-style: normal;
+font-weight: 600;
+line-height: 120%; /* 14.4px */
+}
+
+.ExpirationDate {
+  display: flex;
+  min-width: 120px;
+  width: 12%;
+    align-items: center;
+}
+
+.ExpirationDateText {
+  overflow: hidden;
+color: var(--Brand-Charcoal, var(--Brand-Charcoal, #020202));
+text-overflow: ellipsis;
+font-family: Inter;
+font-size: 14px;
+font-style: normal;
+font-weight: 500;
+line-height: 120%; /* 16.8px */
+letter-spacing: -0.28px;
+opacity: 0.8;
+}
+
+.Supplier {
+  display: flex;
+  min-width: 120px;
+  width: 12%;
+  align-items: flex-start;
+}
+
+.SupplierContainer {
+  display: flex;
+justify-content: center;
+padding: 4px 10px 4px 4px;
+
+align-items: center;
+gap: 6px;
+border-radius: 100px;
+border: 1px solid #EEE;
+background: var(--Brand-Snow, #FFF);
+}
+
+.ImageContainer {
+  display: flex;
+width: 20px;
+height: 20px;
+justify-content: center;
+align-items: center;
+}
+
+.SupplierImage {
+  width: 20px;
+height: 20px;
+flex-shrink: 0;
+border-radius: 100px;
+border: 1px solid #EEE;
+}
+
+.SupplierName {
+  display: flex;
+  align-items: center;
+  height: 20px;
+  color: var(--Brand-Charcoal, var(--Brand-Charcoal, #020202));
+font-family: Inter;
+font-size: 14px;
+font-style: normal;
+font-weight: 600;
+line-height: 100%; /* 14px */
+}
+
+.EmptySpace {
+  display: flex;
+
+  min-width: 100px;
+  width: 10%;
+}
+
+.AddToOrder {
+  display: flex;
+padding: 8px 12px 8px 10px !important;
+justify-content: center;
+align-items: center;
+gap: 6px;
+border-radius: 100px !important;
+border: 1px solid #EEE;
+background: var(--Brand-Snow, #FFF);
+}
+
+.AddToOrderIcon {
+  display: flex;
+  width: 14px;
+height: 14px;
+opacity: 0.35;
+color:#020202
+}
+
+.AddToOrderText {
+  color: var(--Brand-Charcoal, var(--Brand-Charcoal, #020202));
+font-family: Inter;
+font-size: 12px;
+font-style: normal;
+font-weight: 600;
+line-height: 100%; /* 12px */
+letter-spacing: -0.24px;
+}
+
+.DeleteButton {
+  display: flex;
+width: 30px;
+height: 30px;
+padding: 5px !important;
+justify-content: center;
+align-items: center;
+gap: 4px;
+border-radius: 100px !important;
+border: 1px solid #EEE;
+background: var(--Brand-Snow, #FFF);
+}
+
+.DeleteIcon {
+  display: flex;
+  width: 14px;
+height: 14px;
+flex-shrink: 0;
+opacity: 0.35;
+color: #020202;
+}
+
+.DeleteButtonContainer {
+  display: flex;
+  min-width: 40px;
+  width: 4%;
+}
+
+.Pagination {
+  display: flex;
+padding: 32px 40px 40px 40px;
+justify-content: space-between;
+align-items: center;
+align-self: stretch;
+}
+
+.NumberOfElements {
+  color: var(--Brand-Charcoal, var(--Brand-Charcoal, #020202));
+font-family: Inter;
+font-size: 12px;
+font-style: normal;
+font-weight: 600;
+line-height: 120%; /* 14.4px */
+letter-spacing: -0.24px;
+opacity: 0.6;
+}
+
+.Pages {
+  display: flex;
+align-items: center;
+gap: 8px;
+}
+
+/* The end of table */
+
+.disabled {
+  display: none;
+}
+
+.PageList {
+  display: flex;
+align-items: center;
+gap: 8px;
+text-decoration: none;
+margin-bottom: 0;
+}
+
+.ActivePage {
+  display: flex;
+width: 30px;
+height: 30px;
+justify-content: center;
+align-items: center;
+border-radius: 100px;
+background: var(--Brand-Charcoal, #020202) !important;
+}
+
+.ActivePageText {
+  color: var(--Brand-Snow, var(--Brand-Snow, #FFF)) !important;
+}
+
+.NotActivePage {
+  display: flex;
+width: 30px;
+height: 30px;
+justify-content: center;
+align-items: center;
+border-radius: 100px;
+border: 1px solid #EEE;
+background: var(--Brand-Snow, #FFF);
+}
+
+.NotActivePageText {
+  color: var(--Brand-Charcoal, var(--Brand-Charcoal, #020202));
+text-align: center;
+font-family: Inter;
+font-size: 12px;
+font-style: normal;
+font-weight: 600;
+line-height: 100%; /* 12px */
+letter-spacing: -0.24px;
+text-decoration: none;
+}

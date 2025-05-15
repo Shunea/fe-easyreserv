@@ -1,0 +1,139 @@
+.file_upload {
+  position: relative;
+  width: 100%;
+  height: 62vh;
+  border: 1px solid #eeeeee;
+  background-color: #fafafa;
+  border-radius: 12px;
+  text-align: center;
+  padding: 0;
+}
+.input_file_upload {
+  display: none;
+}
+.drag_and_drop_content {
+  padding-top: 16vh;
+}
+.file_upload p {
+  margin-top: 6px;
+  font-size: 11px !important;
+  font-weight: 400 !important;
+  font-family: "Inter" !important;
+  font-style: normal !important;
+  color: #020202;
+  opacity: 0.4;
+  max-width: 100%;
+}
+.file_upload_icon {
+  width: 80px;
+  height: 80px;
+  background: rgba(254, 152, 0, 0.04);
+  /* border: 1.5px dashed rgba(254, 152, 0, 0.2); */
+  background-image: url("data:image/svg+xml,%3csvg width='100%25' height='100%25' xmlns='http://www.w3.org/2000/svg'%3e%3crect width='100%25' height='100%25' fill='none' rx='100' ry='100' stroke='rgba(254, 152, 0, 0.4)' strokeWidth='3' stroke-dasharray='7%25 17%25' stroke-dashoffset='3' strokeLinecap='round'/%3e%3c/svg%3e");
+  border-radius: 200px;
+  margin: 20px auto 20px auto;
+  transition: 0.5s;
+  cursor: pointer;
+}
+.file_upload_icon svg {
+  width: 30px;
+}
+.file_upload_icon i {
+  line-height: 72px;
+  color: #fe9800;
+}
+.drag_active {
+  height: 100%;
+  width: 100%;
+  background-color: #682727;
+  border-radius: 12px;
+  background: rgba(254, 152, 0, 0.1);
+  transition: 0.2s;
+  position: absolute;
+}
+.drag_active_form_upload,
+button.drag_active_button_upload {
+  border-color: rgba(254, 152, 0, 0.4);
+  transition: 0.2s;
+}
+.drag_active_file_upload_icon {
+  transition: 0.5s;
+  background-image: url("data:image/svg+xml,%3csvg width='100%25' height='100%25' xmlns='http://www.w3.org/2000/svg'%3e%3crect width='100%25' height='100%25' fill='none' rx='100' ry='100' stroke='rgba(254, 152, 0, 0.4)' strokeWidth='3' stroke-dasharray='' stroke-dashoffset='3' strokeLinecap='round'/%3e%3c/svg%3e");
+}
+.file_upload_icon:hover svg,
+.drag_active_file_upload_icon svg {
+  animation: flip_right 1.8s forwards;
+}
+.drag_leave_file_upload_icon svg {
+  animation: flip_left 1.8s forwards;
+}
+.drag_drop_file_drop_icon svg {
+  animation: beat 0.5s ease-out;
+}
+.upload_button {
+  cursor: pointer;
+  border-radius: 100px !important;
+  color: black;
+  padding: 0;
+  /* border: 1px solid #eeeeee; */
+  background-color: transparent;
+}
+.upload_button:hover {
+  background-color: transparent;
+  text-decoration-line: underline;
+}
+.drag_file_element {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  border-radius: 1rem;
+  top: 0px;
+  right: 0px;
+  bottom: 0px;
+  left: 0px;
+}
+.error {
+  color: #cc0000 !important;
+}
+@keyframes flip_right {
+  0% {
+    transform: perspective(2000px) rotateY(90deg) skewY(-3.5deg);
+  }
+  30% {
+    transform: perspective(2000px) rotateY(-25deg) skewY(-0.8deg);
+  }
+  50% {
+    transform: perspective(2000px) rotateY(20deg) skewY(0.8deg);
+  }
+  70% {
+    transform: perspective(2000px) rotateY(-10deg) skewY(-0.8deg);
+  }
+  100% {
+    transform: perspective(2000px) rotateY(0deg);
+  }
+}
+@keyframes flip_left {
+  0% {
+    transform: perspective(2000px) rotateY(90deg) skewY(-1deg);
+  }
+  30% {
+    transform: perspective(2000px) rotateY(-25deg) skewY(-0.8deg);
+  }
+  50% {
+    transform: perspective(2000px) rotateY(20deg) skewY(0.8deg);
+  }
+  70% {
+    transform: perspective(2000px) rotateY(-10deg) skewY(-0.8deg);
+  }
+  100% {
+    transform: perspective(2000px) rotateY(0deg);
+  }
+}
+@keyframes beat {
+  50% {
+    transform: scale(0.7);
+  }
+  100% {
+    transform: scale(1);
+  }
+}

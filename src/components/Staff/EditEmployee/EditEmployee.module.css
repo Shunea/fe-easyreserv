@@ -1,0 +1,507 @@
+.EditEmployeeModal {
+  display: inline-flex;
+  justify-content: flex-end;
+  align-items: center;
+  flex-shrink: 0;
+  background: rgba(0, 0, 0, 0.3);
+  backdrop-filter: blur(10px); 
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 99;
+  overflow: auto;
+}
+
+.EditEmployeeBox {
+  display: flex;
+  width: 735px;/*для расширения окна*/
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 24px;
+  background: var(--brand-snow, #fff);
+  box-shadow: 8px 8px 80px 0px rgba(0, 0, 0, 0.04);
+  height: 100vh; 
+  overflow-y: auto;   border-bottom-left-radius: 12px;
+  border-top-left-radius: 12px;
+}
+
+.BoxHead {
+  display: flex;
+  height: 80px;
+  padding: 24px 24px 0px 24px;
+  justify-content: space-between;
+  align-items: center;
+  align-self: stretch;
+}
+
+.BoxHeadTitle {
+  color: #020202;
+  font-family: Inter;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 120%;
+  letter-spacing: -0.48px;
+  margin-bottom: 0;
+}
+
+.BoxHeadButtonContainer {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+}
+
+.BoxHeadButton {
+  width: 28px;
+  height: 28px;
+  opacity: 0.3499999940395355;
+  padding: 0;
+  background-color: transparent;
+}
+
+.BoxHeadButton:hover {
+  background-color: transparent;
+}
+
+.BoxList {
+  display: flex;
+  padding: 0px 24px;
+  align-items: flex-start;
+  gap: 24px;
+  align-self: stretch;
+  border-bottom: 1px solid #eee;
+}
+
+.BoxListItem {
+  display: flex;
+padding: 0px 8px 22px 8px;
+justify-content: center;
+align-items: center;
+gap: 4px;
+cursor: pointer;
+color: var(--brand-charcoal, #020202);
+}
+
+.ActiveTab {
+  border-bottom: 2px solid var(--brand-sun, #fe9800);
+  color: var(--brand-sun, #fe9800);
+}
+
+.BoxListItemText {
+  margin-bottom: 0;
+font-family: Inter;
+font-size: 16px;
+font-style: normal;
+font-weight: 600;
+line-height: 100%;
+flex-direction: row;
+display: flex;
+gap: 4px
+}
+
+.BoxForm {
+  display: flex;
+  padding: 0px 24px;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 24px;
+  flex: 1 0 0;
+  align-self: stretch;
+}
+
+.BoxFormHead {
+  display: flex;
+  padding: 40px 0px;
+  flex-direction: column;
+  align-items: center;
+  gap: 24px;
+  align-self: stretch;
+  border-radius: 12px;
+  border: 1px solid #eee;
+  background: var(--brand-snow, #fff);
+}
+
+.BoxFormDrag {
+  padding: 21px 0 21px 0;
+}
+
+.BoxFormRow {
+  display: flex;
+  align-items: flex-start;
+  gap: 24px;
+  align-self: stretch;
+}
+
+.BoxFormInputContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 12px;
+  flex: 1 0 0;
+  align-self: stretch;
+}
+
+.label {
+  margin-bottom: 0;
+  display: flex;
+  flex-direction: column;
+  align-self: stretch;
+  color: var(--brand-charcoal, #020202);
+  font-family: Inter;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 100%;
+}
+
+.BoxFormInput {
+  display: flex;
+  height: 52px;
+  padding: 0px 16px;
+  align-items: center;
+  gap: 8px;
+  align-self: stretch;
+  border-radius: 12px;
+  border: 1px solid #eee;
+  background: var(--brand-snow, #fff);
+}
+
+.BoxFormInputContainer input {
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  color: var(--brand-charcoal, #020202);
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  font-family: Inter;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 100%;
+}
+
+.BoxFormAction {
+  display: flex;
+  padding: 0;
+  flex-direction: column;
+  align-items: flex-start;
+  align-self: stretch;
+  margin-top: auto;
+}
+
+.BoxFormSubmitButton {
+  display: flex;
+  padding: 16px 24px !important;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  align-self: stretch;
+  border-radius: 12px;
+  background: var(--brand-sun, #fe9800) !important;
+  position: inherit !important;
+  border: 0 !important;
+}
+
+.BoxFormSubmitButtonTitle {
+  color: var(--brand-snow, #fff);
+  text-align: center;
+  font-family: Inter;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 125%;
+  text-transform: none;
+}
+
+.customSelect {
+  color: var(--brand-charcoal, #020202);
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  font-family: Inter;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+}
+
+.EditEmployeeAccordion {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 12px;
+  align-self: stretch;
+  border: 0;
+  box-shadow: none !important;
+}
+
+.EditEmployeeAccordionSummary {
+  align-self: stretch;
+  margin: 0 !important;
+  min-height: fit-content !important;
+}
+
+.EditEmployeeAccordionSummaryText {
+  color: var(--brand-charcoal, #020202);
+  font-family: Inter !important;
+  font-size: 14px !important;
+  font-style: normal !important;
+  font-weight: 600 !important;
+  line-height: 100% !important; /* 14px */
+}
+
+.EditEmployeeAccordionDetails {
+  display: flex;
+  align-items: flex-start;
+  align-self: stretch;
+  border-radius: 12px;
+  border: 1px solid #eee;
+  background: var(--brand-snow, #fff);
+  padding: 0 !important;
+}
+
+.EditEmployeeCalendarList {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  align-self: stretch;
+  min-width: 335px;
+  background: var(--brand-clouds, #f6f6f6);
+  border-top-right-radius: 12px;
+  border-bottom-right-radius: 12px;
+}
+
+.CalendarPlaceholder {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  flex: 1 0 0;
+  align-self: stretch;
+  overflow: hidden;
+  color: var(--brand-charcoal, #020202);
+  text-align: center;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  font-family: Inter;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 100%; /* 16px */
+  opacity: 0.3499999940395355;
+}
+
+.EditEmployeeCalendar {
+  display: flex;
+  padding: 12px 8px;
+  flex-direction: column;
+  align-items: flex-start;
+  border-right: 1px solid #eee;
+  background: var(--brand-snow, #fff);
+  width: auto !important;
+  max-height: none !important;
+  height: 100%;
+  border-top-left-radius: 12px;
+  border-bottom-left-radius: 12px;
+}
+
+.dayWithoutSchedule {
+  opacity: 0.35;
+}
+
+.SelectedDate {
+  color: var(--brand-charcoal, #020202);
+  font-family: Inter;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 100%; /* 16px */
+  position: relative;
+  top: 20px;
+  left: 24px;
+  margin-bottom: 35px;
+}
+
+.NoScheduleAvaliable {
+  position: relative;
+  top: 35%;
+  display: flex;
+  justify-content: center;
+}
+
+.NoScheduleMessage {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  left: auto;
+  position: relative;
+  overflow: hidden;
+  color: var(--brand-charcoal, #020202);
+  text-align: center;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  font-family: Inter;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 100%; /* 16px */
+  opacity: 0.35;
+}
+
+.ScheduleCard {
+  width: 287px;
+  padding: 0;
+  border-radius: 12px !important;
+  background: var(--brand-snow, #fff);
+  box-shadow: 8px 8px 80px 0px rgba(0, 0, 0, 0.04) !important;
+  margin-top: 8px;
+  margin-left: 24px;
+}
+
+.ScheduleCardContent {
+  display: flex;
+  padding: 16px 16px 16px 20px !important;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.ScheduleInformation {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 8px;
+}
+
+.ScheduleInformationLabel {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 8px;
+}
+
+.EditSchedule {
+  opacity: 0.5;
+  font-size: 16px;
+  line-height: 100%; /* 16px */
+}
+
+.FloorInformation {
+  color: var(--brand-charcoal, #020202);
+  font-family: Inter;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 100%; /* 16px */
+}
+
+.ScheduleTime {
+  color: var(--brand-charcoal, #020202);
+  font-family: Inter;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 100%; /* 12px */
+  opacity: 0.3499999940395355;
+}
+
+.FloorIcon {
+  display: flex;
+  align-items: center;
+}
+
+.AddNewScheduleContainer {
+  margin-bottom: 20px;
+  margin-left: 24px;
+  margin-top: auto;
+}
+
+.AddNewSchedule {
+  display: flex;
+  width: 287px;
+  padding: 16px 24px !important;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  border-radius: 12px !important;
+  background: var(--brand-snow, #fff);
+  box-shadow: 8px 8px 80px 0px rgba(0, 0, 0, 0.04);
+}
+
+.AddNewScheduleText {
+  color: var(--brand-charcoal, #020202);
+  text-align: center;
+  font-family: Inter;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 125%; /* 20px */
+  text-transform: none;
+}
+
+.dayHolidayOrDayOff {
+  opacity: 0.35;
+}
+
+.dayHolidayOrDayOff::after {
+  display: none;
+}
+
+.HolidayOrDayOffContainer {
+  position: absolute;
+  top: 24%;
+  justify-content: center;
+  flex-direction: column;
+  opacity: 0.35;
+  display: flex;
+  width: 335px;
+  height: 248px;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.HolidayOrDayOffText {
+  overflow: hidden;
+  color: var(--brand-charcoal, #020202);
+  text-align: center;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  font-family: Inter;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 100%; /* 16px */
+}
+
+.DocumentLength {
+  display: flex;
+  padding: 2px 4px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 4px;
+  border-radius: 100px;
+background: #7C7C7C;
+}
+
+.DocumentLengthActive {
+  background: #FE9800
+}
+
+.DocumentLengthText {
+  color: var(--brand-snow, var(--brand-snow, #FFF));
+  font-family: Inter;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 100%; /* 12px */
+}
+
+.codeLabel {
+  opacity: 0.4;
+  font-size: 20px;
+  position: relative;
+  top: -1px;
+}
+
+
+
+

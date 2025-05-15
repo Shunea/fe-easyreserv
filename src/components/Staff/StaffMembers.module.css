@@ -1,0 +1,250 @@
+.StaffMembersHead {
+  display: flex;
+  width: 100%;
+  padding: 2px 8px 24px 8px;
+  align-items: center;
+  gap: 40px;
+}
+
+.StaffMembersHeading {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  flex: 1 0 0;
+  min-width: fit-content;
+}
+
+.StaffMembersHeadActions {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+}
+
+.StaffMembersContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 16px;
+}
+
+.RowsContainer {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+  grid-gap: 16px;
+  justify-content: center;
+}
+
+.StaffMembersGrid {
+  display: flex;
+  align-items: flex-start;
+  gap: 16px;
+  padding-bottom: 16px;
+  padding-left: 8px;
+}
+
+.EmployeeRow {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  justify-content: center;
+}
+
+.StaffMembersCardContent {
+  padding: 0 !important;
+}
+
+.StaffMembersWorker {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  align-self: stretch;
+  flex: 1 0 0;
+  border-radius: 12px !important;
+  border: 1px solid #eee;
+  background: var(--brand-snow, #fff);
+  box-shadow: none !important;
+  max-width: 205px;
+}
+
+.WorkerHead {
+  height: 140px;
+  align-self: stretch;
+  display: flex;
+  margin: 20px 42px 0 43px;
+}
+
+.WorkerContent {
+  display: flex;
+  padding: 20px 24px 24px 24px;
+  flex-direction: column;
+  align-items: flex-start;
+  align-self: stretch;
+}
+.EditWorkerButton {
+  display: flex;
+  width: 36px;
+  height: 36px;
+  padding: 8px !important;
+  justify-content: center;
+  align-items: center;
+  flex-shrink: 0;
+  border-radius: 100px !important;
+  margin-top: -24px;
+  /* Delete after editting button  */
+  background-color: transparent;
+  border: none;
+}
+
+.EditWorkerButton:hover {
+  background-color: transparent;
+}
+
+.EditWorkerButton:disabled {
+  background-color: transparent !important;
+}
+
+.EditWorkerIcon {
+  width: 20px;
+  height: 20px;
+  flex-shrink: 0;
+  opacity: 0.3499999940395355;
+}
+
+.StaffMembersEmployeeImage {
+  width: 120px;
+  height: 120px;
+  flex-shrink: 0;
+  border-radius: 200px;
+  object-fit: cover;
+}
+
+.WorkerContentTitle {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+  align-self: stretch;
+}
+
+.WorkerContentTitleTextContainer {
+  display: flex;
+  height: 20px;
+  flex-direction: column;
+  align-self: stretch;
+}
+.WorkerContentTitleText {
+  overflow: hidden;
+  color: var(--brand-charcoal, #020202);
+  text-align: center;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  font-family: Inter;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 110%;
+  margin-bottom: 0;
+}
+
+.WorkerTag {
+  display: flex;
+  padding: 5px 10px;
+  justify-content: center;
+  align-items: center;
+  gap: 6px;
+  border-radius: 12px;
+  background: rgba(78, 180, 255, 0.2);
+}
+
+.WorkerTagText {
+  margin-bottom: 0;
+  font-family: Inter;
+  font-size: 11px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 100%;
+}
+
+.EmployeeImageContainer {
+  position: relative;
+}
+
+.ScheduleIcon {
+  width: 12px;
+  height: 12px;
+  flex-shrink: 0;
+  stroke-width: 4px;
+  margin-left: 95px;
+  margin-top: -30px;
+}
+
+.NoSchedules {
+  background-color: #fe9800;
+  color: #232120;
+}
+
+.WaitingInvite {
+  background-color: rgba(78, 180, 255, 0.2);
+  color: #4eb4ff;
+}
+
+.WORKING {
+  background-color: #fff;
+  color: var(--brand-charcoal, #020202);
+  border: 1px solid #eee;
+}
+
+.HOLIDAY {
+  background-color: rgba(151, 71, 255, 0.2);
+  color: #9747ff !important;
+}
+
+.DAY_OFF {
+  background-color: rgba(255, 71, 71, 0.2);
+  color: #ff4747;
+}
+
+.TagIcon {
+  line-height: 14px;
+  height: 14px;
+}
+
+.TagIconImage {
+  vertical-align: 0;
+}
+
+.calendarButton {
+  display: flex;
+  padding: 16px 24px !important;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  border-radius: 12px !important;
+  border: 1px solid #eee !important;
+  background: var(--brand-snow, #fff) !important;
+  position: inherit !important;
+  height: 52px;
+  width: 230px;
+}
+
+.calendarButton:hover {
+  background-color: var(--brand-snow, #fff);
+  opacity: 1;
+  border: 1px solid #eee !important;
+}
+
+.calendarButtonText {
+  color: var(--brand-charcoal, var(--brand-charcoal, #020202));
+  text-align: center;
+  font-family: Inter;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 125%; /* 20px */
+  text-transform: none;
+  width: 150px;
+}

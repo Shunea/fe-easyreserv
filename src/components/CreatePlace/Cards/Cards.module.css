@@ -1,0 +1,102 @@
+.card_content {
+  margin-left: -4px;
+}
+
+.card {
+  border: 2px solid #fe9800 !important;
+  font-weight: 500 !important;
+  font-size: 16px !important;
+  text-align: center;
+  margin: 4px !important;
+  width: 14em !important;
+  height: 9em !important;
+  border-radius: 12px !important;
+}
+
+.card:hover {
+  background-color: rgba(254, 152, 0, 0.04);
+  transition: 2ms;
+  cursor: pointer;
+}
+
+.cardbody {
+  padding: 25px !important;
+}
+
+.cardtitle {
+  font-size: 14px !important;
+}
+
+.selectedcard {
+  background-color: rgba(254, 152, 0, 0.3) !important;
+}
+
+.cardicon svg {
+  width: 37.96px;
+  color: #fe9800 !important;
+}
+
+.unavailable.card {
+  background-color: #fcfcfcfc !important;
+  border-color: #eeeeee !important;
+  color: #020202 !important;
+}
+
+.unavailable.card:hover {
+  cursor: default;
+  background-color: #eeeeee !important;
+}
+
+.unavailable svg,
+.locked svg {
+  color: #020202 !important;
+  opacity: 0.2 !important;
+}
+
+.unavailable.cardtitle {
+  opacity: 0.35;
+}
+
+.locked {
+  position: absolute;
+  float: right;
+  top: -10px;
+  right: 11px;
+}
+
+.locked svg {
+  width: 14px;
+  opacity: 0.35 !important;
+}
+
+.card:last-child:hover {
+  background-color: #fcfcfcfc !important;
+}
+
+.button_container button {
+  margin-top: 20px;
+}
+
+@media (min-width: 1400px) {
+  .button_container {
+    display: flex;
+    gap: 30px;
+    position: absolute;
+    bottom: 40px;
+  }
+}
+
+@media (max-width: 576px) {
+  .card {
+    width: 80% !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
+  }
+
+  .button_container {
+    text-align: center;
+    position: relative;
+    bottom: none;
+    margin-top: 10px;
+  }
+}

@@ -1,0 +1,294 @@
+.label {
+  font-size: 14px;
+  font-weight: 600;
+  margin: 0;
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+
+.label span {
+  opacity: 0.35;
+}
+
+.place_name svg {
+  height: 20px;
+}
+
+.spaces_button a {
+  text-decoration: none !important;
+  color: #020202;
+}
+
+.spaces_cotainer {
+  width: 100%;
+  height: 62vh;
+  outline: 1px solid #eee;
+  border-radius: 12px 12px 0 0;
+  overflow: hidden;
+  overflow-y: scroll;
+}
+
+.spaces_button {
+  background-color: #fafafa;
+  height: 52px;
+  outline: 1px solid #eee;
+  border-radius: 0 0 12px 12px;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 10px;
+}
+
+.spaces_button:hover {
+  background-color: #eee;
+}
+
+.spaces_button:active {
+  background-color: #e3e3e3;
+}
+
+.spaces_button_content {
+  padding: 12px;
+}
+
+.spaces_button .plus_icon svg {
+  color: #fe9800;
+}
+
+.spaces_button p {
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+}
+
+.place_name p {
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 500;
+  padding: 9px;
+  margin: 0;
+}
+
+.place_name {
+  border-bottom: 1px solid #eee;
+}
+
+.place_name span svg {
+  width: 16px;
+  margin: -3px 7px 0 5px;
+  opacity: 0.35;
+}
+
+.info {
+  position: absolute;
+  background-color: #020202;
+  color: #fff;
+  width: 100px;
+  font-size: 8px;
+  text-align: center;
+  border-radius: 12px;
+  padding: 2px;
+  margin-top: -35px;
+  margin-left: 40px;
+  z-index: 2 !important;
+}
+
+.info_el {
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  background-color: #020202;
+  transform: rotate(45deg);
+  margin-top: -15px;
+  margin-left: 37px;
+  border-radius: 3px;
+  z-index: -1;
+}
+
+.duration_label svg:hover .info {
+  background-color: red !important;
+}
+
+.no_spaces {
+  padding-top: 31vh;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  opacity: 0.35;
+  text-align: center;
+}
+
+.duration_label {
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 600;
+}
+
+.duration_label p {
+  padding: 9px;
+  padding-left: 17px;
+  padding-right: 0;
+  margin: 0;
+}
+
+.duration_label svg {
+  cursor: pointer;
+}
+
+.duration_container {
+  padding-right: 0 !important;
+}
+
+.duration_container,
+.buttons_col {
+  background-image: linear-gradient(
+    180deg,
+    rgba(255, 255, 255, 1) 0%,
+    rgba(255, 255, 255, 1) 24%,
+    rgba(238, 238, 238, 1) 24%,
+    rgba(238, 238, 238, 1) 76%,
+    rgba(255, 255, 255, 1) 76%,
+    rgba(255, 255, 255, 1) 100%
+  );
+  background-size: 1px 100%;
+  background-repeat: no-repeat;
+}
+
+.select_container {
+  padding-left: 0 !important;
+}
+
+.duration_label svg {
+  margin-top: -2px;
+}
+
+.duration_label span {
+  opacity: 0.35;
+}
+
+.add_place_row {
+  height: 41px;
+  margin-bottom: 20px;
+}
+
+.add_place_col {
+  height: 41px;
+  border-bottom: 1px solid #eee;
+}
+
+.spaces_input {
+  margin-top: -5px;
+  outline: none !important;
+}
+
+.buttons_col {
+  display: inline-flex;
+  justify-content: center;
+  padding-left: 0;
+  padding-top: 5px;
+}
+
+.buttons_col div {
+  width: 30px;
+  height: 30px;
+  border-radius: 100%;
+  text-align: center;
+  display: grid;
+  place-items: center;
+}
+
+.buttons_col svg {
+  height: 16px;
+  width: 16px;
+}
+
+.deny_button {
+  border: 2px solid #eee;
+  margin-right: 4px;
+}
+
+.deny_button svg {
+  color: #020202;
+  opacity: 0.35;
+}
+
+.deny_button:hover {
+  background-color: #eee;
+}
+
+.deny_button:active {
+  background-color: #e1e1e1;
+}
+
+.accept_button {
+  background-color: #fe9800;
+  margin-left: 4px;
+}
+
+.accept_button:hover {
+  background-color: #f09000;
+}
+
+.accept_button:active {
+  background-color: #da8300;
+}
+
+.accept_button svg {
+  color: #fff;
+}
+
+.form_buttons {
+  padding-top: 40px;
+}
+
+.form_buttons button {
+  margin-right: 16px;
+}
+
+@media (max-width: 725px) {
+  .form_buttons {
+    padding-top: 0px;
+    text-align: center;
+  }
+
+  .form_buttons button {
+    margin-top: 10px;
+  }
+
+  .first_button {
+    margin-top: 20px;
+  }
+}
+
+@media (min-width: 1425px) {
+  .form_buttons {
+    position: absolute;
+    bottom: 40px;
+  }
+}
+
+@media (max-width: 576px) {
+  .form_buttons {
+    text-align: center;
+    position: relative;
+    bottom: none;
+    margin-top: 10px;
+  }
+}
+
+@media (max-width: 496px) {
+  .buttons_col {
+    width: 100%;
+  }
+}
+
+@media (max-width: 382px) {
+  .duration_label svg {
+    display: none;
+  }
+}
+
+@media only screen and (min-width: 992px) and (max-width: 1021px) {
+  .duration_label svg {
+    display: none;
+  }
+}

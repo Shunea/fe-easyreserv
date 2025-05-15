@@ -1,0 +1,12 @@
+.menu {
+  text-align: center;
+  padding: 150px;
+}
+
+.menu_title p {
+  opacity: 1 !important;
+}
+
+.menu_title {
+  padding: 30px 0 20px 0;
+}

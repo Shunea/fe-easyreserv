@@ -1,0 +1,402 @@
+.flexRow {
+  display: flex;
+  flex-direction: row;
+}
+.PlansContainer {
+  padding-top: 30px;
+  gap: 30px;
+  display: flex;
+  flex-direction: column;
+}
+.SubContainerHeader {
+  display: flex;
+  justify-content: space-between;
+}
+.SubContainer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
+  flex-shrink: 0;
+}
+
+.SubContainer p {
+  color: #000;
+  margin: 5px 14px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.switchesContainer {
+  width: 220px;
+  position: relative;
+  display: flex;
+  border: 1px solid #909090;
+  line-height: 3rem;
+  border-radius: 3rem;
+}
+.switchesContainer input {
+  visibility: hidden;
+  position: absolute;
+  top: 0;
+}
+.switchesContainer label {
+  width: 50%;
+  padding: 0;
+  margin: 0;
+  text-align: center;
+  cursor: pointer;
+  color: #909090;
+}
+.switchWrapper {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 50%;
+  padding: 0.15rem;
+  z-index: 3;
+  transition: transform 0.5s cubic-bezier(0.77, 0, 0.175, 1);
+}
+.switch {
+  border-radius: 3rem;
+
+  background: var(
+    --easy-container,
+    linear-gradient(
+      53deg,
+      rgba(254, 152, 0, 0.9) -49.31%,
+      rgba(254, 187, 1, 0.9) 156.71%
+    )
+  );
+  height: 100%;
+}
+
+.switch div {
+  width: 100%;
+  text-align: center;
+  opacity: 0;
+  display: block;
+  color: #fff; /* here */
+  transition: opacity 0.2s cubic-bezier(0.77, 0, 0.175, 1) 0.125s;
+  will-change: opacity;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+/* slide the switch box from right to left */
+.switchesContainer input:nth-of-type(1):checked ~ .switchWrapper {
+  transform: translateX(0%);
+}
+
+/* slide the switch box from left to right */
+.switchesContainer input:nth-of-type(2):checked ~ .switchWrapper {
+  transform: translateX(100%);
+}
+
+/* toggle the switch box labels - first checkbox:checked - show first switch div */
+.switchesContainer
+  input:nth-of-type(1):checked
+  ~ .switchWrapper
+  .switch
+  div:nth-of-type(1) {
+  opacity: 1;
+}
+
+/* toggle the switch box labels - second checkbox:checked - show second switch div */
+.switchesContainer
+  input:nth-of-type(2):checked
+  ~ .switchWrapper
+  .switch
+  div:nth-of-type(2) {
+  opacity: 1;
+}
+
+@media (min-width: 375px) and (max-width: 767px) {
+  .SubContainer {
+    margin-top: 0;
+    margin-right: 0;
+    padding: 0 16px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+    flex-shrink: 0;
+  }
+
+  .SubContainer p {
+    margin: 0;
+    width: 40%;
+    font-size: 13px;
+    color: #000;
+  }
+  .switchesContainer {
+    width: 210px;
+    height: 40px;
+  }
+  .switchesContainer label {
+    position: relative;
+    top: -5px;
+  }
+  .switch div {
+    top: -5px;
+  }
+}
+/* Subscription body */
+
+.SubscriptionBodyContainer {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+}
+.CardContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 300px !important;
+  height: auto;
+  flex-shrink: 0;
+  border-radius: 30px;
+  background: rgba(255, 255, 255, 0);
+}
+.CardContainerTop {
+  margin-top: 32px;
+}
+@media (min-width: 375px) and (max-width: 767px) {
+  .SubscriptionBodyContainer {
+    width: 390px;
+    padding: 0;
+  }
+  .CardContainer {
+    width: 350px !important;
+  }
+}
+
+.SubContainer p {
+  color: #000;
+}
+.MostPopular {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 308px;
+  height: 32px;
+  padding: 6px 8px;
+  flex-shrink: 0;
+  color: #fff;
+  border-radius: 30px 30px 0 0;
+  border: 2px solid #fe9800;
+  border-bottom: none;
+  background: var(
+    --easy-container,
+    linear-gradient(
+      53deg,
+      rgba(254, 152, 0, 0.9) -49.31%,
+      rgba(254, 187, 1, 0.9) 156.71%
+    )
+  );
+}
+.MostPopular p {
+  margin: 6px 10px;
+}
+
+.ProCard {
+  display: flex;
+  justify-content: flex-start;
+  border: 1px solid #e4e4e7;
+  flex-direction: column;
+  width: 308px;
+  height: 565px;
+  flex-shrink: 0;
+  background: #fff;
+  border-radius: 0 0 30px 30px;
+  border: 2px solid #fe9800;
+  border-top: none;
+}
+.OtherCard {
+  display: flex;
+  justify-content: flex-start;
+  border: 1px solid #e4e4e7;
+  flex-direction: column;
+  width: 308px;
+  height: 565px;
+  flex-shrink: 0;
+  background: #fff;
+  border-radius: 30px;
+}
+.OtherCard:hover {
+  box-shadow: -11px 12px 15px -3px rgba(254, 152, 0, 0.6);
+}
+.ProCard:hover {
+  box-shadow: -11px 12px 15px -3px rgba(254, 152, 0, 0.6);
+}
+.MostPopular.active {
+  border: 2px solid rgba(254, 152, 0, 0.4);
+  box-shadow: rgba(254, 152, 0, 0.4) 0px 0px 0px 2px, rgba(254, 152, 0, 0.65) 0px 4px 6px -1px, rgba(255, 255, 255, 0.08) 0px 1px 0px inset;
+  border-bottom: none !important;
+}
+.ProCard.active {
+  border: 2px solid rgba(254, 152, 0, 0.4);
+  box-shadow: rgba(254, 152, 0, 0.4) 0px 0px 0px 2px, rgba(254, 152, 0, 0.65) 0px 4px 6px -1px, rgba(255, 255, 255, 0.08) 0px 1px 0px inset;
+  border-top: none !important;
+}
+.OtherCard.active {
+  border: 2px solid rgba(254, 152, 0, 0.4);
+  box-shadow: rgba(254, 152, 0, 0.4) 0px 0px 0px 2px, rgba(254, 152, 0, 0.65) 0px 4px 6px -1px, rgba(255, 255, 255, 0.08) 0px 1px 0px inset;
+}
+.header {
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: column;
+  font-family: Inter;
+  font-size: 19px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 115%;
+  padding-left: 5px;
+}
+.header p:last-child {
+  font-family: Inter;
+  font-size: 13px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 125%;
+}
+.content {
+  display: flex;
+  flex-direction: column;
+  margin-top: 20px;
+  padding-left: 5px;
+}
+
+.content h1 {
+  margin: 0;
+  color: var(--black, #282828);
+  position: relative;
+  top: 5px;
+  font-family: Inter;
+  font-size: 31px;
+  font-style: normal;
+  font-weight: 700;
+  display: flex;
+  align-items: flex-end;
+}
+.content p:nth-child(2) {
+  font-family: Inter;
+  font-size: 11px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 115%;
+  padding-left: 4px;
+  display: flex;
+  align-items: flex-end;
+}
+.content button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 40px 25px;
+  width: 208px;
+  height: 63.278px;
+  padding: 12px 20px;
+  gap: 10px;
+  border-radius: 100px;
+  background: #fff;
+  color: #282828;
+  border: 1px solid var(--easy-button, #fe9800);
+}
+.content button:hover {
+  color: #fff;
+  background: var(
+    --easy-button,
+    linear-gradient(74deg, #fe9800 5.39%, rgba(254, 187, 1, 0.5) 118.97%)
+  );
+}
+.Saved {
+  margin-left: 15px;
+  margin-top: 12.5px;
+  display: flex;
+  width: fit-content;
+  height: 26px;
+  padding: 10px;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  flex-shrink: 0;
+  border-radius: 30px;
+  border: 0.5px solid #059143;
+  background: rgba(5, 145, 67, 0.3);
+}
+.Saved p {
+  margin: 6px 0;
+  color: var(--black, #282828);
+  text-align: center;
+  font-family: Inter;
+  font-size: 11px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 115%;
+}
+.CardInfo {
+  padding-left: 5px;
+  margin-bottom: 1rem;
+}
+.plusList {
+  list-style: none;
+  padding-left: 5px;
+  counter-reset: item;
+}
+
+.plusList li {
+  font-size: 13px;
+  position: relative;
+  margin-bottom: 19px;
+}
+
+.SubscriptionsCardFooter {
+  display: flex;
+  margin-top: -30px;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  color: #909090;
+}
+.SubscriptionsCardFooter p:nth-child(1) {
+  margin-top: 10px;
+  background: linear-gradient(90deg, #febb01 -0.66%, #fed601 99.83%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-size: 24px;
+}
+@media (min-width: 1720px) {
+  .CardContainer,
+  .ProCard,
+  .MostPopular,
+  .OtherCard {
+    width: 400px !important;
+  }
+  .content button {
+    margin: 40px 80px;
+    color: #282828;
+  }
+  .SubscriptionBodyContainer {
+    padding: 0;
+  }
+}
+@media (min-width: 1820px) {
+  .CardContainer,
+  .ProCard,
+  .MostPopular,
+  .OtherCard {
+    width: 420px !important;
+  }
+}
+.buttonContainer {
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+  gap:30px;
+}

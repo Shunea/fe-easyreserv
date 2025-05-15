@@ -1,0 +1,295 @@
+.StockTable {
+  display: flex;
+padding-top: 16px;
+flex-direction: column;
+align-items: flex-start;
+align-self: stretch;
+background: var(--Brand-Snow, #FFF);
+box-shadow: 8px 8px 80px 0px rgba(0, 0, 0, 0.04) inset;
+min-height: 775px;
+margin-left: -40px;
+margin-right: -40px;
+/* width: fit-content; */
+}
+.TableHead {
+  display: flex;
+  padding: 16px 40px;
+  align-items: flex-start;
+  gap: 40px;
+  align-self: stretch;
+  background: var(--brand-snow, #fff);
+  position: relative;
+}
+
+.TableHead::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: -40px;
+  width: 104%;
+  height: 1px;
+  background: #eee;
+}
+.HeaderItem {
+  color: var(--brand-charcoal, var(--brand-charcoal, #020202));
+  font-family: Inter;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 120%; /* 14.4px */
+  letter-spacing: -0.24px;
+}
+.SearchFieldContainer {
+  display: flex;
+  width: 220px;
+  align-items: flex-start;
+  gap: 4px;
+  flex-shrink: 0;
+}
+.SearchInput {
+  display: flex;
+  align-items: center;
+  gap: -2px;
+  flex: 1 0 0;
+  align-self: stretch;
+  overflow: hidden;
+  color: var(--brand-charcoal, var(--brand-charcoal, #020202));
+  text-overflow: ellipsis;
+  font-family: Inter;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 100%; /* 12px */
+  border: 0;
+  outline: none;
+  max-height: 14.4px;
+  max-width: 120px;
+}
+
+.SearchInput::placeholder {
+  overflow: hidden;
+  color: var(--brand-charcoal, var(--brand-charcoal, #020202));
+  text-overflow: ellipsis;
+  font-family: Inter;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 100%; /* 12px */
+  opacity: 0.35;
+}
+.HoveredHeaderItem {
+  display: flex;
+  width: 240px;
+  align-items: flex-start;
+  flex-shrink: 0;
+}
+.HoveredHeaderTextContainer {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+.HoveredHeaderText {
+  color: #020202;
+  font-family: Inter;
+  font-size: 12px !important;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 120%; /* 14.4px */
+  letter-spacing: -0.24px;
+  padding: 0px !important;
+  background-color: transparent !important;
+}
+.HoveredHeaderItemActions {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+.HoveredHeaderAction {
+  width: 12px;
+  height: 12px;
+  color: #020202;
+  padding: 0 !important;
+  background-color: transparent !important;
+}
+
+.NotHoveredHeaderItem {
+  color: var(--brand-charcoal, var(--brand-charcoal, #020202));
+  font-family: Inter;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 120%; /* 14.4px */
+  letter-spacing: -0.24px;
+  opacity: 0.35;
+}
+
+.ProductRow {
+  display: flex;
+  padding: 16px 40px;
+  align-items: center;
+  gap: 40px;
+  align-self: stretch;
+  position: relative;
+  border-bottom: 1px solid #EEE;
+}
+.Supplier {
+  display: flex;
+  min-width: 240px;
+  width: 27%;
+  align-items: flex-start;
+}
+.SupplierContainer {
+  display: flex;
+padding: 4px 10px 4px 4px;
+
+align-items: center;
+gap: 6px;
+
+}
+.ImageContainer {
+  display: flex;
+width: 20px;
+height: 20px;
+justify-content: center;
+align-items: center;
+}
+.SupplierImage {
+  width: 20px;
+height: 20px;
+flex-shrink: 0;
+border-radius: 100px;
+border: 1px solid #EEE;
+}
+.SupplierName {
+  display: flex;
+  align-items: center;
+  height: 20px;
+  color: var(--Brand-Charcoal, var(--Brand-Charcoal, #020202));
+font-family: Inter;
+font-size: 14px;
+font-style: normal;
+font-weight: 600;
+line-height: 100%; /* 14px */
+}
+.ProductStatusContainer {
+  display: flex;
+  min-width: 160px;
+  width: 18%;
+  flex-direction: row;
+align-items: center;
+gap: 4px;
+}
+.ProductStatusBackground {
+  display: flex;
+padding: 4px 8px;
+justify-content: center;
+align-items: center;
+gap: 4px;
+border-radius: 12px;
+
+}
+.ProductStatus {
+  font-family: Inter;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 120%; /* 14.4px */
+  }
+  .StockStatus {
+    display: flex;
+    min-width: 240px;
+    width: 27%;
+    align-items: center;
+  gap: 8px;
+  }
+  
+  .StockStatusText {
+  font-family: Inter;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 120%; /* 16.8px */
+  letter-spacing: -0.28px;
+  }
+  .ReorderLimit {
+    display: flex;
+    min-width: 100px;
+    width: 11%;
+    align-items: center;
+  gap: 8px;
+  }
+  .ReoderLimitText {
+    color: var(--Brand-Charcoal, var(--Brand-Charcoal, #020202));
+  font-family: Inter;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 120%; /* 16.8px */
+  letter-spacing: -0.28px;
+  opacity: 0.8;
+  }
+  .ProductCategory {
+    display: flex;
+    min-width: 160px;
+    width: 17%;
+    align-items: center;
+  gap: 4px;
+  }
+  
+  .ProductCategoryBackground {
+    display: flex;
+  padding: 4px 8px;
+  justify-content: center;
+  align-items: center;
+  gap: 4px;
+  border-radius: 12px;
+  }
+  
+  .ProductCategoryText {
+    color: var(--Brand-Charcoal, var(--Brand-Charcoal, #020202));
+  font-family: Inter;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 120%; /* 14.4px */
+  }
+
+  .HeaderItem:nth-of-type(1) {
+    min-width: 240px;
+    width: 27%;
+  }
+  .HeaderItem:nth-of-type(2) {
+    min-width: 160px;
+    width: 18%;
+  
+  }
+  
+  .HeaderItem:nth-of-type(3) {
+    min-width: 240px;
+    width: 27%;
+  
+  }
+  
+  .HeaderItem:nth-of-type(4) {
+    min-width: 100px;
+    width: 11%;
+  
+  }
+  
+  .HeaderItem:nth-of-type(5) {
+    min-width: 160px;
+    width: 17%;
+  
+  }
+
+  .NoLastOrder {
+    opacity: 0.35;
+  }
+
+  .Currency {
+    opacity: 0.35;
+    font-family: Inter;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 16.6px;
+  }

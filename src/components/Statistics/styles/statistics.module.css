@@ -1,0 +1,333 @@
+.StatisticsContainer {
+  display: flex;
+  flex-direction: column;
+}
+
+.Head {
+  display: flex;
+  width: 100%;
+  height: 94px;
+  padding: 20px 10px;
+  align-items: center;
+  gap: 40px;
+  flex-shrink: 0;
+  background: var(--brand-snow, #fff);
+  box-shadow: 8px 8px 80px 0px rgba(0, 0, 0, 0.04);
+}
+.Heading {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  flex: 1 0 0;
+}
+
+.CompanyTitle {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.CompanyName {
+  color: var(--brand-charcoal, var(--brand-charcoal, #020202));
+  font-family: Inter;
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 120%; /* 38.4px */
+  letter-spacing: -0.64px;
+}
+
+.CompanyStatus {
+  width: 16px;
+  height: 16px;
+  background-color: #4be248;
+  border-radius: 100px;
+}
+
+.CompanyAddress {
+  display: flex;
+  align-items: flex-start;
+  gap: 8px;
+}
+
+.CompanyAddressText {
+  color: var(--brand-charcoal, var(--brand-charcoal, #020202));
+  font-family: Inter;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 175%; /* 28px */
+  opacity: 0.4;
+}
+.HeadActions {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.Body {
+  display: flex;
+  padding: 40px 0;
+  gap: 24px;
+}
+.Main {
+  height: 708px;
+  display: flex;
+  flex-direction: column;
+  flex: 2.2;
+  gap: 24px;
+}
+
+.InfoCards {
+  height: 203px;
+  display: flex;
+  gap: 24px;
+}
+
+.IndicatorCard {
+  position: relative;
+  width: calc(25% - 12px);
+  display: flex;
+  padding: 20px 24px 24px 24px;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+  align-self: stretch;
+  border-radius: 20px;
+  aspect-ratio: 1/ 1;
+}
+
+.OcupancyRateCard {
+  display: flex;
+  padding: 20px 24px 24px 24px;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex: 1 0 0;
+  align-self: stretch;
+  border-radius: 12px;
+}
+
+.IconContainer {
+  display: flex;
+  padding-top: 4px;
+  align-items: flex-start;
+  gap: 4px;
+  position: relative;
+}
+
+.IconControl {
+  display: flex;
+  width: 36px;
+  height: 36px;
+  padding: 9.778px;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  background: var(--brand-snow, #fff);
+  box-shadow: 12px 12px 20px 0px rgba(116, 229, 114, 0.1),
+    2px 2px 12px 0px rgba(0, 0, 0, 0.05);
+}
+
+.Icon {
+  width: 44.444px;
+  flex-shrink: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.CardContent {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  width: 100%;
+  align-items: flex-start;
+}
+
+.ContentValue {
+  display: flex;
+  align-items: flex-start;
+
+  gap: 8px;
+}
+
+.ContentValueText {
+  font-family: Inter;
+  font-size: 36px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 120%; /* 57.6px */
+  letter-spacing: -1.92px;
+}
+
+.ContentLabel {
+  display: flex;
+  flex-direction: row;
+  justify-content: start;
+  align-items: flex-start;
+  width: 100%;
+}
+
+.ContentLabelText {
+  color: var(--brand-charcoal, var(--brand-charcoal, #020202));
+  font-family: Inter;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 120%; /* 16.8px */
+  letter-spacing: -0.28px;
+}
+
+.CurrencyLabel {
+  color: var(--brand-charcoal, var(--brand-charcoal, #020202));
+  font-feature-settings: "sups" on;
+  font-family: Inter;
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 150%; /* 48px */
+  letter-spacing: -1.28px;
+  opacity: 0.35;
+}
+
+.CardLinkIcon {
+  width: 20px;
+  height: 20px;
+  position: absolute;
+  right: 16px;
+  bottom: 16px;
+  opacity: 0.2;
+}
+
+.OccupancySection {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  background: rgba(255, 255, 255, 1);
+  border: 2px solid rgba(238, 238, 238, 1);
+  border-radius: 20px;
+}
+.OccupancyChart {
+  /* padding: 32px; */
+  /* height: 70%; */
+}
+.OccupancyHeader {
+  /* height: 112px; */
+  border-bottom: 2px solid rgba(238, 238, 238, 1);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 24px;
+}
+
+.Legend {
+  display: flex;
+  width: 126px;
+  font-size: 12px;
+  gap: 8px;
+}
+.Title {
+  font-weight: 600;
+  font-size: 20px;
+}
+.Actions {
+  display: flex;
+  gap: 8px;
+  height: 40px;
+  font-weight: 600;
+}
+
+.Sidebar {
+  flex: 1;
+  height: 708px;
+  display: flex;
+  gap: 24px;
+  flex-direction: column;
+}
+
+.TimeSection {
+  height: 358px;
+}
+.TimeHeader {
+  height: 64px;
+  border-bottom: 2px solid rgba(238, 238, 238, 1);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 24px;
+}
+
+.TableSection {
+  height: 346px;
+  border: 2px solid rgba(238, 238, 238, 1);
+  border-radius: 20px;
+}
+.TableChart {
+  height: 258px;
+}
+
+.TodayGain {
+  font-weight: 700;
+  font-size: 14px;
+}
+
+.NotificationButton button {
+  top: 0;
+  left: 0;
+}
+
+.NotificationButton {
+  display: flex;
+  width: 52px;
+  height: 52px;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  border-radius: 100px !important;
+  border: 1px solid #eee;
+  background: var(--brand-snow, #fff) !important;
+  position: relative;
+}
+
+.NotificationIcon {
+  width: 24px;
+  height: 24px;
+  flex-shrink: 0;
+  opacity: 0.5;
+}
+
+.NotificationDot {
+  width: 8px;
+  height: 8px;
+  position: absolute;
+  right: 17px;
+  top: 6px;
+  color: #f23636;
+  stroke-width: 2px;
+  stroke: var(--brand-snow, #fff);
+}
+.NotificationButton:hover {
+  background: none;
+  border: 1px solid rgba(254, 152, 0, 0.4);
+}
+
+.loader {
+  position: relative;
+  left: 0;
+  top: 40%;
+}
+
+
+.Popup{
+  background: black;
+  display: flex;
+  gap: 8px;
+  flex-direction: column;
+  width: 230px;
+  height: 85px;
+  border-radius: 12px;
+  padding: 15px 20px;
+  position: absolute;
+
+}

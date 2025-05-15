@@ -1,0 +1,125 @@
+.InvoiceRow {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 8px;
+  align-self: stretch;
+}
+.InvoiceItem {
+  display: flex;
+  padding: 0 16px;
+  align-items: center;
+  gap: 16px;
+  align-self: stretch;
+  border-radius: 12px;
+  border: 1px solid #eee;
+  background: var(--Brand-Snow, #fff);
+}
+
+.TitleContainer {
+  display: flex;
+  width: 120px;
+  align-items: center;
+  gap: 8px;
+}
+
+.DocumentIcon {
+  width: 20px;
+  height: 20px;
+  flex-shrink: 0;
+  display: flex;
+}
+
+.InputField {
+  display: flex;
+  height: 30px;
+  align-items: center;
+  gap: 8px;
+  align-self: stretch;
+  border: 0;
+  background: var(--Brand-Snow, #fff);
+  outline: none;
+}
+
+.Line {
+  width: 1px;
+  height: 32px;
+  background: #eee;
+}
+
+.SerialContainer {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  flex: 1 0 0;
+  width: 120px;
+}
+
+.SerialText {
+  min-width: fit-content;
+  color: var(--Brand-Charcoal, var(--Brand-Charcoal, #020202));
+  font-family: Inter;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 100%; /* 14px */
+  opacity: 0.35;
+}
+
+.TimeContainer {
+  /* display: flex;
+  align-items: flex-start;
+  gap: 4px;
+  flex: 1 0 0; */
+  /* height: 10px; */
+}
+
+.TimeText {
+  min-width: fit-content;
+  color: var(--Brand-Charcoal, var(--Brand-Charcoal, #020202));
+  font-family: Inter;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 100%;
+  opacity: 0.35;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+}
+
+.Download {
+  display: flex;
+  width: 108px;
+  height: 25px;
+  padding: 5px;
+  justify-content: center;
+  align-items: center;
+  gap: 4px;
+  border-radius: 100px !important;
+  border: 1px solid #eee;
+  background: var(--Brand-Snow, #fff);
+  color: #020202;
+}
+
+.Download:hover {
+  background-color: #fff;
+}
+.NotificationButton {
+  display: flex;
+  width: 25px;
+  height: 25px;
+  padding: 5px;
+  justify-content: center;
+  align-items: center;
+  gap: 4px;
+  border-radius: 100px;
+  border: 1px solid #eee;
+  background: var(--Brand-Snow, #fff);
+}
+
+.NotificationIcon svg{
+  width: 14px;
+  height: 14px;
+}

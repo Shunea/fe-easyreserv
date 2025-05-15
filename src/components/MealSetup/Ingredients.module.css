@@ -1,0 +1,146 @@
+.label {
+  color: var(--brand-charcoal, #020202);
+  font-family: Inter;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 100%;
+  padding: 0px 0px 12px 0px;
+}
+.ingredients_row,
+.total {
+  outline: 1px solid #eeeeee;
+
+  color: var(--brand-charcoal, #020202);
+}
+.ingredients_row p {
+  margin-top: 7px;
+  margin-bottom: 5px;
+  margin-left: 10px;
+}
+.total {
+  padding-top: 6px;
+  padding-bottom: 6px;
+  margin: 0px;
+  padding-right: 110px;
+  color: var(--brand-charcoal, #020202);
+  font-family: Inter;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 100%;
+}
+
+.ingredients_grams {
+  outline: 1px solid #eeeeee;
+  color: var(--brand-charcoal, #020202);
+  font-family: Inter;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 100%;
+  height: 40px;
+  display: flex; /* Use flexbox to align the items */
+  align-items: center; /* Center the items vertically */
+  justify-content: center;
+  padding: 0; /* Remove any padding inside the column */
+}
+
+.grams_input {
+  width: 100%; /* Full width of the parent container */
+  height: 100%; /* Full height of the parent container */
+  padding: 0; /* Remove any extra padding */
+  margin: 0; /* Remove any extra margin */
+  border: none; /* Remove any border to avoid extra spacing */
+  box-sizing: border-box; /* Include padding and border in the width and height */
+  font-family: Inter;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 100%;
+  text-align: center;
+  background-color: transparent; /* Match the background color with the parent */
+  outline: none; /* Remove the default outline to avoid extra spacing */
+}
+.btn_delete {
+  display: flex;
+  align-items: center; /* Center vertically */
+  justify-content: center; /* Center horizontally */
+}
+
+.delete_icon_wrapper {
+  display: flex;
+  width: 30px;
+  height: 30px;
+  padding: 5px;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  border-radius: 100px !important;
+  border: 1px solid #eee;
+  background: var(--brand-snow, #fff);
+  cursor: pointer;
+}
+
+.delete_icon_wrapper svg {
+  width: 100%; /* Full width of the wrapper */
+  height: 100%; /* Full height of the wrapper */
+  color: #f23636;
+}
+
+.ingredients_select {
+  padding: 0;
+  outline: 1px solid #eeeeee;
+  font-weight: 500;
+}
+
+.header {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+.button {
+padding: 10px;
+  border-radius: 12px;
+  outline: 1px solid #eeeeee;
+  justify-content: center;
+  font-size: 16px;
+  cursor: pointer;
+  color: var(--brand-charcoal, #020202);
+  font-size: 16px;
+  font-weight: 500;
+  width: 100%;
+}
+.button.clicked {
+  border-radius: 0 0 12px 12px;
+}
+.first_row {
+  border-radius: 12px 12px 0 0;
+  margin: auto;
+}
+.first_row .ingredients_select {
+  border-radius: 0 0 0 0;
+}
+
+.button::before {
+  content: "+";
+  color: #fe9800;
+  margin-right: 5px;
+}
+
+@media (max-width: 575px) {
+  .ingredients_name {
+    padding-top: 5px;
+    padding-bottom: 5px;
+  }
+  .first_row .ingredients_select {
+    border-radius: 0;
+  }
+}
+
+.ingredients_row {
+  display: flex;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  outline: 1px solid #eeeeee;
+}

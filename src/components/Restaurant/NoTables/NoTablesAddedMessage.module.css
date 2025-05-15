@@ -1,0 +1,92 @@
+.menu {
+  text-align: center;
+  border-radius: 12px;
+  background: #FCFCFC;
+  height: 80vh;
+}
+
+.menu .icon_container {
+  padding-top: 60px;
+}
+
+.menu_title p {
+  opacity: 1 !important;
+}
+
+.menu_title {
+  padding: 30px 0 20px 0;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: auto;
+  height: auto;
+}
+
+.header>div {
+  display: flex;
+  flex-direction: column;
+}
+
+.header>div>p:first-child {
+  font-size: 32px;
+}
+
+.header>div>p:last-child {
+  font-size: 16px;
+}
+
+.plus_icon svg {
+  color: #020202;
+  width: 17px !important;
+  opacity: 0.6;
+
+}
+
+.header_col {
+  max-width: 215px;
+}
+
+.header_second_col {
+  margin-top: 12px;
+  justify-content: flex-end;
+}
+
+button.button_header {
+  border-radius: 12px;
+  outline: 1px solid #EEE !important;
+  background: var(--brand-snow, #FFF);
+  display: flex;
+  width: 100%;
+  max-width: 191px;
+  height: 40px;
+  font-weight: 500;
+  font-size: 15px;
+  padding: 0px 16px;
+  align-items: center;
+  gap: 8px;
+  color: var(--brand-snow, silver);
+  box-shadow: 8px 8px 80px 0px rgba(0, 0, 0, 0.04);
+}
+
+.selectIcon {
+  position: absolute;
+  opacity: 0.35;
+  margin-left: 12px;
+  margin-top: 5px;
+}
+
+button.button_header:hover {
+  outline: 1px solid rgba(254, 152, 0, 0.4);
+
+}
+
+button.button_header:hover:active {
+  outline: 1px solid rgba(254, 152, 0, 0.4);
+}
+
+button.button_header:hover .plus_icon svg {
+  opacity: 1;
+}

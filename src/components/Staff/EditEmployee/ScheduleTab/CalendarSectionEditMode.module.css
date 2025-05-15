@@ -1,0 +1,212 @@
+.EditScheduleCard {
+  display: flex;
+  width: 287px;
+  flex-direction: column;
+  align-items: flex-start;
+  border-radius: 8px;
+  background: var(--brand-snow, #fff);
+  box-shadow: 8px 8px 80px 0px rgba(0, 0, 0, 0.04);
+}
+.CardHead {
+  display: flex;
+  padding: 12px;
+  justify-content: space-between;
+  align-items: center;
+  align-self: stretch;
+  border-bottom: 1px solid #eee;
+}
+.ScheduleHeadTitle {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+}
+
+.HeadTitle {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+.TurColor {
+  width: 12px;
+  height: 12px;
+  border-radius: 20px;
+}
+
+.BLUE {
+  background: linear-gradient(
+      270deg,
+      rgba(255, 255, 255, 0.2) 0%,
+      rgba(255, 255, 255, 0) 100%
+    ),
+    #36baf2;
+}
+.GREEN {
+  background: linear-gradient(
+      270deg,
+      rgba(255, 255, 255, 0.2) 0%,
+      rgba(255, 255, 255, 0) 100%
+    ),
+    #4be248;
+}
+
+.RED {
+  background: linear-gradient(
+      270deg,
+      rgba(255, 255, 255, 0.2) 0%,
+      rgba(255, 255, 255, 0) 100%
+    ),
+    #ff1a1a;
+}
+.YELLOW {
+  background: linear-gradient(
+      270deg,
+      rgba(255, 255, 255, 0.2) 0%,
+      rgba(255, 255, 255, 0) 100%
+    ),
+    #ffff00;
+}
+.GREY {
+  background: linear-gradient(
+      270deg,
+      rgba(255, 255, 255, 0.2) 0%,
+      rgba(255, 255, 255, 0) 100%
+    ),
+    #d1cccc;
+}
+.ORANGE {
+  background: linear-gradient(
+      270deg,
+      rgba(255, 255, 255, 0.2) 0%,
+      rgba(255, 255, 255, 0) 100%
+    ),
+    #ff9900;
+}
+.BLACK {
+  background: linear-gradient(
+      270deg,
+      rgba(255, 255, 255, 0.2) 0%,
+      rgba(255, 255, 255, 0) 100%
+    ),
+    #000000;
+}
+.HeadActions {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+.DiscardEdit {
+  display: flex;
+  width: 25px;
+  height: 25px;
+  padding: 5px;
+  justify-content: center;
+  align-items: center;
+  gap: 4px;
+  border-radius: 100px;
+  border: 1px solid #eee;
+  background: var(--brand-snow, #fff);
+  color: #020202;
+  opacity: 0.35;
+}
+.CardContent {
+  display: flex;
+  padding: 12px;
+  justify-content: space-between;
+  align-items: center;
+  align-self: stretch;
+}
+.lineIcon {
+  width: 12px;
+  height: 0px;
+  stroke-width: 1px;
+  stroke: #eee;
+}
+.ProposedTourEditMode {
+  display: flex;
+  padding: 12px;
+  justify-content: space-between;
+  align-items: center;
+  align-self: stretch;
+  border-radius: 0px 0px 8px 8px;
+  background: #f9e8ce;
+}
+.ProposedTourContent {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 4px;
+}
+.ProposedText {
+  color: var(--brand-charcoal, var(--brand-charcoal, #020202));
+  font-family: Inter;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 100%; /* 12px */
+  letter-spacing: -0.24px;
+  opacity: 0.35;
+}
+.ProposedTime {
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 1;
+  overflow: hidden;
+  color: var(--brand-charcoal, var(--brand-charcoal, #020202));
+  text-overflow: ellipsis;
+  font-family: Inter;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 100%; /* 12px */
+}
+.ProposedTourActions {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+.DeclinePropose {
+  display: flex;
+  width: 25px;
+  height: 25px;
+  padding: 5px;
+  justify-content: center;
+  align-items: center;
+  gap: 4px;
+  border-radius: 100px;
+  background: var(--brand-snow, #fff);
+}
+.AcceptPropose {
+  display: flex;
+  width: 25px;
+  height: 25px;
+  padding: 5px;
+  justify-content: center;
+  align-items: center;
+  gap: 4px;
+  border-radius: 100px;
+  background: var(--brand-sun, #fe9800);
+}
+.CancelEdit {
+  display: flex;
+  width: 287px;
+  padding: 16px 24px;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  border-radius: 12px;
+  background: var(--brand-snow, #fff);
+  box-shadow: 8px 8px 80px 0px rgba(0, 0, 0, 0.04);
+  margin-bottom: -4px;
+  margin-top: auto;
+}
+.CancelEditText {
+  color: var(--brand-charcoal, var(--brand-charcoal, #020202));
+  text-align: center;
+  font-family: Inter;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 125%; /* 20px */
+}

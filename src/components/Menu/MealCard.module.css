@@ -1,0 +1,151 @@
+.MealCard {
+  display: inline-flex;
+flex-direction: column;
+align-items: flex-start;
+border-radius: 12px;
+border: 1px solid #EEE;
+background: var(--brand-snow, #FFF);
+min-height: 410px;
+}
+
+.CardImageContainer {
+  width: 220px;
+height: 180px;
+position: relative;
+}
+
+.CardImage {
+  width: 220px;
+  height: 180px;
+flex-shrink: 0;
+background-color: lightgray;
+background-position: 50%;
+background-size: cover;
+background-repeat: no-repeat;
+border-top-right-radius: 12px;
+border-top-left-radius: 12px;
+}
+
+.CardContent {
+  display: flex;
+width: 220px;
+min-height: 130px;
+padding: 20px 24px 24px 24px;
+flex-direction: column;
+align-items: flex-start;
+}
+
+.ContentTitle {
+  display: flex;
+flex-direction: column;
+align-items: flex-start;
+gap: 8px;
+align-self: stretch;
+}
+
+.ContentTitleText {
+  height: 20px;
+align-self: stretch;
+overflow: hidden;
+color: var(--brand-charcoal, var(--brand-charcoal, #020202));
+text-overflow: ellipsis;
+white-space: nowrap;
+font-family: Inter;
+font-size: 20px;
+font-style: normal;
+font-weight: 600;
+line-height: 100%; /* 20px */
+}
+
+.ContentTitleIngridients {
+  color: var(--brand-charcoal, var(--brand-charcoal, #020202));
+font-family: Inter;
+font-size: 12px;
+font-style: normal;
+font-weight: 400;
+line-height: 175%; /* 21px */
+}
+.ContentFooter {
+  display: flex;
+padding: 16px 0px 20px 0px;
+align-items: flex-start;
+gap: 20px;
+align-self: stretch;
+}
+
+.ContentFooterPrice {
+  flex: 1 0 0;
+  color: var(--brand-sun, var(--brand-sun, #FE9800));
+font-family: Inter;
+font-size: 16px;
+font-style: normal;
+font-weight: 700;
+line-height: 100%; /* 16px */
+}
+
+.ContentFooterWeight {
+  flex: 1 0 0;
+  color: var(--brand-charcoal, var(--brand-charcoal, #020202));
+text-align: right;
+font-family: Inter;
+font-size: 16px;
+font-style: normal;
+font-weight: 500;
+line-height: 100%; /* 16px */
+opacity: 0.35;
+}
+
+.ContentActions {
+  display: flex;
+align-items: center;
+gap: 4px;
+align-self: stretch;
+}
+
+.ContentAction {
+  display: flex;
+height: 40px !important;
+padding: 10px 12px !important;
+justify-content: center;
+align-items: center;
+gap: 8px;
+flex: 1 0 0;
+border-radius: 12px;
+border: 1px solid #EEE;
+background: var(--brand-snow, #FFF) !important;
+}
+
+.ContentActionIcon {
+  width: 16px;
+height: 16px;
+color:#020202;
+display: flex;
+}
+
+.ContentActionText {
+  color: var(--brand-charcoal, var(--brand-charcoal, #020202));
+  text-align: center;
+  font-family: Inter;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 120%; /* 16.8px */
+}
+
+.DeleteButton {
+  display: flex;
+width: 30px !important;
+height: 30px !important;
+padding: 5px !important;
+justify-content: center;
+align-items: center;
+gap: 4px;
+position: absolute;
+right: 8px;
+top: 8px;
+border-radius: 100px !important;
+border: 1px solid #EEE;
+background: var(--brand-snow, #FFF) !important;
+color: #020202;
+opacity: 0.35;
+}

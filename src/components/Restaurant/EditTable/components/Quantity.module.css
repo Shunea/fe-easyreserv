@@ -1,0 +1,60 @@
+.Quantity {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 12px;
+  flex: 1 0 0;
+}
+
+.QuantityLabel {
+  align-self: stretch;
+  color: var(--brand-charcoal, var(--brand-charcoal, #020202));
+  font-family: Inter;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 100%; /* 14px */
+}
+
+.QuantityField {
+  display: flex;
+  height: 52px;
+  padding: 0px 16px;
+  align-items: center;
+  gap: 8px;
+  align-self: stretch;
+  border-radius: 12px;
+  border: 1px solid #eee;
+  background: var(--brand-snow, #fff);
+}
+
+.QuantityButton {
+  width: 20px;
+  height: 20px;
+  min-width: auto !important;
+  padding: 0 !important;
+  position: inherit !important;
+}
+
+.QuantityButton:disabled {
+  background-color: transparent !important;
+}
+
+.QuantityInput {
+  display: flex;
+  align-items: center;
+  flex: 1 0 0;
+  overflow: hidden;
+  color: var(--brand-charcoal, var(--brand-charcoal, #020202));
+  text-align: center;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  font-family: Inter;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 100%; /* 16px */
+  height: 16px;
+  border: 0;
+  width: 65.75px;
+}

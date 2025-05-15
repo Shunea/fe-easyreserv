@@ -1,0 +1,91 @@
+.label {
+  color: var(--brand-charcoal, #020202);
+  font-family: Inter;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 100%;
+  padding: 24px 0px;
+}
+.image_gallery_card {
+  width: 140px;
+  height: 160px;
+  border-radius: 12px;
+  padding: 0;
+  outline: 1px solid #eeeeee;
+  background-size: cover;
+  background-repeat: no-repeat;
+  margin: 4px;
+}
+.image_gallery_card:hover .delete_overlay {
+  display: flex;
+}
+.upload_gallery_card {
+  width: 140px;
+  height: 160px;
+  border-radius: 12px;
+  padding: 0;
+  margin: 4px;
+}
+.gallery {
+  padding-left: 12px;
+  max-height: 62vh;
+  overflow: hidden;
+  overflow-y: scroll;
+}
+.delete_overlay {
+  display: none;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(2, 2, 2, 0.2);
+  border-radius: 12px;
+  text-align: center;
+  justify-content: end;
+}
+.delete_icon {
+  cursor: pointer;
+  width: 30px;
+  height: 30px;
+  margin-top: 10px !important;
+  margin-right: 10px !important;
+  border-radius: 50px;
+  background-color: #fafafa;
+  text-align: center;
+  margin: auto auto;
+  position: sticky;
+}
+.delete_icon svg {
+  color: #f23636;
+}
+.imagesGallery {
+  position: relative; /* Makes the parent container a reference point for absolute positioning */
+}
+.form_buttons {
+  padding-top: 60px;
+}
+.form_buttons button {
+  margin-right: 16px;
+}
+
+@media (max-width: 725px) {
+  .form_buttons {
+    padding-top: 0px;
+    text-align: center;
+  }
+  .form_buttons button {
+    margin-top: 10px;
+  }
+}
+@media (min-width: 1425px) {
+  .form_buttons {
+    position: relative;
+    bottom: 40px;
+  }
+}
+@media (max-width: 576px) {
+  .form_buttons {
+    text-align: center;
+    position: relative;
+    margin-top: 10px;
+  }
+}

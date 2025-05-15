@@ -1,0 +1,60 @@
+.ScheduleRow {
+  display: flex;
+  align-items: flex-start;
+  gap: 24px;
+  align-self: stretch;
+}
+
+.QuantityGroup {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+  flex: 1 0 0;
+}
+
+.StartDate {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 12px;
+  flex: 1 0 0;
+}
+
+.StartDateLabel {
+  display: flex;
+  height: 16px;
+  align-items: center;
+  gap: 4px;
+  align-self: stretch;
+  margin-left: 5px;
+}
+
+.StartDateLabelText {
+  color: var(--brand-charcoal, var(--brand-charcoal, #020202));
+  font-family: Inter;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 100%; /* 14px */
+}
+
+.StartDatePicker {
+  border: 1px solid #eee;
+  background: var(--brand-snow, #fff);
+  border-radius: 12px;
+  height: 52px;
+  width: 100%;
+}
+
+.ScheduleTourLabel {
+  align-self: stretch;
+  color: var(--brand-charcoal, var(--brand-charcoal, #020202));
+  font-family: Inter;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 100%;
+  justify-content: center;
+  display: flex;
+  margin-bottom: auto;
+}

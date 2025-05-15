@@ -1,0 +1,493 @@
+.Modal {
+  display: inline-flex;
+  justify-content: flex-end;
+  align-items: center;
+  flex-shrink: 0;
+  background: rgba(0, 0, 0, 0.3);
+  backdrop-filter: blur(10px);
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 99;
+  overflow: auto;
+}
+
+.Box {
+  display: flex;
+  width: 735px;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 24px;
+  background: var(--brand-snow, #fff);
+  box-shadow: 8px 8px 80px 0px rgba(0, 0, 0, 0.04);
+  height: 100vh;
+  overflow-y: auto;
+  border-bottom-left-radius: 12px;
+  border-top-left-radius: 12px;
+}
+
+.BoxHead {
+  display: flex;
+  min-height: 80px;
+  padding: 24px 24px 0px 24px;
+  justify-content: space-between;
+  align-items: center;
+  align-self: stretch;
+}
+
+.BoxHeadTitle {
+  color: #020202;
+  font-family: Inter;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 120%;
+  letter-spacing: -0.48px;
+  margin-bottom: 0;
+}
+
+.BoxHeadButtonContainer {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+}
+
+.BoxHeadButton {
+  width: 28px;
+  height: 28px;
+  opacity: 0.3499999940395355;
+  padding: 0;
+  background-color: transparent;
+}
+
+.BoxHeadButton:hover {
+  background-color: transparent;
+}
+
+.BoxList {
+  display: flex;
+  padding: 0px 24px;
+  align-items: flex-start;
+  gap: 24px;
+  align-self: stretch;
+  border-bottom: 1px solid #eee;
+}
+
+.BoxListItem {
+  display: flex;
+  padding: 0px 8px 22px 8px;
+  justify-content: center;
+  align-items: center;
+  gap: 4px;
+  cursor: pointer;
+  color: var(--brand-charcoal, #020202);
+}
+
+.ActiveTab {
+  border-bottom: 2px solid var(--brand-sun, #fe9800);
+  color: var(--brand-sun, #fe9800);
+}
+
+.BoxListItemText {
+  margin-bottom: 0;
+  font-family: Inter;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 100%;
+  flex-direction: row;
+  display: flex;
+  gap: 4px;
+}
+
+.AddVacationHead {
+  display: flex;
+  padding: 24px 24px 0px 24px;
+  justify-content: space-between;
+  align-items: center;
+  align-self: stretch;
+}
+
+.HeadHeading {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.HeadActions {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+}
+
+.BackButton {
+  display: flex;
+  width: 40px;
+  height: 40px;
+  padding-right: 0px;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  border-radius: 100px !important;
+  border: 1px solid #eee;
+  padding: 0;
+  background-color: transparent;
+}
+.BackButton:hover {
+  background-color: #eee;
+}
+
+.LeftArrow {
+  width: 20px;
+  height: 20px;
+  flex-shrink: 0;
+  opacity: 0.5;
+}
+
+.HeadingTitle {
+  color: var(--brand-charcoal, var(--brand-charcoal, #020202));
+  font-family: Inter;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 120%; /* 28.8px */
+  letter-spacing: -0.48px;
+}
+
+.HeadActions {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+}
+
+.CloseButton {
+  width: 28px;
+  height: 28px;
+  opacity: 0.35;
+  background-color: transparent;
+  padding: 0;
+  display: flex;
+}
+.CloseButton:hover {
+  background-color: transparent;
+}
+.BoxForm {
+  padding: 24px;
+}
+.BoxFormContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 32px;
+  align-self: stretch;
+  background: var(--Brand-Snow, #fff);
+}
+.InputContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 12px;
+  flex: 1 0 0;
+}
+
+.BoxFormSection {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 16px;
+  align-self: stretch;
+}
+
+.BoxLine {
+  width: 687px;
+  height: 1px;
+  background: #eee;
+}
+
+.SectionTitle {
+  display: flex;
+  align-items: flex-start;
+  align-self: stretch;
+}
+
+.SectionTitleText {
+  color: var(--Brand-Charcoal, var(--Brand-Charcoal, #020202));
+  font-family: Inter;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 120%; /* 24px */
+}
+
+.SectionContent {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 32px;
+  align-self: stretch;
+}
+
+.SectionRow {
+  display: flex;
+  align-items: flex-start;
+  gap: 24px;
+  align-self: stretch;
+}
+
+.ontainer {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 12px;
+  flex: 1 0 0;
+}
+
+.InputLabelContainer {
+  display: flex;
+  height: 16px;
+  align-items: center;
+  gap: 4px;
+  align-self: stretch;
+}
+
+.InputLabel {
+  color: var(--Brand-Charcoal, var(--Brand-Charcoal, #020202));
+  font-family: Inter;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 100%; /* 14px */
+}
+
+.InputField {
+  display: flex;
+  height: 52px;
+  padding: 0px 16px;
+  align-items: center;
+  gap: 8px;
+  align-self: stretch;
+  border-radius: 12px;
+  border: 1px solid #eee;
+  background: var(--Brand-Snow, #fff);
+}
+
+select {
+  /* styling */
+  background-color: white;
+  border: thin solid blue;
+  border-radius: 4px;
+  display: inline-block;
+  font: inherit;
+  line-height: 1.5em;
+  padding: 0.5em 3.5em 0.5em 1em;
+
+  /* reset */
+
+  margin: 0;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+}
+
+select.InputField {
+  background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none"><g opacity="0.35"><path d="M4 7L10 13L16 7" stroke="%23020202" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></g></svg>');
+
+  background-position: calc(100% - 20px) calc(1em + 2px),
+    calc(100% - 15px) calc(1em + 2px), calc(100% - 2.5em) 0.5em;
+  background-size: 20px 20px, 20px 20px, 4px 6em;
+  background-repeat: no-repeat;
+}
+
+select.InputField:focus {
+  background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none"><g opacity="0.35"><path d="M4 13L10 7L16 13" stroke="%23020202" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></g></svg>');
+
+  background-position: calc(100% - 20px) calc(1em + 2px),
+    calc(100% - 15px) calc(1em + 2px), calc(100% - 2.5em) 0.5em;
+  background-size: 20px 20px, 20px 20px, 4px 6em;
+  background-repeat: no-repeat;
+  border-color: #fe9800;
+  outline: 0;
+}
+
+select:-moz-focusring {
+  color: transparent;
+  text-shadow: 0 0 0 #000;
+}
+
+option .SelectPlaceholder {
+  opacity: 0.35;
+}
+
+.InputField::placeholder,
+.SelectPlaceholder {
+  display: flex;
+  padding: 8px 0px;
+  align-items: center;
+  gap: 4px;
+  right: -0.5px;
+  top: -8px;
+  background: var(--Brand-Snow, #fff);
+  height: 16px;
+  flex: 1 0 0;
+  overflow: hidden;
+  color: var(--Brand-Charcoal, var(--Brand-Charcoal, #020202));
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  font-family: Inter;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 100%; /* 16px */
+  opacity: 0.35 !important;
+}
+
+.StartDatePicker {
+  border: 1px solid #eee;
+  background: var(--brand-snow, #fff);
+  border-radius: 12px;
+  height: 52px;
+}
+
+.StartDate {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 12px;
+  flex: 1 0 0;
+}
+
+.SupplierContent {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 12px;
+  align-self: stretch;
+}
+
+.SearchIcon {
+  position: absolute;
+  box-sizing: border-box;
+  top: 50%;
+  right: 16px;
+  transform: translateY(-50%);
+}
+
+.SupplierListContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: -1px;
+  align-self: stretch;
+  border-radius: 12px;
+  border: 1px solid #eee;
+  background: var(--Brand-Snow, #fff);
+}
+
+.SupplierList {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  align-self: stretch;
+}
+
+.SupplierRow {
+  display: flex;
+  padding: 12px 24px;
+  align-items: center;
+  gap: 16px;
+  align-self: stretch;
+  border-bottom: 1px solid #eee;
+  background: var(--Brand-Snow, #fff);
+}
+
+.SupplierNameContainer {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  flex: 1 0 0;
+}
+
+.SupplierImage {
+  width: 36px;
+  height: 36px;
+  border-radius: 200px;
+  border: 1px solid #eee;
+}
+
+.SupplierNameBox {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 4px;
+  flex: 1 0 0;
+}
+
+.SupplierName {
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 1;
+  overflow: hidden;
+  color: var(--Brand-Charcoal, var(--Brand-Charcoal, #020202));
+  text-overflow: ellipsis;
+  font-family: Inter;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 120%; /* 19.2px */
+  letter-spacing: -0.32px;
+}
+
+.AddSupplierButton {
+  display: flex;
+  padding: 16px 24px;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  align-self: stretch;
+  border-top: 1px solid #eee;
+  background: #fafafa;
+}
+
+.AddSupplierText {
+  color: var(--Brand-Charcoal, var(--Brand-Charcoal, #020202));
+  font-family: Inter;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 100%; /* 16px */
+}
+
+.BoxAction {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  align-self: stretch;
+  background: var(--Brand-Snow, #fff);
+}
+
+.SaveItemButton {
+  display: flex;
+  padding: 16px 24px;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  align-self: stretch;
+  border-radius: 12px;
+  background: var(--Brand-Sun, #fe9800);
+}
+
+.SaveItemText {
+  color: var(--Brand-Snow, var(--Brand-Snow, #fff));
+  text-align: center;
+  font-family: Inter;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 125%; /* 20px */
+}

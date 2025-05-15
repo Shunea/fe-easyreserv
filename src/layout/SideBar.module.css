@@ -1,0 +1,371 @@
+.sidebar {
+  position: fixed;
+  z-index: 4;
+  height: 100%;
+  width: 270px;
+  background-color: #020202;
+  transition: all 0.2s;
+}
+
+.sidebar ul {
+  padding: 0;
+}
+
+.main_icon svg {
+  width: 24px;
+}
+
+.business_logo {
+  width: 48px;
+  height: 48px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 100%;
+}
+
+.header_title {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  color: #fff;
+  font-size: 18px;
+  font-weight: 500;
+  padding: 20px;
+}
+
+.logout_button {
+  background: none;
+  border: none;
+  color: gray;
+  opacity: 0.7;
+  cursor: pointer;
+}
+
+.logout_button:hover {
+  color: #fff;
+  opacity: 1.5;
+  background: none;
+}
+
+.header_icon {
+  display: inline-block;
+  padding: 20px;
+}
+
+.sidebar ul {
+  list-style-type: none;
+}
+
+.soon_label {
+  position: absolute;
+  text-align: center;
+  margin-left: -8px;
+  margin-top: -11px;
+  color: #2c2c2c;
+  opacity: 1 !important;
+}
+
+.menu_item_label {
+  padding-left: 20px;
+  padding-top: 2px;
+}
+
+.main_icon,
+.menu_item_label {
+  opacity: 0.35;
+}
+
+.menu_item_container {
+  height: 60px;
+  width: 100%;
+  color: #fff;
+}
+
+.disabled {
+  pointer-events: none;
+}
+
+.link_active .main_icon,
+.link_active .menu_item_label,
+.menu_item_container:hover .main_icon,
+.menu_item_container:hover .menu_item_label {
+  opacity: 1;
+}
+
+.menu_item_icon {
+  position: sticky;
+  width: 80px;
+  text-align: center;
+  display: inline-flex;
+  padding-left: 28px;
+  padding-right: 28px;
+}
+
+.toggled_sidebar {
+  width: 80px;
+  transition: all 0.2s;
+}
+
+.sidebar_header {
+  overflow: hidden;
+  position: absolute;
+  left: 0;
+  right: 0;
+  height: 110px;
+  top: 0;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  border-bottom: 1px solid#2c2c2c;
+}
+
+.sidebar_menu {
+  padding-top: 20px;
+  overflow: hidden;
+  overflow-y: auto;
+  position: absolute;
+  top: 110px;
+  bottom: 80px;
+  width: 100%;
+}
+
+.sidebar_footer {
+  width: 100%;
+  height: 80px;
+  bottom: 0;
+  position: absolute;
+  left: 0;
+  right: 0;
+  color: #fff;
+  display: flex;
+  justify-content: flex-end;
+  border-top: 1px solid#2c2c2c;
+}
+
+.footer_icon {
+  opacity: 0.35;
+  cursor: pointer;
+  display: block;
+  height: 80px;
+  padding: 28px;
+}
+.footer_icon.rotate {
+  transform: rotate(-180deg);
+}
+
+.footer_icon:hover {
+  opacity: 0.7;
+}
+
+.header_arrow {
+  display: block;
+  width: 48px;
+  /* position: absolute; */
+  text-align: center;
+}
+
+.header_arrow svg {
+  color: rgba(255, 255, 255, 0.4);
+}
+
+.header_button_arrow {
+  padding: 0 !important;
+  background-color: transparent !important;
+  color: rgba(255, 255, 255, 0.4);
+}
+
+.RestaurantModal {
+  display: flex;
+  width: 360px;
+  height: 360px;
+  flex-direction: column;
+  align-items: flex-start;
+  border-radius: 20px;
+  box-shadow: 8px 8px 80px 0px rgba(0, 0, 0, 0.04);
+}
+
+.ModalHead {
+  display: flex;
+  padding: 24px 24px 16px 24px;
+  justify-content: space-between;
+  align-items: center;
+  align-self: stretch;
+  border-radius: 12px 12px 0px 0px;
+  border: 1px solid #eee;
+  background: var(--brand-snow, #fff);
+}
+
+.HeadTitle {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.HeadTitleText {
+  color: var(--brand-charcoal, var(--brand-charcoal, #020202));
+  font-family: Inter;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 120%; /* 24px */
+  letter-spacing: -0.4px;
+}
+
+.PlacesCount {
+  display: flex;
+  padding: 4px 6px;
+  justify-content: center;
+  align-items: center;
+  gap: 6px;
+  border-radius: 12px;
+  background: var(--brand-sun, #fe9800);
+}
+
+.PlacesCountText {
+  color: var(--brand-snow, var(--brand-snow, #fff));
+  font-family: Inter;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 800;
+  line-height: 100%; /* 12px */
+}
+
+.CreatePlaceButton {
+  display: flex;
+  padding: 8px 12px 8px 10px !important;
+  justify-content: center;
+  align-items: center;
+  gap: 6px;
+  border-radius: 100px !important;
+  border: 1px solid #eee;
+  background: var(--brand-snow, #fff);
+}
+
+.PlusIcon {
+  width: 14px;
+  height: 14px;
+  display: flex;
+  color: #020202;
+}
+
+.CreatePlaceText {
+  color: var(--brand-charcoal, var(--brand-charcoal, #020202));
+  font-family: Inter;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 100%; /* 12px */
+  letter-spacing: -0.24px;
+}
+
+.ModalContent {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  align-self: stretch;
+  border-radius: 0px 0px 12px 12px;
+  border-right: 1px solid #eee;
+  border-bottom: 1px solid #eee;
+  border-left: 1px solid #eee;
+  background: var(--brand-snow, #fff);
+}
+
+.ModalContentList {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  align-self: stretch;
+}
+
+.RestaurantRow {
+  display: flex;
+  padding: 12px 24px;
+  align-items: center;
+  gap: 8px;
+  align-self: stretch;
+  border-bottom: 1px solid #eee;
+  background: var(--brand-snow, #fff);
+}
+
+.SelectedRestaurant {
+  background: rgba(254, 152, 0, 0.05);
+}
+
+.RestaurantHead {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  flex: 1 0 0;
+}
+
+.checkedRestaurant {
+  width: 20px;
+  height: 20px;
+}
+
+.RestaurantImageContainer {
+  display: flex;
+  width: 48px;
+  height: 48px;
+  padding: 4px;
+  justify-content: center;
+  align-items: center;
+  border-radius: 100px;
+  border: 1px solid #eee;
+  background: var(--brand-snow, #fff);
+}
+
+.RestaurantImage {
+  width: 40px;
+  height: 40px;
+  flex-shrink: 0;
+  border-radius: 100px;
+}
+
+.RestaurantAvatar {
+  display: flex;
+  width: 48px;
+  height: 48px;
+  justify-content: center;
+  align-items: center;
+  border-radius: 100px;
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  background: var(--brand-clouds, #f6f6f6);
+}
+
+.RestaurantAvatarImage {
+  width: 48px;
+  height: 48px;
+  flex-shrink: 0;
+  border-radius: 100px;
+  border: 1px solid rgba(255, 255, 255, 0.12);
+}
+
+.RestaurantContent {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 4px;
+  flex: 1 0 0;
+}
+
+.RestaurantName {
+  color: var(--brand-charcoal, var(--brand-charcoal, #020202));
+  font-family: Inter;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 120%; /* 21.6px */
+  letter-spacing: -0.36px;
+}
+
+.RestaurantAddress {
+  color: var(--brand-charcoal, var(--brand-charcoal, #020202));
+  font-family: Inter;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 100%; /* 14px */
+  opacity: 0.6;
+}

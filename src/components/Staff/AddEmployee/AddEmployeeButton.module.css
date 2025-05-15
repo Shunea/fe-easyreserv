@@ -1,0 +1,32 @@
+.AddEmployeeButton {
+  display: flex;
+  padding: 16px 24px !important;
+  justify-content: center;
+  align-items: center;
+  /* gap: 8px; */
+  width: 190px;
+  position: inherit !important;
+  height: 52px;
+  border-radius: 12px;
+  background: var(--brand-sun, #fe9800) !important;
+  border: 0 !important;
+}
+
+.AddEmployeeButton:hover {
+  background-color: rgba(254, 152, 0, 1);
+  opacity: 1;
+  border: 0;
+}
+
+.AddEmployeeButtonText {
+  color: rgba(255, 255, 255, 1);
+  text-align: center;
+  font-family: 'Inter' !important;
+  font-size: 15px !important;
+  font-style: normal;
+  font-weight: 500 !important;
+  line-height: 125%;
+  /* 20px */
+  text-transform: none;
+  width: 150px;
+}

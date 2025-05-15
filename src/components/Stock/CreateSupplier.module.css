@@ -1,0 +1,229 @@
+.AddVacationHead {
+  display: flex;
+  padding: 24px;
+  justify-content: space-between;
+  align-items: center;
+  align-self: stretch;
+}
+
+.HeadHeading {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.HeadActions {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+}
+
+.BackButton {
+  display: flex;
+  width: 40px;
+  height: 40px;
+  padding-right: 0px;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  border-radius: 100px !important;
+  border: 1px solid #eee;
+  padding: 0;
+  background-color: transparent;
+}
+.BackButton:hover {
+  background-color: #eee;
+}
+
+.LeftArrow {
+  width: 20px;
+  height: 20px;
+  flex-shrink: 0;
+  opacity: 0.5;
+}
+
+.HeadingTitle {
+  color: var(--brand-charcoal, var(--brand-charcoal, #020202));
+  font-family: Inter;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 120%; /* 28.8px */
+  letter-spacing: -0.48px;
+}
+
+.HeadActions {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+}
+
+.CloseButton {
+  width: 28px;
+  height: 28px;
+  opacity: 0.35;
+  background-color: transparent;
+  padding: 0;
+  display: flex;
+}
+.CloseButton:hover {
+  background-color: transparent;
+}
+
+.BoxForm {
+  display: flex;
+padding: 24px;
+flex-direction: column;
+align-items: flex-start;
+gap: 32px;
+flex: 1 0 0;
+align-self: stretch;
+background: var(--Brand-Snow, #FFF);
+}
+
+.BoxFormSection {
+  display: flex;
+flex-direction: column;
+align-items: flex-start;
+gap: 16px;
+align-self: stretch;
+}
+
+.Line {
+  width: 687px;
+height: 1px;
+background: #EEE;
+}
+
+.SectionContent {
+  display: flex;
+flex-direction: column;
+align-items: flex-start;
+gap: 32px;
+align-self: stretch;
+}
+
+.SectionRow {
+  display: flex;
+align-items: flex-start;
+gap: 24px;
+align-self: stretch;
+}
+
+.InputContainer {
+  display: flex;
+flex-direction: column;
+align-items: flex-start;
+gap: 12px;
+flex: 1 0 0;
+}
+
+.InputLabelContainer {
+  display: flex;
+height: 16px;
+align-items: center;
+gap: 4px;
+align-self: stretch;
+}
+
+.InputLabel {
+  color: var(--Brand-Charcoal, var(--Brand-Charcoal, #020202));
+  font-family: Inter;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 100%; /* 14px */
+}
+
+.InputField {
+  display: flex;
+height: 52px;
+padding: 0px 16px;
+align-items: center;
+gap: 8px;
+align-self: stretch;
+border-radius: 12px;
+border: 1px solid #EEE;
+background: var(--Brand-Snow, #FFF);
+}
+
+.PhoneContainer {
+  width: 100%;
+  color: var(--brand-charcoal, #020202);
+  font-family: Inter !important;
+  font-size: 14px !important;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 100%;
+}
+
+.PhoneInput {
+  display: flex !important;
+  height: 52px !important;
+  align-items: center !important;
+  gap: 8px !important;
+  align-self: stretch !important;
+  border-radius: 12px !important;
+  border: 1px solid #eee !important;
+  background: var(--brand-snow, #fff) !important;
+  width: 100% !important;
+}
+
+.PhoneDropDown {
+  height: 180px;
+  border-radius: 12px !important;
+  width: 331.5px !important;
+  font-family: Inter !important;
+  font-size: 14px !important;
+}
+
+.PhoneButton {
+  background-color: #eee;
+}
+
+.Action {
+  display: flex;
+  padding: 0px 24px 24px 24px;
+flex-direction: column;
+align-items: flex-start;
+align-self: stretch;
+background: var(--Brand-Snow, #FFF);
+}
+
+.SaveButton {
+  display: flex;
+padding: 16px 24px;
+justify-content: center;
+align-items: center;
+gap: 8px;
+align-self: stretch;
+border-radius: 12px;
+background: var(--Brand-Sun, #FE9800);
+}
+
+.SaveText {
+  color: var(--Brand-Snow, var(--Brand-Snow, #FFF));
+text-align: center;
+font-family: Inter;
+font-size: 16px;
+font-style: normal;
+font-weight: 600;
+line-height: 125%; /* 20px */
+}
+
+.CheckBox {
+  width: 20px;
+height: 52px;
+background-color: var(--Brand-Snow, #FFF);
+stroke-width: 1px;
+stroke: #EEE;
+display: flex;
+padding: 0;
+justify-content: center;
+    align-items: center;
+}
+
+.CheckBox:hover {
+  background-color: var(--Brand-Snow, #FFF);
+
+}

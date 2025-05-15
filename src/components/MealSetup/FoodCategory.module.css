@@ -1,0 +1,133 @@
+.label {
+  color: var(--brand-charcoal, #020202);
+  font-family: Inter;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 100%;
+}
+.header {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 12px;
+}
+
+.meals ul {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 5px;
+  margin-top: 24px;
+  list-style: none;
+  padding: 2px;
+  margin: 0;
+}
+
+.meals li {
+  color: var(--brand-charcoal, #020202);
+  font-family: Inter;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 100%;
+  background-color: var(
+    --brand-white,
+    white
+  ); /* Set default background color to white */
+  border-radius: 8px;
+  padding: 6px;
+  cursor: pointer;
+  transition: background-color 0.1s, color 0.1s;
+  outline: 1px solid #eeeeee;
+}
+
+.meals li.selected {
+  background-color: var(
+    --brand-charcoal,
+    #020202
+  ); /* Set background color to black when selected */
+  color: var(--brand-white, white); /* Set text color to white when selected */
+}
+
+.meals li:hover {
+  background-color: var(--brand-charcoal, #020202);
+  color: var(--brand-white, white);
+}
+
+.createItem {
+  color: var(--brand-charcoal, var(--brand-charcoal, #020202));
+  font-family: Inter;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 100%;
+  background-color: var(--brand-white, white);
+  border-radius: 8px;
+  padding: 6px;
+  cursor: pointer;
+  transition: background-color 0.1s, color 0.1s;
+  outline: 1px solid #eeeeee;
+  opacity: 0.5;
+}
+
+.createItem:hover {
+  background-color: var(
+    --brand-charcoal,
+    #020202
+  ); /* Set background color to black on hover for the "+ Create" button */
+  color: var(
+    --brand-white,
+    white
+  ); /* Set text color to white on hover for the "+ Create" button */
+}
+
+.CreateMealButton {
+  position: static;
+  display: flex;
+padding: 16px 24px;
+justify-content: center;
+align-items: center;
+gap: 8px;
+border-radius: 12px !important;
+background: var(--brand-sun, #FE9800);
+width: auto;
+border: 0;
+}
+
+.CreateMealText {
+  color: var(--brand-snow, var(--brand-snow, #FFF));
+text-align: center;
+font-family: Inter;
+font-size: 16px;
+font-style: normal;
+font-weight: 600;
+line-height: 125%; /* 20px */
+}
+
+.BackButton {
+  position: static;
+
+  display: flex;
+padding: 16px 24px;
+justify-content: center;
+align-items: center;
+gap: 8px;
+border-radius: 12px !important;
+border: 1px solid #EEE;
+background: var(--brand-snow, #FFF) !important;
+}
+
+.BackButton:hover {
+  border: 1px solid #EEE;
+  background-color: #FE9800;
+}
+
+.BackButtonText {
+  color: var(--brand-charcoal, var(--brand-charcoal, #020202));
+text-align: center;
+font-family: Inter;
+font-size: 16px;
+font-style: normal;
+font-weight: 600;
+line-height: 125%; /* 20px */
+}

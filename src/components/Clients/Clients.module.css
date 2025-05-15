@@ -1,0 +1,238 @@
+.CommonClientsContainer {
+  position: relative;
+
+}
+
+@media screen and (min-width: 768px) {
+  .CommonClientsContainer {
+    height: calc(100vh + 140px);
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .CommonClientsContainer {
+    height: calc(100vh + 200px);
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  /* For screens 1280px and larger, subtract 40px */
+  .CommonClientsContainer {
+    height: calc(100vh - 40px);
+  }
+}
+
+
+.ClientsContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-bottom: 37px;
+  width: 100%;
+}
+.clients {
+  display: flex;
+  gap: 8px;
+  justify-content: center;
+  align-items: center;
+}
+
+.clients .container {
+  display: flex;
+  align-items: center;
+  border: 1px solid #eee;
+  background: var(--brand-snow, #fff);
+  border-radius: 12px;
+  padding: 8px 16px;
+}
+
+.nav-button {
+  background-color: transparent;
+  border: none;
+  color: #333;
+  font-size: 18px;
+  cursor: pointer;
+  outline: none;
+  padding: 0 10px;
+}
+
+.date {
+  color: var(--brand-charcoal, var(--brand-charcoal, #020202));
+  text-align: center;
+  font-family: Inter;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 100%; /* 16px */
+}
+
+.date_picker {
+  width: 100%;
+  max-width: 260px;
+  height: 52px;
+  border-radius: 12px;
+  border: none;
+  outline: 1px solid #eeeeee;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  user-select: none;
+  padding: 0 12px;
+  gap: 8px;
+}
+
+.DatePickerArrow {
+  width: 28px;
+  height: 28px;
+  cursor: pointer;
+}
+
+.date_picker .date_value {
+  display: flex;
+  width: 150px;
+  justify-content: center;
+  color: var(--brand-charcoal, var(--brand-charcoal, #020202));
+  text-align: center;
+  font-family: Inter;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 100%; /* 16px */
+}
+
+.date_picker svg {
+  opacity: 0.35;
+}
+
+.date_picker svg:hover {
+  opacity: 0.75;
+}
+
+.Pagination {
+  /* position: absolute; */
+  /* bottom: 0; */
+  display: flex;
+  padding: 32px 40px 40px 40px;
+  justify-content: center;
+  align-items: center;
+  align-self: stretch;
+  /* width: 100%; */
+}
+
+.NumberOfElements {
+  color: var(--Brand-Charcoal, var(--Brand-Charcoal, #020202));
+  font-family: Inter;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 120%; /* 14.4px */
+  letter-spacing: -0.24px;
+  opacity: 0.6;
+}
+
+.Pages {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+/* The end of table */
+
+.disabled {
+  display: none;
+}
+
+.PageList {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  text-decoration: none;
+  margin-bottom: 0;
+}
+
+.ActivePage {
+  display: flex;
+  width: 30px;
+  height: 30px;
+  justify-content: center;
+  align-items: center;
+  border-radius: 100px;
+  background: var(--Brand-Charcoal, #020202) !important;
+}
+
+.ActivePageText {
+  color: var(--Brand-Snow, var(--Brand-Snow, #fff)) !important;
+}
+
+.NotActivePage {
+  display: flex;
+  width: 30px;
+  height: 30px;
+  justify-content: center;
+  align-items: center;
+  border-radius: 100px;
+  border: 1px solid #eee;
+  background: var(--Brand-Snow, #fff);
+}
+
+.NotActivePageText {
+  color: var(--Brand-Charcoal, var(--Brand-Charcoal, #020202));
+  text-align: center;
+  font-family: Inter;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 100%; /* 12px */
+  letter-spacing: -0.24px;
+  text-decoration: none;
+}
+
+.exportWrapper {
+  position: relative;
+}
+
+.Export {
+  display: flex;
+  width: 150px;
+  align-items: center;
+  gap: 8px;
+  justify-content: center;
+  height: 52px;
+  border-radius: 12px;
+  border: none;
+  padding: 16px;
+  background-color: rgba(254, 152, 0, 1);
+  outline: 1px solid #eeeeee;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.exportMenu {
+  position: absolute;
+  top: 100%;
+  right: 0;
+  background: white;
+  border: 1px solid #eee;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  z-index: 1000;
+}
+
+.exportMenuItem {
+  padding: 12px 16px;
+  cursor: pointer;
+  white-space: nowrap;
+  transition: background 0.2s;
+}
+
+.exportMenuItem:hover {
+  background: #f5f5f5;
+}

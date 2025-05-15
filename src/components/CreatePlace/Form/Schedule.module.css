@@ -1,0 +1,121 @@
+.day {
+  line-height: 40px;
+  outline: 1px solid #eeeeee;
+}
+
+.day input {
+  margin: 13px 15px auto 15px;
+  box-shadow: none;
+}
+
+.label {
+  font-size: 14px;
+  font-weight: 600;
+  margin: 0;
+  margin-bottom: 5px;
+}
+
+.day input:checked {
+  background-color: #fe9800;
+  outline: none;
+  border: none;
+  box-shadow: none;
+}
+
+.day input:hover {
+  outline: 1px solid rgba(254, 152, 0, 0.4);
+}
+
+.day input:focus {
+  box-shadow: none;
+  border: 1px solid #eeeeee;
+}
+
+.schedule_row {
+  display: grid;
+  grid-template-columns: 50% auto;
+}
+
+.hours {
+  display: grid;
+  grid-template-columns: 50% 50%;
+}
+
+.schedule_row select {
+  border-radius: 0 !important;
+}
+
+.schedule_row select:disabled {
+  color: rgba(2, 2, 2, 0.4);
+}
+
+.corner_top_left {
+  border-radius: 12px 0 0 0 !important;
+}
+
+.bottom_row {
+  outline: 1px solid #eeeeee;
+  border-radius: 0 0 12px 12px;
+  display: grid;
+  grid-template-columns: 90% auto;
+}
+
+.toggle_label {
+  font-weight: 500;
+  font-size: 15px;
+  padding: 10px;
+  margin: 0;
+  padding-left: 15px;
+}
+
+.toggle input {
+  margin-top: 12px;
+  width: 34px !important;
+  height: 20px !important;
+}
+
+.toggle input:checked {
+  background-color: #fe9800;
+  border: none;
+}
+
+.toggle input:focus {
+  box-shadow: none;
+  border: none;
+  outline: 1px solid rgba(254, 152, 0, 0.4);
+  background-image: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='-4 -4 8 8'%3e%3ccircle r='3' fill='rgba(255,214,153,255)'/></svg>");
+}
+
+.toggle input:hover {
+  box-shadow: none;
+  border: none;
+  outline: 2px solid rgba(254, 152, 0, 0.2);
+}
+
+@media (max-width: 990px) {
+  .schedule {
+    padding-top: 40px;
+  }
+
+  .schedule_row {
+    display: grid;
+    grid-template-columns: auto;
+  }
+
+  .corner_top_left {
+    border-radius: 12px 12px 0 0 !important;
+  }
+
+  .corner_top_right select {
+    border-radius: 0 !important;
+  }
+
+  .bottom_row {
+    display: block;
+    text-align: center;
+  }
+
+  .toggle input {
+    margin-top: -5px;
+  }
+}

@@ -1,0 +1,544 @@
+.VacationContent {
+  display: flex;
+  padding: 0px 24px;
+  flex-direction: column;
+  align-items: flex-start;
+  flex: 1 0 0;
+  align-self: stretch;
+}
+
+.VacationRow {
+  display: flex;
+  align-items: flex-start;
+  gap: 24px;
+  align-self: stretch;
+}
+
+.VacationCard {
+  display: flex;
+  padding: 20px;
+  align-items: center;
+  gap: 16px;
+  flex: 1 0 0;
+  border-radius: 12px;
+  background: rgba(18, 102, 79, 0.1);
+}
+
+.VacationCardSick {
+  display: flex;
+  padding: 20px;
+  align-items: center;
+  gap: 16px;
+  flex: 1 0 0;
+  border-radius: 12px;
+  background: rgba(242, 54, 54, 0.2);
+}
+
+.VacationCardOff {
+  display: flex;
+  padding: 20px;
+  align-items: center;
+  gap: 16px;
+  flex: 1 0 0;
+  border-radius: 12px;
+  background: linear-gradient(
+      270deg,
+      rgba(255, 255, 255, 0.2) 0%,
+      rgba(255, 255, 255, 0) 100%
+    ),
+    rgba(54, 186, 242, 0.2);
+}
+
+.VacationIcon {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+
+.VacationIconContainerS,
+.VacationIconContainerH,
+.VacationIconContainerR {
+  display: flex;
+  width: 40px;
+  height: 40px;
+  padding: 9px;
+  justify-content: center;
+  align-items: center;
+  border-radius: 100px;
+  background: var(--brand-snow, #fff);
+  box-shadow: 8px 8px 20px 0px rgba(18, 102, 79, 0.1),
+    2px 2px 12px 0px rgba(0, 0, 0, 0.05);
+}
+
+.VacationIconContainerS {
+  color: #12664f;
+}
+
+.VacationIconContainerH {
+  color: #f23636;
+}
+
+.VacationIconContainerR {
+  color: #36baf2;
+}
+
+.VacationCardContent {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 2px;
+}
+
+.VacationValue {
+  color: var(--brand-charcoal, var(--brand-charcoal, #020202));
+  font-family: Inter;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 100%;
+  /* 24px */
+  letter-spacing: -0.96px;
+}
+
+.VacationLabel {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 8px;
+  color: var(--brand-charcoal, var(--brand-charcoal, #020202));
+  font-family: Inter;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 120%;
+  /* 14.4px */
+  letter-spacing: -0.24px;
+}
+
+.List {
+  display: flex;
+  padding-top: 32px;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 16px;
+  flex: 1 0 0;
+  align-self: stretch;
+}
+
+.Heading {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  align-self: stretch;
+  min-height: 37px;
+}
+
+.HeadingTitle {
+  color: var(--brand-charcoal, var(--brand-charcoal, #020202));
+  font-family: Inter;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 120%;
+  /* 24px */
+  letter-spacing: -0.4px;
+}
+
+.Export {
+  display: flex;
+  padding: 9px 16px;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  border-radius: 100px;
+  border: 1px solid #eee;
+  background: var(--brand-snow, #fff);
+}
+
+.ExportIcon {
+  width: 16px;
+  height: 16px;
+  color: #fe9800;
+}
+
+.ExportText {
+  color: var(--brand-charcoal, var(--brand-charcoal, #020202));
+  font-family: Inter;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 125%;
+  /* 17.5px */
+  letter-spacing: -0.28px;
+}
+
+.VacationContent svg {
+  vertical-align: super;
+}
+
+.VacationList {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 8px;
+  flex: 1 0 0;
+  align-self: stretch;
+  overflow-y: auto;
+  max-height: 345px;
+}
+
+.VacationItem {
+  display: flex;
+  align-items: flex-start;
+  gap: 16px;
+  align-self: stretch;
+  padding-right: 5px;
+}
+
+.VacationItemCard {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  flex: 1 0 0;
+  border-radius: 12px;
+  border: 1px solid #eee;
+  background: var(--brand-snow, #fff);
+}
+
+.CardHead {
+  display: flex;
+  padding: 12px;
+  justify-content: space-between;
+  align-items: center;
+  align-self: stretch;
+  border-bottom: 1px solid #eee;
+}
+
+.HeadTitle {
+  display: flex;
+  width: 366.5px;
+  align-items: center;
+  gap: 16px;
+}
+
+.TitleHeading {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 8px;
+}
+
+.VacationItemIcon {
+  color: #020202;
+  width: 16px;
+  height: 16px;
+  opacity: 0.35;
+}
+
+.VacationTitle,
+.VacationID {
+  color: var(--brand-charcoal, var(--brand-charcoal, #020202));
+  font-family: Inter;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 100%;
+  /* 16px */
+  color: rgba(2, 2, 2);
+  font-family: Inter;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 100%;
+}
+
+.VacationID {
+  opacity: 0.35;
+}
+
+.HeadActions {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+
+.HeadButton,
+.HeadNotificationButton {
+  display: flex;
+  width: 25px;
+  height: 25px;
+  padding: 5px;
+  justify-content: center;
+  align-items: center;
+  gap: 4px;
+  border-radius: 100px;
+  border: 1px solid #eee;
+  background: var(--brand-snow, #fff);
+}
+
+.HeadButtonIcon {
+  width: 14px;
+  height: 14px;
+  flex-shrink: 0;
+  opacity: 0.35;
+  color: #020202;
+}
+
+.CardContent {
+  display: flex;
+  padding: 12px;
+  justify-content: space-between;
+  align-items: center;
+  align-self: stretch;
+  max-height: 57.3px;
+}
+
+.CardContentForm {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.CardContentFormItem {
+  display: flex;
+  padding: 8px 8px 8px 12px;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  border-radius: 8px;
+  border: 1px solid #eee;
+  background: var(--brand-snow, #fff);
+  box-shadow: 0px 0px 0px 0px rgba(0, 0, 0, 0.02),
+    0px 1px 1px 0px rgba(0, 0, 0, 0.02), 0px 2px 2px 0px rgba(0, 0, 0, 0.02),
+    0px 5px 3px 0px rgba(0, 0, 0, 0.01), 0px 9px 4px 0px rgba(0, 0, 0, 0),
+    0px 15px 4px 0px rgba(0, 0, 0, 0);
+}
+
+.Line {
+  width: 12px;
+  height: 0px;
+  stroke-width: 1px;
+  stroke: #eee;
+}
+
+.VacationAction {
+  display: flex;
+  align-items: flex-start;
+  gap: 24px;
+  align-self: stretch;
+  margin-bottom: 24px;
+  margin-top: auto;
+}
+
+.VacationButton {
+  display: flex;
+  padding: 16px 24px;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  flex: 1 0 0;
+  border-radius: 12px;
+  background: var(--brand-sun, #fe9800) !important;
+}
+
+.plusIcon {
+  width: 20px;
+  height: 20px;
+  color: white;
+}
+
+.VacationButtonText {
+  color: var(--brand-snow, var(--brand-snow, #fff));
+  text-align: center;
+  font-family: Inter;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 125%;
+  /* 20px */
+}
+
+.CheckboxContainer {
+  display: flex;
+  padding: 14px 0px;
+  align-items: flex-start;
+  gap: 4px;
+}
+
+.CheckboxLabel {
+  display: inline-block;
+  position: relative;
+}
+
+.HiddenCheckbox {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+}
+
+.Checkbox {
+  width: 20px;
+  height: 20px;
+  border: 1px solid #eee;
+  /* Add border to the custom checkbox */
+  background-color: #fff;
+  /* Default background color */
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+.Checked {
+  background-color: #fe9800;
+  /* Orange background color */
+}
+
+.Checkmark {
+  color: #fff;
+  font-size: 14px;
+  line-height: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+.VacationCancelButton {
+  display: flex;
+  padding: 16px 24px;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  flex: 1 0 0;
+  border-radius: 12px;
+  border: 1px solid #eee;
+  background: var(--brand-snow, #fff);
+}
+
+.CancelButtonText {
+  color: var(--brand-charcoal, var(--brand-charcoal, #020202));
+  text-align: center;
+  font-family: Inter;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 125%;
+  /* 20px */
+}
+
+.VacationExportButton {
+  display: flex;
+  padding: 16px 24px;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  flex: 1 0 0;
+  border-radius: 12px;
+  background: var(--brand-sun, #fe9800);
+}
+
+.exportIcon {
+  width: 20px;
+  height: 20px;
+}
+
+.ExportToPDFText {
+  color: var(--brand-snow, var(--brand-snow, #fff));
+  text-align: center;
+  font-family: Inter;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 125%;
+  /* 20px */
+}
+
+.withdraw {
+  background-color: #020202 !important;
+}
+
+.withdraw:hover {
+  background-color: #020202 !important;
+}
+
+.withdrawIcon {
+  color: white;
+  opacity: 1;
+}
+
+.WithdrawModal {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 8px;
+  position: relative;
+  border-radius: 12px;
+  border: 1px solid #eee;
+  background: var(--brand-snow, #fff);
+  box-shadow: 8px 8px 80px 0px rgba(0, 0, 0, 0.04);
+  top: -10px;
+}
+
+.ModalContent {
+  display: flex;
+  padding: 8px 12px;
+  align-items: flex-start;
+  gap: 16px;
+  border-radius: 12px;
+  background: var(--brand-snow, #fff);
+}
+
+.Arrow {
+  width: 12px;
+  height: 12px;
+  transform: rotate(-90deg);
+  position: absolute;
+  right: 35px;
+  top: -5px;
+  fill: var(--brand-snow, #fff);
+  stroke-width: 1px;
+  stroke: #eee;
+}
+
+.ModalText {
+  color: var(--brand-charcoal, var(--brand-charcoal, #020202));
+  font-family: Inter;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 120%;
+  /* 14.4px */
+  letter-spacing: -0.24px;
+  max-width: 170px;
+}
+
+.ModalActions {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+
+.ModalDeclineButton {
+  display: flex;
+  width: 25px;
+  height: 25px;
+  padding: 5px;
+  justify-content: center;
+  align-items: center;
+  gap: 4px;
+  border-radius: 100px;
+  border: 1px solid #eee;
+  background: var(--brand-snow, #fff);
+}
+
+.ModalAcceptButton {
+  display: flex;
+  width: 25px;
+  height: 25px;
+  padding: 5px;
+  justify-content: center;
+  align-items: center;
+  gap: 4px;
+  border-radius: 100px;
+  background: var(--brand-sun, #fe9800) !important;
+}

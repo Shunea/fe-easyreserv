@@ -1,0 +1,151 @@
+.Container {
+  display: flex;
+  flex-direction: row;
+  margin-left: 80px;
+  height: 100vh;
+}
+.Content {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+}
+.Profile {
+  display: flex;
+  width: 280px;
+  flex-direction: column;
+  align-items: flex-start;
+  flex-shrink: 0;
+  border-right: 1px solid #eee;
+  background: var(--brand-snow, #fff);
+}
+.ProfileHeader {
+  border-bottom: rgba(0, 0, 0, 0.02);
+  display: flex;
+  padding: 40px 24px 0;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  align-self: stretch;
+}
+
+.ProfileImage {
+  border-radius: 200px;
+  flex-shrink: 0;
+  width: 120px;
+  height: 120px;
+  border: 1px solid rgba(0, 0, 0, 0.02);
+  background: lightgray 50% / cover no-repeat;
+}
+.AddButton {
+  position: absolute;
+  top: 0;
+  right: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: none;
+  border: none;
+  width: 1px;
+  height: 1px;
+  cursor: pointer;
+}
+.AddButton:hover {
+  background: none;
+}
+
+.ProfileContent {
+  display: flex;
+  height: 96px;
+  padding: 20px 24px 24px 24px;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+  align-self: stretch;
+}
+.ProfileContent h1 {
+  color: var(--brand-charcoal, var(--brand-charcoal, #020202));
+  text-align: center;
+  text-overflow: ellipsis;
+  font-family: Inter;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 100%;
+}
+.ProfileContent p {
+  width: 100px;
+  display: flex;
+  padding: 6px 10px;
+  justify-content: center;
+  align-items: center;
+  gap: 6px;
+  border-radius: 12px;
+  background: rgba(151, 71, 255, 0.2);
+  color: #9747ff;
+  font-family: Inter;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 100%; /* 12px */
+}
+
+.ProfileMenu {
+  display: flex;
+  padding: 8px 12px;
+  height: 626px;
+  flex-direction: column;
+  align-items: flex-start;
+  flex: 1 0 0;
+  align-self: stretch;
+}
+.ProfileList {
+  height: 566px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  flex: 1 0 0;
+  align-self: stretch;
+}
+.ProfileListItem {
+  display: flex;
+  padding: 12px 12px 12px 8px;
+  align-items: center;
+  gap: 10px;
+  align-self: stretch;
+}
+.ProfileListItem.Active {
+  background: rgba(254, 152, 0, 0.1);
+  color: #fe9800;
+}
+.ProfileListItem:nth-child(1).Active svg path,
+.ProfileListItem:nth-child(3).Active svg path,
+.ProfileListItem:nth-child(4).Active svg path {
+  stroke: #fe9800;
+}
+.ProfileListItem:nth-child(2).Active svg path {
+  fill: #fe9800;
+}
+.ProfileListItem.Active svg g {
+  opacity: 1;
+}
+.ProfileLogOut {
+  cursor: pointer;
+  display: flex;
+  padding: 12px 12px 12px 8px;
+  gap: 10px;
+  height: 44px;
+  align-self: stretch;
+  color: #f23636;
+  font-family: Inter;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 100%;
+}
+
+.SaveButton {
+  padding: 12px 28px;
+  border-radius: 100px !important;
+  width: 156.49px;
+  margin-top: 8px;
+}

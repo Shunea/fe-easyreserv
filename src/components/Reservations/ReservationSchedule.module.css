@@ -1,0 +1,188 @@
+.apptContent {
+  border-radius: 12px;
+  border: 1px solid #eee;
+  background: #fff;
+}
+
+.appointment_card {
+  display: flex;
+  flex-direction: column;
+  border-radius: 12px !important;
+  height: 100%;
+  border: 1px solid #eee;
+  background: #fff;
+  color: #fff;
+  font-family: "Inter" !important;
+}
+
+.appointment_card:hover {
+  cursor: pointer;
+}
+
+.appointment {
+  background-color: transparent !important;
+  outline: none;
+  width: 98% !important;
+  box-shadow: 0px 0px 17px 1px rgba(0, 0, 0, 0.15);
+  border-radius: 12px !important;
+  margin-left: 8px !important;
+  border: none !important;
+}
+
+.scheduler_layout {
+  background-color: #fafafa !important;
+}
+
+.client_name {
+  font-weight: 700;
+  font-size: 13px;
+}
+
+.client_details {
+  font-family: "Inter";
+  margin-left: 20px;
+}
+.Logo_RestaurantName {
+  display: flex;
+  gap: 8px;
+}
+.rating_icon svg {
+  width: 12px;
+  margin-top: -3px;
+  margin-left: 9px;
+}
+
+.seats_icon svg {
+  width: 12px;
+  opacity: 0.5;
+  margin-right: 5px;
+  margin-top: -2px;
+}
+
+.guest_rating {
+  font-size: 12px;
+  margin-top: -2px;
+}
+
+.left_side {
+  float: left;
+  padding: 16px;
+  display: flex;
+  flex-direction: row;
+}
+.TooltipContainer {
+  display: flex;
+  gap: 8px;
+}
+
+.right_side {
+  float: right;
+}
+
+.order {
+  border: 1.5px solid #eee;
+  width: 22px;
+  height: 22px;
+  border-radius: 100%;
+  text-align: center;
+}
+
+.status {
+  width: 22px;
+  height: 22px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 100%;
+  color: #fff;
+}
+
+.status svg {
+  margin-top: 1px;
+}
+
+.order svg {
+  width: 14px;
+  margin-top: -2px;
+}
+
+.reservation_icons {
+  display: inline-flex;
+  padding-top: 13px;
+  padding-right: 13px;
+}
+
+.reservation_icons .avatar_icon {
+  margin: 0;
+  margin-left: 8px;
+  margin-right: 8px;
+}
+.ClientImage {
+  width: 32px;
+  height: 32px;
+  border-radius: 100px;
+  object-fit: cover;
+}
+.avatar_icon {
+  /* position: absolute; */
+  /* z-index: 3; */
+  border: 1px solid #a0a0a0;
+  width: 22px;
+  height: 22px;
+  display: inline-block;
+  margin-right: 6px;
+  border-radius: 100%;
+  background-size: cover;
+  text-align: center;
+  cursor: pointer;
+  transition: 0.2s ease-in-out;
+  margin: 13px;
+}
+
+.avatar_icon svg {
+  width: 18px;
+  margin-top: -4px;
+  color: #a0a0a0;
+}
+
+/* .avatar_icon:hover {
+  transform: scale(2);
+  transition: 0.5s ease-in-out;
+} */
+
+.pending {
+  background-color: #edbe39;
+}
+
+.confirmed {
+  background-color: #24c56e;
+}
+
+.rejected {
+  background-color: #30cdcd;
+}
+
+.awaiting_payment {
+  background-color: #36baf2;
+}
+
+.canceled {
+  background-color: #fc4747;
+}
+
+.closed {
+  background-color: #36baf2;
+}
+
+.dishonored {
+  background-color: #2167d1;
+}
+.serve {
+  background-color: #d15ab7;
+}
+
+.inline_amount {
+  margin-left: 8px;
+  font-weight: 500;
+  color: inherit;
+}

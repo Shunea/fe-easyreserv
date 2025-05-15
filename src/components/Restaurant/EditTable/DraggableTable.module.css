@@ -1,0 +1,40 @@
+.draggable_table_container {
+  text-align: center;
+  cursor: default;
+  position: absolute;
+  padding: 3px;
+  user-select: none;
+  cursor: grab;
+}
+
+.draggable_table_container svg {
+  color: #fff;
+  stroke: #020202;
+  user-select: none;
+}
+
+.draggable_table_container:hover svg {
+  color: #f6f6f6;
+}
+
+.draggable_table_container:active svg {
+  color: #eee;
+}
+
+.draggable_table_container:active {
+  cursor: grabbing !important;
+}
+
+.draggable_table_container .table_name {
+  position: absolute;
+  font-weight: 600;
+  width: 100%;
+  display: table-cell;
+  height: 100%;
+  vertical-align: middle;
+  /* margin: -3px 0 0 -3px; */
+  text-shadow: -1px -1px 0 #fff, 1px -1px 0 #fff, -1px 1px 0 #fff,
+    1px 1px 0 #fff;
+  /* -webkit-text-strokeWidth: 0.4px;
+  -webkit-text-stroke-color: #fff; */
+}

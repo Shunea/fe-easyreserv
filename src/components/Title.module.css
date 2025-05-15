@@ -1,0 +1,43 @@
+.text h1 {
+  font-family: "Inter" !important;
+  font-style: normal !important;
+  font-weight: 600 !important;
+  font-size: 32px;
+  line-height: 120% !important;
+  letter-spacing: -0.02em !important;
+  color: #020202;
+  margin: 0;
+}
+
+.text p {
+  font-size: 16px;
+  font-weight: 400 !important;
+  font-family: "Inter" !important;
+  font-style: normal !important;
+  color: #020202;
+  opacity: 0.4;
+  margin: 0;
+  margin-top: 5px;
+  padding-bottom: 20px;
+}
+
+.statusCircle {
+  width: 16px;
+  height: 16px;
+  border-radius: 100%;
+  margin-left: 10px;
+  margin-bottom: 3px;
+  display: inline-block;
+}
+
+.statusCircle_closed {
+  background-color: #e24848;
+}
+
+.statusCircle_closingSoon {
+  background-color: #edbe39;
+}
+
+.statusCircle_open {
+  background-color: #4be248;
+}

@@ -1,0 +1,165 @@
+.HeadContainer {
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  align-items: flex-start;
+  align-self: stretch;
+}
+
+.FixedHead {
+  display: flex;
+  height: 94px;
+  width: 92%;
+  padding: 20px 10px;
+  align-items: center;
+  gap: 40px;
+  align-self: stretch;
+  background: var(--Brand-Snow, #FFF);
+  box-shadow: 8px 8px 80px 0px rgba(0, 0, 0, 0.04);
+  position: fixed; 
+  top: 0; 
+}
+
+.Heading {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  flex: 1 0 0;
+}
+
+.Title {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.TitleText {
+  color: var(--Brand-Charcoal, var(--Brand-Charcoal, #020202));
+  font-family: Inter;
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 120%; /* 38.4px */
+  letter-spacing: -0.64px;
+}
+
+.HeadActions {
+  display: flex;
+  align-items: center;
+  gap: 16px;;
+}
+
+.TableHead, .TableRow {
+  display: flex;
+  padding: 10px;
+  align-items: center;
+  gap: 50px;
+  align-self: stretch;
+}
+
+.TableCell, .HeaderItem {
+  width: 120px; /* базовая ширина для всех колонок */
+  flex-shrink: 0;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  font-size: 14px;
+  padding: 8px 4px;
+}
+
+/* Специфические ширины для разных типов данных */
+.TableCell:nth-child(1), .HeaderItem:nth-child(1) { width: 180px; } /* Restaurant ID */
+.TableCell:nth-child(2), .HeaderItem:nth-child(2) { width: 100px; } /* Operator */
+.TableCell:nth-child(3), .HeaderItem:nth-child(3) { width: 205px; } /* Data si Ora Modificare */
+.TableCell:nth-child(4), .HeaderItem:nth-child(4) { width: 100px; } /* Nume Client */
+.TableCell:nth-child(5), .HeaderItem:nth-child(5) { width: 150px; } /* Numar Telefon */
+.TableCell:nth-child(6), .HeaderItem:nth-child(6) { width: 120px; } /* Comentarii */
+.TableCell:nth-child(7), .HeaderItem:nth-child(7) { width: 100px; } /* Comanda */
+.TableCell:nth-child(8), .HeaderItem:nth-child(8) { width: 190px; } /* Data si Ora Plasare */
+.TableCell:nth-child(9), .HeaderItem:nth-child(9) { width: 120px; } /* Adresa */
+.TableCell:nth-child(10), .HeaderItem:nth-child(10) { width: 70px; } /* Tip achitare */
+.TableCell:nth-child(11), .HeaderItem:nth-child(11) { width: 70px; } /* Total Suma */
+.TableCell:nth-child(12), .HeaderItem:nth-child(12) { width: 100px; } /* Curier */
+.TableCell:nth-child(13), .HeaderItem:nth-child(13) { width: 150px; } /* Numar telefon curier */
+.TableCell:nth-child(14), .HeaderItem:nth-child(14) { width: 70px; } /* Status curier */
+.TableCell:nth-child(15), .HeaderItem:nth-child(15) { width: 180px; } /* Timp estimativ */
+.TableCell:nth-child(16), .HeaderItem:nth-child(16) { width: 170px; } /* Estimare timp */
+
+.HeadActions {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.AddItemButton {
+    display: flex;
+    padding: 16px 24px;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    border-radius: 12px;
+    background: var(--Brand-Sun, #FE9800);
+    color: var(--Brand-Snow, #FFF);
+    font-family: Inter;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 125%;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .AddItemButton:hover {
+    background-color: #FF8C00;
+  }
+
+.TableBody {
+  margin-top: 10px;
+}
+
+.TableRow {
+  display: flex;
+  padding: 10px;
+  align-items: flex-start;
+  gap: 50px;
+  align-self: stretch;
+}
+
+.TableCell, .HeaderItem {
+  min-width: 100px;
+  flex-shrink: 0;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  font-size: 14px;
+  padding: 8px 4px;
+}
+
+/* Специфичные ширины для определенных колонок */
+.TableCell:nth-child(3), 
+.HeaderItem:nth-child(3),
+.TableCell:nth-child(8),
+.HeaderItem:nth-child(8) {
+  min-width: 150px; /* Для длинных дат */
+  font-size: 13px; /* Чуть меньший размер для дат */
+}
+
+.TableCell:nth-child(9),
+.HeaderItem:nth-child(9) {
+  min-width: 200px; /* Для адреса */
+}
+
+.TableCell:nth-child(5),
+.HeaderItem:nth-child(5) {
+  min-width: 120px; /* Для телефонных номеров */
+}
+
+.LoadingMessage,
+.ErrorMessage {
+  text-align: center;
+  padding: 20px;
+}
+
+.ErrorMessage {
+  color: red;
+}

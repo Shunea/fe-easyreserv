@@ -1,0 +1,490 @@
+.Modal {
+  display: inline-flex;
+  justify-content: flex-end;
+  align-items: center;
+  flex-shrink: 0;
+  background: rgba(0, 0, 0, 0.3);
+  backdrop-filter: blur(10px);
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 99;
+  overflow: auto;
+}
+
+.Box {
+  display: flex;
+  width: 735px;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 24px;
+  background: var(--brand-snow, #fff);
+  box-shadow: 8px 8px 80px 0px rgba(0, 0, 0, 0.04);
+  height: 100vh;
+  overflow-y: auto;
+  border-bottom-left-radius: 12px;
+  border-top-left-radius: 12px;
+}
+
+.BoxHead {
+  display: flex;
+  min-height: 80px;
+  padding: 24px 24px 0px 24px;
+  justify-content: space-between;
+  align-items: center;
+  align-self: stretch;
+}
+
+.BoxHeadTitle {
+  color: #020202;
+  font-family: Inter;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 120%;
+  letter-spacing: -0.48px;
+  margin-bottom: 0;
+}
+
+.BoxHeadButtonContainer {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+}
+
+.BoxHeadButton {
+  width: 28px;
+  height: 28px;
+  opacity: 0.3499999940395355;
+  padding: 0;
+  background-color: transparent;
+}
+
+.BoxHeadButton:hover {
+  background-color: transparent;
+}
+
+.BoxList {
+  display: flex;
+  padding: 0px 24px;
+  align-items: flex-start;
+  gap: 24px;
+  align-self: stretch;
+  border-bottom: 1px solid #eee;
+}
+
+.BoxListItem {
+  display: flex;
+  padding: 0px 8px 22px 8px;
+  justify-content: center;
+  align-items: center;
+  gap: 4px;
+  cursor: pointer;
+  color: var(--brand-charcoal, #020202);
+}
+
+.ActiveTab {
+  border-bottom: 2px solid var(--brand-sun, #fe9800);
+  color: var(--brand-sun, #fe9800);
+}
+
+.BoxListItemText {
+  margin-bottom: 0;
+  font-family: Inter;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 100%;
+  flex-direction: row;
+  display: flex;
+  gap: 4px;
+}
+
+.AddVacationHead {
+  display: flex;
+  padding: 24px;
+  justify-content: space-between;
+  align-items: center;
+  align-self: stretch;
+}
+
+.HeadHeading {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.HeadActions {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+}
+
+.BackButton {
+  display: flex;
+  width: 40px;
+  height: 40px;
+  padding-right: 0px;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  border-radius: 100px !important;
+  border: 1px solid #eee;
+  padding: 0;
+  background-color: transparent;
+}
+.BackButton:hover {
+  background-color: #eee;
+}
+
+.LeftArrow {
+  width: 20px;
+  height: 20px;
+  flex-shrink: 0;
+  opacity: 0.5;
+}
+
+.HeadingTitle {
+  color: var(--brand-charcoal, var(--brand-charcoal, #020202));
+  font-family: Inter;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 120%; /* 28.8px */
+  letter-spacing: -0.48px;
+}
+
+.HeadActions {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+}
+
+.CloseButton {
+  width: 28px;
+  height: 28px;
+  opacity: 0.35;
+  background-color: transparent;
+  padding: 0;
+  display: flex;
+}
+.CloseButton:hover {
+  background-color: transparent;
+}
+
+.BoxBody {
+  display: flex;
+  padding: 24px;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 32px;
+  align-self: stretch;
+  background: var(--Brand-Snow, #fff);
+}
+
+.BoxContent {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 32px;
+  align-self: stretch;
+}
+
+.ContentSection {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 16px;
+  align-self: stretch;
+}
+
+.SectionTitle {
+  display: flex;
+  align-items: flex-start;
+  align-self: stretch;
+}
+
+.SectionTitleText {
+  color: var(--Brand-Charcoal, var(--Brand-Charcoal, #020202));
+  font-family: Inter;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 120%; /* 24px */
+}
+
+.List {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 16px;
+  align-self: stretch;
+}
+
+.Row {
+  display: flex;
+  align-items: flex-end;
+  gap: 8px;
+  align-self: stretch;
+}
+
+.RowTitle {
+  color: var(--Brand-Charcoal, var(--Brand-Charcoal, #020202));
+  font-family: Inter;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 100%; /* 14px */
+  opacity: 0.35;
+  white-space: nowrap;
+}
+
+.Line {
+  width: 100%;
+  height: 1px;
+  border-bottom: dashed #bbb 1px;
+}
+
+.RowValue {
+  color: var(--Brand-Charcoal, var(--Brand-Charcoal, #020202));
+  text-align: right;
+  font-family: Inter;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 100%; /* 14px */
+  white-space: nowrap;
+}
+.DocumentContainer {
+  display: flex;
+  gap: 4px;
+  flex-direction: column;
+  width: 100%;
+}
+.InvoiceRow {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 8px;
+  align-self: stretch;
+}
+
+.InvoiceItem {
+  display: flex;
+  padding: 12px 16px;
+  align-items: center;
+  gap: 16px;
+  align-self: stretch;
+  border-radius: 12px;
+  border: 1px solid #eee;
+  background: var(--Brand-Snow, #fff);
+}
+
+.TitleContainer {
+  display: flex;
+  width: 250px;
+  align-items: center;
+  gap: 8px;
+}
+
+.DocumentIcon {
+  width: 20px;
+  height: 20px;
+  flex-shrink: 0;
+  display: flex;
+}
+
+.InvoiceTitle {
+  flex: 1 0 0;
+  color: var(--Brand-Charcoal, var(--Brand-Charcoal, #020202));
+  font-family: Inter;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 120%; /* 16.8px */
+}
+
+.Hover {
+  color: #020202;
+}
+
+.Hover:hover {
+  color: #fe9800;
+}
+
+.NotHover {
+  color: #020202;
+}
+
+.Line2 {
+  width: 1px;
+  height: 32px;
+  background: #eee;
+}
+
+.SerialContainer {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  flex: 1 0 0;
+  width: 60px;
+}
+
+.SerialText {
+  color: var(--Brand-Charcoal, var(--Brand-Charcoal, #020202));
+  font-family: Inter;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 100%; /* 14px */
+  opacity: 0.35;
+}
+
+.SerialValue,
+.TimeValue {
+  color: var(--Brand-Charcoal, var(--Brand-Charcoal, #020202));
+  text-align: right;
+  font-family: Inter;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 120%; /* 16.8px */
+}
+
+.TimeContainer {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  /* flex: 1 0 0;
+  width: 207px; */
+}
+
+.TimeText {
+  color: var(--Brand-Charcoal, var(--Brand-Charcoal, #020202));
+  font-family: Inter;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 100%; /* 14px */
+  opacity: 0.35;
+}
+
+.Download {
+  display: flex;
+  width: 30px;
+  height: 30px;
+  padding: 5px;
+  justify-content: center;
+  align-items: center;
+  gap: 4px;
+  border-radius: 100px;
+  border: 1px solid #eee;
+  background: var(--Brand-Snow, #fff);
+  color: #020202;
+  opacity: 0.35;
+}
+.Download svg g {
+  opacity: 1;
+}
+
+.Download:hover {
+  background-color: #fff;
+}
+
+.EditButton {
+  display: flex;
+  padding: 16px 24px;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  align-self: stretch;
+  border-radius: 12px;
+  background: var(--Brand-Sun, #fe9800);
+}
+
+.EditText {
+  color: var(--Brand-Snow, var(--Brand-Snow, #fff));
+  text-align: center;
+  font-family: Inter;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 125%; /* 20px */
+}
+.SupplierNameContainer {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  flex: 1 0 0;
+}
+.SupplierNameBox {
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+  gap: 4px;
+  font-size: 16px;
+}
+.SupplierName {
+  display: flex;
+  flex-direction: row;
+  gap: 12px;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 1;
+  color: var(--Brand-Charcoal, var(--Brand-Charcoal, #020202));
+  text-overflow: ellipsis;
+  font-family: Inter;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 120%;
+}
+.SupplierRow {
+  display: flex;
+  padding: 12px 24px;
+  align-items: center;
+  gap: 16px;
+  align-self: stretch;
+  border-bottom: 1px solid #eee;
+  background: var(--Brand-Snow, #fff);
+}
+.SupplierRow:nth-child(1) {
+  border-radius: 12px 12px 0 0;
+}
+.SupplierRow:nth-child(2) {
+  border-radius: 0 0 12px 12px;
+}
+.SupplierList {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  align-self: stretch;
+}
+.SupplierListContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  align-self: stretch;
+  border-radius: 12px;
+  border: 1px solid #eee;
+  background: var(--Brand-Snow, #fff);
+}
+.Liscence label span:nth-child(1) {
+  font-size: 14px;
+  font-weight: 500;
+}
+.Liscence label span:nth-child(2),
+.SerialValue span {
+  font-size: 16px;
+  opacity: 0.35;
+}
+.SerialValue span {
+  padding-right: 8px;
+}
+.Liscence .SupplierName {
+  display: flex;
+  flex-direction: row;
+  gap: 12px;
+}

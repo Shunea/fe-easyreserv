@@ -1,0 +1,24 @@
+.container {
+  background: rgba(0, 0, 0, 0.02);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+.textarea {
+  display: flex;
+  min-height: 92px;
+  width: 687px;
+  padding: 0px 16px;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: 8px;
+  align-self: stretch;
+  border-radius: 12px;
+  margin-bottom: 24px;
+  border: 1px solid #eee;
+  background: var(--brand-snow, #fff);
+}
+.textarea::placeholder {
+  padding: 10px 0;
+}

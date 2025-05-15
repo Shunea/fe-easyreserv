@@ -1,0 +1,390 @@
+.ListViewContainer {
+  display: flex;
+  flex-direction: column;
+  min-width: 800px;
+  overflow-x: auto;
+}
+
+.TableHead {
+  display: flex;
+  background-color: #ffffff; 
+  padding: 0px;
+  border-bottom: 1px solid #cccccc; 
+  min-width: 800px;
+  align-items: center;
+}
+
+.HeaderItem {
+  flex: 1; 
+  text-align: left; 
+  padding: 10px;
+  box-sizing: border-box; 
+  color: rgba(0, 0, 0, 0.5);
+}
+
+.HeaderItemUserName {
+  flex: 1; 
+  text-align: left; 
+  padding: 10px;
+  box-sizing: border-box; 
+  color: rgba(0, 0, 0, 0.5); 
+  cursor: pointer;
+}
+
+.HeaderItemUserName:hover {
+  color: black;
+}
+
+
+.HeaderItemDepartment {
+  flex: 1; 
+  text-align: left; 
+  padding: 10px;
+  box-sizing: border-box; 
+  color: rgba(0, 0, 0, 0.5); 
+  cursor: pointer;
+}
+
+.HeaderItemDepartment:hover {
+  color: black;
+}
+
+.HeaderItemRole {
+  flex: 1; 
+  text-align: left; 
+  padding: 10px;
+  box-sizing: border-box; 
+  color: rgba(0, 0, 0, 0.5); 
+  cursor: pointer;
+}
+
+.HeaderItemRole:hover {
+  color: black;
+}
+
+.ClientRow {
+  display: flex; 
+  padding: 1px;
+  border-bottom: 1px solid #cccccc; 
+  min-width: 800px;
+}
+
+.ClientRole,
+.ClientDepartment,
+.ClientMonth,
+.ClientTotalWorkHours,
+.ClientSalary
+ {
+  flex: 1; 
+  text-align: left; 
+  padding: 10px; 
+  box-sizing: border-box; 
+}
+
+.ClientUserName {
+  flex: 1; 
+  text-align: left; 
+  padding: 10px; 
+  box-sizing: border-box; 
+  cursor: pointer; 
+}
+
+.ClientUserName:hover {
+  opacity: 0.7; 
+}
+
+.FilterIcon {
+  margin-left: 8px;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.MonthDropdown {
+  position: absolute; 
+  background-color: white;
+  border: 1px solid #ccc;
+  z-index: 10;
+  top: 8%;
+}
+
+.MonthItem {
+  padding: 8px;
+  cursor: pointer;
+  color: rgba(0, 0, 0, 0.5); 
+}
+
+.MonthItem:hover {
+  color: black; 
+}
+
+.HeaderItemMonth {
+  cursor: pointer; 
+}
+
+.HeaderItemMonth:hover {
+  color: black; 
+}
+
+.ListViewHeadBackButton {
+  display: flex;
+  width: 40px;
+  height: 40px;
+  padding: 0 !important;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  border-radius: 100px !important;
+  border: 1px solid #eee;
+  background-color: transparent;
+  opacity: 0.35;
+  margin-left: 10px;
+  margin-top: -5px;
+}
+
+.ListViewHeadText {
+  margin: 0;
+  margin-left: 16px;
+}
+
+.ListViewHeadHeading {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  margin-bottom: 20px;
+  gap: 16px;
+}
+
+.DepartmentSalaryContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 24px;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  flex-wrap: wrap;
+}
+
+.DepartmentDropdownWrapper {
+  position: relative;
+  min-width: 200px;
+}
+
+.DepartmentDropdownButton {
+  padding: 8px 16px;
+  background: #ffffff;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  transition: all 0.3s ease;
+  color: #000000;
+}
+
+.DepartmentDropdownButton:hover {
+  background: #ffffff;
+  border-color: #ddd;
+}
+
+.DepartmentDropdown {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background: white;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  z-index: 1000;
+  min-width: 150px;
+}
+
+.DepartmentItem {
+  padding: 8px 16px;
+  cursor: pointer;
+}
+
+.DepartmentItem:hover {
+  background: #f5f5f5;
+}
+
+.TotalDepartmentSalary {
+  font-weight: 500;
+  white-space: nowrap;
+}
+
+.HeaderRight {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 16px;
+  margin-left: auto;
+  flex-wrap: wrap;
+}
+
+.date_picker {
+  width: 260px;
+  height: 52px;
+  border-radius: 12px;
+  border: 1px solid #eeeeee;
+  background: #ffffff;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  user-select: none;
+  padding: 0 12px;
+  gap: 8px;
+  background: #fff;
+}
+
+.DatePickerArrow {
+  width: 28px;
+  height: 28px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0.6;
+  transition: opacity 0.2s ease;
+}
+
+.DatePickerArrow:hover {
+  opacity: 1;
+}
+
+.date_value {
+  display: flex;
+  width: 150px;
+  justify-content: center;
+  color: var(--brand-charcoal, #020202);
+  text-align: center;
+  font-family: Inter;
+  font-size: 17px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 100%;
+}
+
+@media screen and (max-width: 1200px) {
+  .DepartmentSalaryContainer {
+    position: relative;
+    transform: none;
+    left: auto;
+    width: 100%;
+    justify-content: center;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .date_picker {
+    width: 100%;
+    max-width: 260px;
+  }
+
+  .DepartmentDropdownWrapper {
+    width: 100%;
+    max-width: 200px;
+  }
+}
+
+.SearchContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 5px;
+}
+
+.SearchInput {
+  width: 50%;
+  padding: 5px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  font-size: 12px;
+  margin-top: 5px;
+  margin-left: -3px;
+}
+
+.SearchInput:focus {
+  outline: none;
+  border-color: #000000;
+}
+.HeaderItem svg {
+  margin-left: 5px;
+  vertical-align: middle;
+}
+
+.HeaderItem:hover {
+  cursor: pointer;
+}
+
+.HeaderItemSalary {
+  color: #8B8B8B;
+  transition: color 0.2s ease;
+}
+
+.HeaderItemSalary:hover {
+  color: #000000;
+  cursor: pointer;
+}
+
+.HeaderItemSalary svg {
+  margin-left: 5px;
+  vertical-align: middle;
+  width: 20px;
+  height: 20px;
+  opacity: 0.6;
+  transition: opacity 0.2s ease;
+}
+
+.HeaderItemSalary:hover svg {
+  opacity: 1;
+}
+
+.HeaderItemSalary:hover svg path {
+  fill: #000000;
+}
+
+.HeaderItemHours {
+  color: #8B8B8B;
+  transition: color 0.2s ease;
+}
+
+.HeaderItemHours:hover {
+  color: #000000;
+  cursor: pointer;
+}
+
+.HeaderItemHours svg {
+  margin-left: 5px;
+  vertical-align: middle;
+  width: 20px;
+  height: 20px;
+  opacity: 0.6;
+  transition: opacity 0.2s ease;
+}
+
+.HeaderItemHours:hover svg {
+  opacity: 1;
+}
+
+.HeaderItemHours:hover svg path {
+  fill: #000000;
+}
+
+.ClearIcon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  opacity: 0.7;
+  transition: opacity 0.2s ease;
+  padding: 20px;
+  margin-left: -60px;
+}
+
+.ClearIcon:hover {
+  opacity: 1;
+}
